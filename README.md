@@ -4,8 +4,13 @@
 - 레퍼 사이트(서브) : https://www.pltt.xyz/pages/service/video.php
 - gsap 레퍼: https://madewithgsap.com/
 
+# 250426
+1. 프로젝트 디렉토리 구성
+2. git pull + push
+3. 디자인 디테일 체크
+
 # 2504014
-0. 메인 페이지 내용 정리
+1. 메인 페이지 내용 정리
 2. 디자인 가이드 설정
 - 폰트 : 프리텐다드(KOR) / Raleway(ENG) - https://fonts.google.com/specimen/Raleway
 - 폰트 사이즈
