@@ -4,6 +4,9 @@
 - 레퍼 사이트(서브) : https://www.pltt.xyz/pages/service/video.php
 - gsap 레퍼: https://madewithgsap.com/
 
+# 250508
+1. 디자인 디테일 체크 / 모바일 스타일 체크
+
 # 250426
 1. 프로젝트 디렉토리 구성
 2. git pull + push
