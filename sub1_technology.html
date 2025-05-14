@@ -8,6 +8,266 @@
 </head>
 
 <body>
+
+  <!------ header ------>
+  <header>
+    <!---- nav ---->
+    <nav>
+      <h1 class="logo"><a href=""><img src="" alt="logo"></a></h1>
+      <ul class="main-menu">
+        <li class="main-item"><a href="">기술</a></li>
+        <li class="main-item"><a href="">솔루션</a></li>
+        <li class="main-item"><a href="">서비스</a></li>
+        <li class="main-item"><a href="">사업영역</a></li>
+      </ul>
+      <ul class="sub-menu">
+        <li class="sub-item"><a href="">문의하기</a></li>
+        <li class="sub-item"><a href="">데모 신청</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!------- sub1-main ------>
+  <section class="sub1-main">
+    <!---- main 영역 title ---->
+    <div class="main-title">
+      <h2>얼굴인식</h2>
+      <p>가장 안전한 보안수단인 얼굴로 여러분의 일상과 사회의 안전한 삶을 누리세요.</p>
+    </div>
+    <!---- main 영역 video+text ---->
+    <div class="main-video">
+      <video src="./assets/images/sub1_technology/about.mp4" autoplay muted loop></video>
+      <div class="video-txt">
+        <h3>얼굴 정보를 통해<br>정확한 신원확인이 가능한<br>얼굴인식 인공지능</h>
+          <p>알체라의 얼굴인식 인공지능 기술은 얼굴 이미지를 기반으로 특장점을 추출하여 빠르고 정확한 본인인증 솔루션을 제공합니다.<br>신뢰할 수 있는 실시간 얼굴 위조 판별 기술을 더해, 다양한
+            비즈니스
+            성공을 경험해 보세요.</p>
+      </div>
+    </div>
+  </section>
+
+  <!------ contents 1 ------>
+  <section class="con1">
+    <h3 class="contents-title">국내 1위, 글로벌 최상위권의 얼굴인식 기술</h3>
+    <!-- text 1 -->
+    <div class="txt-box">
+      <h4>99.99%</h>
+        <p>1초 이내 인식 가능</p>
+        <h5>NIST FRVT 국내 1위의<br>얼굴인식 정확도와 인식 속도</h5>
+        <h6>글로벌 최대 안면인식 테스트 NIST FRVT<br>국내 1위의 기술력으로 높은 인식율과<br>속도를 자랑합니다.</h6>
+    </div>
+    <!-- text 2 -->
+    <div class="txt-box">
+      <h4>20,000</h>
+        <p>일 평균</p>
+        <h5>알체라 데이터 센터에서<br>생성되는 학습용 데이터의 수</h5>
+        <h6>한국과 베트남의 자체 데이터 센터에서 전문 인력이 양질의 학습용 데이터를 생산해 AI 엔진의 성능을 지속적으로 개선시키고 있습니다. </h6>
+    </div>
+    <!-- text 3 -->
+    <div class="txt-box">
+      <h4>3.5</h>
+        <p>억대</p>
+        <h5>현재까지 알체라 기술이<br>적용된 카메라 수</h5>
+        <h6>출입보안 및 핀테크 등 다양한 영역에서 그 노하우를 인정받고 있습니다.</h6>
+    </div>
+  </section>
+
+  <!------ contents 2 ------>
+  <section class="con2">
+    <h3 class="contents-title">얼굴인식의 핵심 기술</h>
+      <!-- contents 2 images -->
+      <div class="img-box">
+        <img src="./assets/images/sub1_technology/faceDetection.jpg" alt="">
+        <img src="./assets/images/sub1_technology/image 4.png" alt="">
+        <img src="./assets/images/sub1_technology/image 5.png" alt="">
+        <img src="./assets/images/sub1_technology/image 6.png" alt="">
+      </div>
+      <!-- contents 2 text -->
+      <div class="txt-box">
+        <div class="txt-wrapper">
+          <h5>Face Detection</h5>
+          <p>Face Detection은 얼굴인식 첫 절반 과정으로 얼굴검출, 랜드마크 검출, 얼굴정렬까지의 세 단계로 구성됩니다. 이미지가 입력되면 AI는 먼저 얼굴의 영역을 찾고, 얼굴이 검출되면
+            랜드마크 포인트를 추출해냅니다.<br>이후 랜드마크 포인트를 기준으로 얼굴 이미지를 회전시키고 편집해 Face Matching이 가능한 형태로 변형시킵니다.</p>
+        </div>
+        <div class="txt-wrapper">
+          <h5>Face Matching</h5>
+          <p>Face Matching은 Face Detection 이후 얼굴인식의 나머지 절반 과정으로, 특징추출과 특징 대조로 구성됩니다. 정렬된 얼굴 이미지를 받은 AI는 이미지에 몇 십 개의
+            Convolutional Layers를 적용시켜 얼굴을 N차원의 벡터값으로 변환시킵니다.<br>이 벡터 값은 사람마다 고유한 값이어서 이후에 서로 대조시키는 방식으로 신원 확인이 가능합니다.
+          </p>
+        </div>
+        <div class="txt-wrapper">
+          <h5>Face Anti-Spoofing</h5>
+          <p>Face Anti-Spoofing은 입력되는 얼굴 이미지가 촬영 당시 실제로 해당 장소에 있던 실제 사람으로부터 촬영된 것인지 확인하는 기능으로 IR, 3D Depth, RGB 카메라에서 모두
+            구동 가능합니다. <br>많은 적용 사례와 산업군이 증명하듯, 알체라의 Anti-Spoofing(위변조방지) 기술은 99%의 True Positive Rate을 지녀 신분 도용 등 사기 방지에
+            아주 효과적입니다.</p>
+        </div>
+        <div class="txt-wrapper">
+          <h5>Age, Gender, Emotion</h5>
+          <p>Age, Gender, Emotion(AGE)는 촬영된 인물의 나이, 성별, 그리고 감정을 추측하는 기능입니다. 오프라인 매장에서 고객군의 특징을 나이, 성별에 따라 구분하여 제품 추천을 하는
+            등의 서비스 구현이 가능합니다.</p>
+        </div>
+      </div>
+  </section>
+
+  <!------ contents 3 ------>
+  <section class="con3">
+    <h3 class="contents-title">얼굴인식 AI 기술 활용 사례</h3>
+    <a href="">Read More ></a>
+    <!-- link -->
+    <ul class="link-wrapper">
+      <li>
+        <a href="">
+          <h5>행정안전부 정부청사관리본부</h5>
+          <p>스마트 정부청사 통합관리체계 구축사업</p>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <h5>인천국제공항공사</h5>
+          <p>스마트패스 구축사업</p>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <h5>한국교육과정평가원</h5>
+          <p>이미지 적합성 판별 AI 솔루션</p>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <h5>경찰청</h5>
+          <p>얼굴인식 AI 솔루션</p>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <h5>신한카드</h5>
+          <p>페이스페이(FacePay) 얼굴인식 AI 솔루션</p>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <h5>토스증권</h5>
+          <p>신분증 진위확인 솔루션</p>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <h5>롯데정보통신</h5>
+          <p>얼굴인식 AI 솔루션</p>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <h5>삼성 SDS</h5>
+          <p>얼굴인식 AI 솔루션</p>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <h5>부산은행</h5>
+          <p>신분증 OCR 및 사본판별 솔루션</p>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <!------ contents 4 ------>
+  <section class="con4">
+    <h3 class="contents-title">얼굴인식 기술 적용 솔루션 안내</h3>
+    <!-- solution info -->
+    <ul class="solution-info">
+      <li>
+        <img src="" alt="">
+        <h6>얼굴 본인인증</h6>
+        <p>높은 보안성과 편리함을 보장하는 얼굴 본인인증 솔루션</p>
+        <a href="">더 알아보기</a>
+      </li>
+      <li>
+        <img src="" alt="">
+        <h6>신분증 본인인증</h6>
+        <p>위조와 도용의 위험을 예방하는 신분증 본인인증 솔루션</p>
+        <a href="">더 알아보기</a>
+      </li>
+      <li>
+        <img src="" alt="">
+        <h6>바이오정보 분산관리</h6>
+        <p>개인정보 유출 방지를 위한 분산형 얼굴 정보 저장 방식</p>
+        <a href="">더 알아보기</a>
+      </li>
+      <li>
+        <img src="" alt="">
+        <h6>eKYC</h6>
+        <p>고객확인제도 구현을 위한 통합 보안 솔루션</p>
+        <a href="">더 알아보기</a>
+      </li>
+      <li>
+        <img src="" alt="">
+        <h6>재외국민 여권 신원확인</h6>
+        <p>재외국민 비대면 본인인증이 가능한 신원확인 솔루션</p>
+        <a href="">더 알아보기</a>
+      </li>
+      <li>
+        <img src="" alt="">
+        <h6>출입통제</h6>
+        <p>안전하고 편리한 출입통제 솔루션</p>
+        <a href="">더 알아보기</a>
+      </li>
+    </ul>
+  </section>
+
+  <!------ request ------>
+  <section class="request">
+    <p>Contact Us</p>
+    <h3>얼굴인식 AI 기술로 비즈니스를 업그레이드하세요</h3>
+    <h4>알체라의 세일즈 컨설턴트가<br>고객님에게 최적의 솔루션을 제안 드립니다.</h4>
+    <a href="">문의하기<img src="" alt=""></a>
+  </section>
+
+  <!------ footer ------>
+  <footer>
+    <!-- footer menu wrapper -->
+    <div class="footer-menu-wrapper">
+      <ul>
+        <li><a href="">솔루션 문의하기<img src="" alt=""></a></li>
+        <li><a href="">데모 신청하기<img src="" alt=""></a></li>
+        <li><a href="">회사소개서 다운로드<img src="" alt=""></a></li>
+      </ul>
+      <ul>
+        <li><a href="">기술</a></li>
+        <li><a href="">솔루션</a></li>
+        <li><a href="">서비스</a></li>
+        <li><a href="">사업영역</a></li>
+      </ul>
+    </div>
+    <!-- footer-bottom -->
+    <div class="footer-bottom">
+      <!-- address -->
+      <div class="address">
+        <h2><a href=""><img src="" alt="logo"></a></h2>
+        <p>(주)알체라 (대표이사: 황영규) ㅣ 경기도 성남시 분당구 판교로256번길 25 GB2빌딩 C동 7층 ㅣ 사업자등록번호: 643-87-00337<br>ⓒ 2025. Alchera Inc.</p>
+      </div>
+      <!-- language -->
+      <div class="lang">
+        <a href="">KOR</a>
+        <a href="">ENG</a>
+      </div>
+      <!-- policy -->
+      <div class="policy">
+        <a href="">개인정보처리방침</a>
+        <a href="">내부정보관리규정</a>
+      </div>
+      <!-- family-site -->
+      <ul class="family-site">
+        <li class="active">Family Site</li>
+        <li><a href="">FireScout</a></li>
+        <li><a href="">useB</a></li>
+        <li><a href="">AI HEROES</a></li>
+        <li><a href="">Workple</a></li>
+      </ul>
+    </div>
+  </footer>
+
 </body>
 
 </html>
