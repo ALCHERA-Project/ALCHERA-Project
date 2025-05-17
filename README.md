@@ -4,6 +4,12 @@
 - 레퍼 사이트(서브) : https://www.pltt.xyz/pages/service/video.php
 - gsap 레퍼: https://madewithgsap.com/
 
+# 250517
+1. 은혜
+ㄴ 이미지/아이콘 정리
+ㄴ global / font css 작성 / push
+ㄴ 나머지 html 재작성해서 올리기
+
 # 250508
 1. 디자인 디테일 체크 / 모바일 스타일 체크
 2. 퍼블리싱 가이드 작성
