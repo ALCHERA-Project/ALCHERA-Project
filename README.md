@@ -7,9 +7,9 @@
 # 250517
 ### 은혜
 - js / Raleway.css 작성
-- 이미지/아이콘 정리
-- global / font css 작성 / push
-- 나머지 html 재작성해서 올리기
+- 이미지 / 아이콘 정리하기
+- global css 작성하기
+- 나머지 html 재작성 asap
 
 # 250508
 1. 디자인 디테일 체크 / 모바일 스타일 체크
