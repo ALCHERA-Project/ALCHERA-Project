@@ -10,6 +10,14 @@
 - 이미지 / 아이콘 정리하기
 - global css 작성하기
 - 나머지 html 재작성 asap
+### 서희
+- sub 1 pc 버전 css 작업
+
+# 250516
+### 서희
+- global css header 작업
+- main html 구조 작성
+- sub 1 html 구조 작성, 모바일 버전 css 작업
 
 # 250508
 1. 디자인 디테일 체크 / 모바일 스타일 체크
