@@ -6,6 +6,7 @@
 
 # 250517
 1. 은혜
+- js / Raleway.css 작성
 - 이미지/아이콘 정리
 - global / font css 작성 / push
 - 나머지 html 재작성해서 올리기
