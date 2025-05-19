@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+/** font **/
+/* en font-family: 'Raleway'; */
+@import url(./raleway.css); 
+/* ko font-family: 'Pretendard'; */
+@import url(./pretendard.css);
+
+:root {
+  /* 
+    기본 폰트 사이즈 14px sm
+    기본 폰트 두께 500 sm
+  */
+
+/****** font ******/
+--primary-font-en: 'Raleway', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+--primary-font-ko: 'Pretendard', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+/*** size ***/
+--size-xxs: 10px;
+--size-xs: 12px;
+--size-sm: 14px;
+--size-md: 16px;
+--size-lg: 18px;
+--size-xl: 20px;
+--size-xxl: 25px;
+/*** weight ***/
+--weight-xs: 400;
+--weight-sm: 500;
+--weight-md: 600;
+--weight-lg: 700;
+
+/****** color ******/
+/* --color-b: #000;
+--color-w: #fff;
+--color-g: #AEAEAE;
+--color-lg: #f3f3f3;
+--color-main: #0000C5; */
+
+/****** z-index ******/
+/* 1: 가장 위에 올라올 것, 9: 가장 아래 내려갈 것 */
+--zIndex-7: -9999;
+--zIndex-6: 99;
+--zIndex-5: 999;
+--zIndex-4: 9999;
+--zIndex-3: 99999;
+--zIndex-2: 999999;
+--zIndex-1: 9999999;
+
+/****** line-height ******/
+--lineHeight-sm: 1.4;
+--lineHeight-nm: 1.6;
+--lineHeight-md: 1.8;
+--lineHeight-lg: 1;
+--lineHeight-xxl: 3;
+
+/****** 기타 ******/
+--full-size: 100%;
+--text-indent: -9999px;
+--primary-center: 0 auto;
+}
