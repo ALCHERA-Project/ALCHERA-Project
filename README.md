@@ -6,6 +6,10 @@
 - gsap 레퍼: https://madewithgsap.com/
 
 # 250517
+### 서희
+- main pc버전 css 작업
+
+# 250517
 ### 은혜
 - js / Raleway.css 작성
 - 이미지 / 아이콘 정리하기

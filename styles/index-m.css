@@ -304,6 +304,9 @@ body {
   padding: 30px;
   background-color: #ddd;
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .solution .img-menu-wrapper li h5 {
@@ -426,7 +429,9 @@ body {
 }
 
 .location h2 {
+  font-size: 24px;
   margin: 0px 20px;
+  color: #000038;
 }
 
 .location img {
