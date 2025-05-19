@@ -10,7 +10,7 @@
 - main pc버전 css 작업
 
 ### 은혜
-- global css 작성하기
+- global/globalVar css 작성
 - 나머지 html 재작성 asap
 
 # 250517
