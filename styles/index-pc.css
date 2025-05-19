@@ -232,6 +232,7 @@
 
   .solution .img-menu-wrapper li p {
     font-size: 18px;
+    margin-bottom: 10px;
   }
 
   /****** 3-history ******/
@@ -248,20 +249,22 @@
   .history .history-wrapper {
     width: 100%;
     display: flex;
-    gap: 100px;
   }
 
   .history .history-wrapper dl {
     display: flex;
-    gap: 70px;
+    /* gap: 70px; */
+    gap: 0;
     margin: 0;
     margin-bottom: 40px;
   }
 
   .history .history-wrapper dl dt {
+    width: 47px;
     margin: 0;
     font-size: 20px;
     line-height: 45px;
+    margin-right: 70px;
   }
 
   .history .history-txt {}
@@ -272,9 +275,82 @@
     line-height: 40px;
   }
 
-  .history .history-wrapper .history-left {}
+  .history .history-wrapper .history-left {
+    margin-right: 100px;
+  }
 
   .history .history-wrapper .history-right {}
+
+  .history .history-wrapper dl:after {
+    content: "";
+    position: absolute;
+    left: 80px;
+    top: 10px;
+    width: 2px;
+    height: 80%;
+    background: #000038;
+  }
+
+  .history .history-wrapper dl:first-child:after {
+    top: 10px;
+    height: calc(100% - 60px);
+  }
+
+  .history .history-wrapper dt {
+    position: relative;
+    font-weight: bold;
+    color: #000038;
+    line-height: 1;
+    width: 15%;
+  }
+
+  .history .history-wrapper dt:after {
+    content: "";
+    position: absolute;
+    left: 76px;
+    top: 40px;
+    transform: translateY(-230%);
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #000038;
+    box-sizing: border-box;
+  }
+
+  .history .history-wrapper .history-right dl:after {
+    content: "";
+    position: absolute;
+    left: 785px;
+    top: 10px;
+    width: 2px;
+    height: 65%;
+    background: #000038;
+  }
+
+  .history .history-wrapper .history-right dl:first-child:after {
+    top: 10px;
+    height: calc(100% - 170px);
+  }
+
+
+  .history .history-wrapper .history-right dt {
+    position: relative;
+    font-weight: bold;
+    color: #000038;
+  }
+
+  .history .history-wrapper .history-right dt:after {
+    content: "";
+    position: absolute;
+    left: 76px;
+    top: 40px;
+    transform: translateY(-230%);
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #000038;
+    box-sizing: border-box;
+  }
 
   /****** 4-press ******/
   .press {

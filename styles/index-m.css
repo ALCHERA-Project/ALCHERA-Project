@@ -335,7 +335,9 @@ body {
   margin-bottom: 45px;
 }
 
-.history .history-wrapper {}
+.history .history-wrapper {
+  position: relative;
+}
 
 
 
@@ -347,11 +349,12 @@ body {
 }
 
 .history .history-wrapper dl dt {
+  width: 39px;
   margin: 0;
   font-size: 15px;
   font-weight: 600;
   color: #000038;
-  margin: 0;
+  line-height: 25px;
 }
 
 .history .history-txt {}
@@ -367,6 +370,43 @@ body {
 .history .history-wrapper .history-left {}
 
 .history .history-wrapper .history-right {}
+
+.history .history-wrapper dl:after {
+  content: "";
+  position: absolute;
+  left: 55px;
+  top: 2px;
+  width: 2px;
+  height: 75%;
+  background: #000038;
+}
+
+.history .history-wrapper dl:first-child:after {
+  top: 10px;
+  height: calc(100% - 10px);
+}
+
+.history .history-wrapper dt {
+  position: relative;
+  font-weight: bold;
+  color: #000038;
+  line-height: 1;
+  width: 15%;
+}
+
+.history .history-wrapper dt:after {
+  content: "";
+  position: absolute;
+  left: 52px;
+  top: 27px;
+  transform: translateY(-230%);
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background: #000038;
+  box-sizing: border-box;
+}
+
 
 /****** 4-press ******/
 .press {
