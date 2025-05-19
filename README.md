@@ -5,16 +5,19 @@
 - 레퍼 사이트(서브) : https://www.pltt.xyz/pages/service/video.php
 - gsap 레퍼: https://madewithgsap.com/
 
-# 250517
+# 250519
 ### 서희
 - main pc버전 css 작업
+
+### 은혜
+- global css 작성하기
+- 나머지 html 재작성 asap
 
 # 250517
 ### 은혜
 - js / Raleway.css 작성
 - 이미지 / 아이콘 정리하기
-- global css 작성하기
-- 나머지 html 재작성 asap
+
 ### 서희
 - sub 1 pc 버전 css 작업
 - main 모바일 버전 css 작업업
