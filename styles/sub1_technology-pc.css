@@ -270,7 +270,10 @@
 
   .con4 .solution-info li:nth-child(1) {}
 
-  .con4 .solution-info li img {}
+  .con4 .solution-info li img {
+  width: 51px;
+  margin-bottom: 20px;
+}
 
   .con4 .solution-info li h6 {
     font-size: 18px;

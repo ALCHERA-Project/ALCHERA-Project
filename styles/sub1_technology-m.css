@@ -199,19 +199,53 @@ body {}
   width: 100%;
   height: 160px;
   padding: 20px;
-  background-color: #ddd;
   border-radius: 15px;
 }
 
-.con3 .link-wrapper li:nth-child(1) {}
-.con3 .link-wrapper li:nth-child(2) {}
-.con3 .link-wrapper li:nth-child(3) {}
-.con3 .link-wrapper li:nth-child(4) {}
-.con3 .link-wrapper li:nth-child(5) {}
-.con3 .link-wrapper li:nth-child(6) {}
-.con3 .link-wrapper li:nth-child(7) {}
-.con3 .link-wrapper li:nth-child(8) {}
-.con3 .link-wrapper li:nth-child(9) {}
+.con3 .link-wrapper li:nth-child(1) {
+  background: url(../assets/images/sub1_technology/con3/government.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.con3 .link-wrapper li:nth-child(2) {
+  background: url(../assets/images/sub1_technology/con3/airport.JPG) no-repeat center;
+  background-size: cover;
+}
+
+.con3 .link-wrapper li:nth-child(3) {
+  background: url(../assets/images/sub1_technology/con3/education.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.con3 .link-wrapper li:nth-child(4) {
+  background: url(../assets/images/sub1_technology/con3/police.jpeg) no-repeat center;
+  background-size: cover;
+}
+
+.con3 .link-wrapper li:nth-child(5) {
+  background: url(../assets/images/sub1_technology/con3/sinhan.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.con3 .link-wrapper li:nth-child(6) {
+  background: url(../assets/images/sub1_technology/con3/toss.png) no-repeat center;
+  background-size: cover;
+}
+
+.con3 .link-wrapper li:nth-child(7) {
+  background: url(../assets/images/sub1_technology/con3/lotte.png) no-repeat center;
+  background-size: cover;
+}
+
+.con3 .link-wrapper li:nth-child(8) {
+  background: url(../assets/images/sub1_technology/con3/samsung.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.con3 .link-wrapper li:nth-child(9) {
+  background: url(../assets/images/sub1_technology/con3/busan.png) no-repeat center;
+  background-size: cover;
+}
 
 .con3 .link-wrapper li a {
   width: 100%;
@@ -225,14 +259,14 @@ body {}
 .con3 .link-wrapper li a h5 {
   font-size: 16px;
   font-weight: 600;
-  /* color: #fff; */
+  color: #fff;
   margin-bottom: 2px;
 }
 
 .con3 .link-wrapper li a p {
   font-size: 13px;
   font-weight: 400;
-  /* color: #fff; */
+  color: #fff;
 }
 
 /* contents 4 */
@@ -249,18 +283,21 @@ body {}
 
 .con4 .solution-info li {
   width: calc(50% - 5px);
-  height: 230px;
+  height: 250px;
   border: 1px solid #00006B;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0px 25px;
+  padding: 0px 15px;
   text-align: center;
 }
 
-.con4 .solution-info li img {}
+.con4 .solution-info li img {
+  width: 40px;
+  margin-bottom: 12px;
+}
 
 .con4 .solution-info li h6 {
   font-size: 16px;

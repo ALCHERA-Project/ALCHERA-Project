@@ -5,6 +5,11 @@
 - 레퍼 사이트(서브) : https://www.pltt.xyz/pages/service/video.php
 - gsap 레퍼: https://madewithgsap.com/
 
+
+# 250520
+### 서희
+- main, sub-1 이미지 첨부, css 작업
+
 # 250519
 ### 서희
 - main pc버전 css 작업
