@@ -5,6 +5,12 @@
 - 레퍼 사이트(서브) : https://www.pltt.xyz/pages/service/video.php
 - gsap 레퍼: https://madewithgsap.com/
 
+# 250522
+#### 수정할 것
+- a 태그에 # 넣기
+- img alt 값 쓰기
+- 파비콘 만들기
+
 # 250521
 ### 은혜
 - global css 작성 (header/footer)
