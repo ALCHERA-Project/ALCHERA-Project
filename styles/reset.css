@@ -34,7 +34,8 @@ h6 {
   font-size: 100%;
 }
 
-ul {
+ul,
+ol {
   list-style: none
 }
 
