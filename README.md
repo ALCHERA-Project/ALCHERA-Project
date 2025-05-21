@@ -5,6 +5,12 @@
 - 레퍼 사이트(서브) : https://www.pltt.xyz/pages/service/video.php
 - gsap 레퍼: https://madewithgsap.com/
 
+# 250521
+### 은혜
+- global css 작성 (header/footer)
+- sub 2 class 수정
+- 'request' > 'contact'로 수정
+
 # 250520
 ### 은혜
 - openGraph 생성

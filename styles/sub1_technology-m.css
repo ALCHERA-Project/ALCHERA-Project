@@ -322,8 +322,8 @@ body {}
   border-radius: 15px;
 }
 
-/* request */
-.request {
+/* contact */
+.contact {
   height: 340px;
   width: 100%;
   padding: 0px 40px;
@@ -336,28 +336,28 @@ body {}
   background-color: #ddd;
 }
 
-.request p {
+.contact p {
   font-size: 16px;
   font-weight: 600;
   color: #fff;
   margin-bottom: 20px;
 }
 
-.request h3 {
+.contact h3 {
   font-size: 28px;
   font-weight: 600;
   color: #fff;
   margin-bottom: 10px;
 }
 
-.request h4 {
+.contact h4 {
   font-size: 16px;
   font-weight: 600;
   color: #fff;
   margin-bottom: 20px;
 }
 
-.request a {
+.contact a {
   font-size: 16px;
   font-weight: 600;
   color: #0000A5;

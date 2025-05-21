@@ -290,30 +290,30 @@
     padding: 12px 30px;
   }
 
-  /* request */
-  .request {
+  /* contact */
+  .contact {
     height: 430px;
     padding: 0px 40px;
   }
 
-  .request p {
+  .contact p {
     font-size: 16px;
     font-weight: 600;
     color: #fff;
     margin-bottom: 20px;
   }
 
-  .request h3 {
+  .contact h3 {
     font-size: 38px;
     margin-bottom: 35px;
   }
 
-  .request h4 {
+  .contact h4 {
     font-size: 16px;
     margin-bottom: 40px;
   }
 
-  .request a {
+  .contact a {
     font-size: 18px;
     padding: 13px 35px;
   }
