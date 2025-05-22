@@ -290,32 +290,4 @@
     padding: 12px 30px;
   }
 
-  /* contact */
-  .contact {
-    height: 430px;
-    padding: 0px 40px;
-  }
-
-  .contact p {
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-    margin-bottom: 20px;
-  }
-
-  .contact h3 {
-    font-size: 38px;
-    margin-bottom: 35px;
-  }
-
-  .contact h4 {
-    font-size: 16px;
-    margin-bottom: 40px;
-  }
-
-  .contact a {
-    font-size: 18px;
-    padding: 13px 35px;
-  }
-
 }

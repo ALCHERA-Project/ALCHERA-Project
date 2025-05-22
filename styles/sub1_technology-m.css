@@ -332,8 +332,8 @@ body {}
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: url();
-  background-color: #ddd;
+  background: url(../assets/images/global/contact.jpg) no-repeat center;
+  background-size: cover;
 }
 
 .contact p {
