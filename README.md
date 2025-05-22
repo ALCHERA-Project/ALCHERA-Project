@@ -3,9 +3,7 @@
 - Alchera Youtube : https://www.youtube.com/@ALCHERAinc/videos
 - 레퍼 사이트(메인): https://convencion-hyundai.plastic.design/?utm_source=awwwards&utm_medium=web&utm_campaign=hyundai_convention&utm_content=awwwards_summit
 - 레퍼 사이트(서브) : https://www.pltt.xyz/pages/service/video.php
-- gsap 레퍼: https://madewithgsap.com/
-
-git 연결  
+- gsap 레퍼: https://madewithgsap.com/ 
 
 # 250522
 #### 수정할 것!!
