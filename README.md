@@ -7,7 +7,7 @@
 - google drive : https://drive.google.com/drive/folders/1jNLVl-mRead3KSveLNgLUBjFLA73RuBt?usp=drive_link
 
 # 250522
-### 해올 것
+#### 해올 것
 1) css 완성
 - 트랜지션 / 애니메이션 등..
 - global 4개 css 작성
@@ -18,20 +18,21 @@
 - 메인에 3가지 종류
 
 #### 오늘 작업
-1. 디자인
-- mo
-1) 메인이미지 세로 : 700px + 제목 위치 수정
-2) 햄버거 메뉴 만들기
+1) 디자인
+###### mo
+- 메인이미지 세로 : 700px + 제목 위치 수정
+- 햄버거 메뉴 만들기
 
-- pc
-1) header > menu > 드롭메뉴 만들 것
+###### pc
+- header > menu > 드롭메뉴 만들 것
 
-- 서브 페이지 font 크기 맞추기
-1) globalVar 작성 - weight / color 만 우선 사용
-
-2. 디자인 스타일 (도형 크기/컬러/그라디언트 등)
+###### 디자인 스타일 (도형 크기/컬러/그라디언트 등)
 - gradient : 은혜가 만들어볼게 ^^
 - img 라운드값 15px
+
+2) 퍼블
+- 서브 페이지 font 크기 맞추기
+- globalVar 작성 > weight + color 만 우선 사용
 
 # 250521
 ### 은혜
