@@ -32,7 +32,7 @@
 
 #### 퍼블
 - 서브 페이지 font 크기 맞추기
-- <b>globalVar 작성 > weight + color 만 우선 사용</b>
+- <b>globalVar 작성 : weight / color 우선 사용</b>
 
 # 250521
 ### 은혜
