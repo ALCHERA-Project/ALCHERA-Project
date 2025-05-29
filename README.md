@@ -7,17 +7,17 @@
 - google drive : https://drive.google.com/drive/folders/1jNLVl-mRead3KSveLNgLUBjFLA73RuBt?usp=drive_link
 
 # 250522
-### 해올 것
+### 1. 해올 것
 #### css 완성
 1) 트랜지션 / 애니메이션 등..
 2) global 4개 css 작성
 - 은혜 : 헤더 / 채팅 + GoToTop
 - 서희 : 컨택트 / 푸터 / 파비콘 만들기
 
-3) js 공부
+#### js 공부
 - 메인에 3가지 종류
 
-### 미팅 내용
+### 2. 미팅 내용
 #### 디자인
 1) mo
 - 메인이미지 세로 : 700px + 제목 위치 수정
