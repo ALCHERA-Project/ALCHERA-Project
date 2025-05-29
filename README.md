@@ -6,6 +6,12 @@
 - gsap 레퍼: https://madewithgsap.com/
 - google drive : https://drive.google.com/drive/folders/1jNLVl-mRead3KSveLNgLUBjFLA73RuBt?usp=drive_link
 
+# 250529
+### 은혜
+1) 디자인 > mo
+- 'Read More' 위치 제목 밑으로 변경
+- chat / goToTop 아이콘 추가 
+
 # 250522
 ### 1. 해올 것
 #### css 완성
