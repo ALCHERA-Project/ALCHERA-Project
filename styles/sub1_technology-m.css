@@ -75,7 +75,7 @@ body {}
 .con1 {}
 
 .con1 .txt-box {
-  margin: 20px 20px;
+  margin: 25px 20px;
   padding: 0px 30px;
   height: 330px;
   border: 1px solid #000038;
@@ -175,6 +175,7 @@ body {}
 
 .con3 .contents-title {
   margin-bottom: 20px;
+  margin-top: 0px;
 }
 
 .con3 .readmore-btn {
@@ -271,7 +272,7 @@ body {}
 
 /* contents 4 */
 .con4 {
-  margin: 40px 20px;
+  margin: 40px 20px 80px;
 }
 
 .con4 .solution-info {

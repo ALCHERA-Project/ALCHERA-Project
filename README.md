@@ -6,6 +6,11 @@
 - gsap 레퍼: https://madewithgsap.com/
 - google drive : https://drive.google.com/drive/folders/1jNLVl-mRead3KSveLNgLUBjFLA73RuBt?usp=drive_link
 
+# 250531
+### 서희
+- footer 모바일, PC 버전 css 작성
+- main, sub1 css 수정정
+
 # 250529
 ### 은혜
 1) 디자인 > mo

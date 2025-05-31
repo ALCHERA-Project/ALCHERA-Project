@@ -52,54 +52,177 @@ header nav .sub-menu .sub-item {}
 header nav .sub-menu .sub-item a {}
 
 /****** footer-mobile ******/
-footer {}
+footer {
+  background-color: var(--color-b);
+  color: var(--color-w);
+  padding: 30px 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--color-w);
+}
 
 /**** footer-menu ****/
-footer .footer-menu-wrapper {}
+footer .footer-menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--color-w);
+}
 
-footer .footer-menu-wrapper ul {}
+footer .footer-menu-wrapper .link-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-footer .footer-menu-wrapper ul li {}
+footer .footer-menu-wrapper .link-list li {}
 
-footer .footer-menu-wrapper ul li a {}
+footer .footer-menu-wrapper .link-list li a {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+}
 
-footer .footer-menu-wrapper ul li a img {}
+footer .footer-menu-wrapper .link-list li a img {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(358deg) brightness(100%) contrast(100%);
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+}
 
-footer .footer-menu-wrapper ul li a img {}
+footer .footer-menu-wrapper .site-map {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+footer .footer-menu-wrapper .site-map li {}
+
+footer .footer-menu-wrapper .site-map li a {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 30px;
+}
 
 /**** footer-bottom ****/
-footer .footer-bottom {}
+footer .footer-bottom {
+  padding: 25px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+}
 
 /** address **/
 footer .footer-bottom .address {}
 
-footer .footer-bottom .address h2 {}
+footer .footer-bottom .address h2 {
+  margin: 0;
+}
 
 footer .footer-bottom .address h2 a {}
 
-footer .footer-bottom .address h2 a img {}
+footer .footer-bottom .address h2 a img {
+  width: 120px;
+  margin: 0;
+}
 
-footer .footer-bottom .address p {}
+footer .footer-bottom .address p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--color-mg);
+  margin: 0;
+  margin-top: 15px;
+}
+
+.footer-info {
+  position: relative;
+}
 
 /** language **/
-footer .footer-bottom .lang {}
+footer .footer-bottom .lang {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
 
-footer .footer-bottom .lang a {}
+footer .footer-bottom .lang a {
+  height: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14px;
+}
+
+footer .footer-bottom .lang a:last-child {
+  padding-left: 10px;
+  border-left: 1px solid var(--color-w);
+}
 
 /** policy **/
-footer .footer-bottom .policy {}
+footer .footer-bottom .policy {
+  margin-bottom: 15px;
+}
 
-footer .footer-bottom .policy a {}
+footer .footer-bottom .policy a {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--color-mg);
+  line-height: 20px;
+}
 
 /** family-site **/
-footer .footer-bottom .family-site {}
+footer .footer-bottom .family-site {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-footer .footer-bottom .family-site li {}
+footer .footer-bottom .family-site li {
+  width: 140px;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid var(--color-w);
+  padding: 0px 20px;
+  display: none;
+}
 
-footer .footer-bottom .family-site li a {}
+footer .footer-bottom .family-site li a {
+  font-size: 12px;
+  font-weight: 400;
+}
 
-footer .footer-bottom .family-site .active {}
+footer .footer-bottom .family-site .active {
+  display: block;
+}
 
+/** sns **/
+.sns {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 20px;
+  top: -5px;
+}
+
+.sns li {}
+
+.sns li a {}
+
+.sns li a img {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(358deg) brightness(100%) contrast(100%);
+}
 
 /****** contact-mobile ******/
 .contact {
@@ -147,8 +270,12 @@ footer .footer-bottom .family-site .active {}
   cursor: pointer;
 }
 
-/****** contact-pc ******/
+
+/****** pc ******/
+
 @media (min-width: 1280px) {
+
+  /****** contact ******/
   .contact {
     height: 430px;
     padding: 0px 40px;
@@ -174,5 +301,126 @@ footer .footer-bottom .family-site .active {}
   .contact a {
     font-size: 18px;
     padding: 13px 35px;
+  }
+
+
+  /****** footer ******/
+  footer {
+    padding: 50px 80px;
+  }
+
+  /**** footer-menu ****/
+  footer .footer-menu-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0px;
+    padding-bottom: 140px;
+  }
+
+  footer .footer-menu-wrapper .link-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  footer .footer-menu-wrapper .link-list li {}
+
+  footer .footer-menu-wrapper .link-list li a {
+    font-size: 18px;
+  }
+
+  footer .footer-menu-wrapper .site-map {
+    flex-direction: row;
+    gap: 70px;
+  }
+
+  footer .footer-menu-wrapper .site-map li {}
+
+  footer .footer-menu-wrapper .site-map li a {
+    font-size: 18px;
+  }
+
+  /**** footer-bottom ****/
+  footer .footer-bottom {
+    padding: 70px 0px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    position: relative;
+  }
+
+  /** address **/
+  footer .footer-bottom .address {
+    display: flex;
+    gap: 30px;
+  }
+
+  footer .footer-bottom .address h2 {
+    margin: 0;
+  }
+
+  footer .footer-bottom .address h2 a {}
+
+  footer .footer-bottom .address h2 a img {
+    width: 160px;
+  }
+
+  footer .footer-bottom .address p {
+    margin-top: 0px;
+  }
+
+  .footer-info {
+    position: static;
+    display: flex;
+    align-items: baseline;
+  }
+
+  /** language **/
+  footer .footer-bottom .lang {
+    margin-bottom: 0px;
+    margin-right: 60px;
+  }
+
+  /** policy **/
+  footer .footer-bottom .policy {
+    margin-bottom: 0px;
+  }
+
+  /** family-site **/
+    footer .footer-bottom .family-site {
+      position: absolute;
+      right: 0px;
+      bottom: 30px;
+    }
+
+  footer .footer-bottom .family-site li {
+    width: 140px;
+    height: 33px;
+    line-height: 33px;
+    padding: 0px 20px;
+    display: none;
+  }
+
+  footer .footer-bottom .family-site li a {
+    font-size: 10px;
+  }
+
+  /** sns **/
+  .sns {
+    gap: 25px;
+    right: 0px;
+    top: 65px;
+  }
+
+  .sns li {}
+
+  .sns li a {}
+
+  .sns li a img {
+    width: 30px;
+    height: 30px;
   }
 }

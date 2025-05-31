@@ -28,7 +28,8 @@
   }
 
   .about .about-txt {
-    width: calc(100% - 320px);
+    width: calc(100% - 400px);
+    /* width: 100%; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -162,14 +163,17 @@
     gap: 40px;
   }
 
-  .tech .tech-scroll .tech-info ul li {}
+  .tech .tech-scroll .tech-info ul li {
+    gap: 15px;
+  }
 
   .tech .tech-scroll .tech-info ul li img {
-    width: 85px;
-    height: 85px;
+    width: 55px;
+    height: 55px;
   }
 
   .tech .tech-scroll .tech-info ul li p {
+    width: 90px;
     font-size: 20px;
   }
 
