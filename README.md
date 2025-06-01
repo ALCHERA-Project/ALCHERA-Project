@@ -6,10 +6,14 @@
 - gsap 레퍼: https://madewithgsap.com/
 - google drive : https://drive.google.com/drive/folders/1jNLVl-mRead3KSveLNgLUBjFLA73RuBt?usp=drive_link
 
+# 250601
+### 서희
+- favicon 제작 후 적용
+
 # 250531
 ### 서희
 - footer 모바일, PC 버전 css 작성
-- main, sub1 css 수정정
+- main, sub1 css 수정
 
 # 250529
 ### 은혜

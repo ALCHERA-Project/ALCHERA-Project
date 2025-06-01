@@ -1,7 +1,16 @@
 @charset "utf-8";
 
 /* common css */
-body {}
+body {
+  margin: 0;
+}
+
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
 
 .contents-title {
   font-size: 22px;
@@ -45,7 +54,7 @@ body {}
 }
 
 .sub1-main .main-video {
-  width: 100%;
+  width: calc(100% - 40px);
   padding: 50px 20px;
   background-color: #000038;
 }
@@ -91,13 +100,16 @@ body {}
   font-size: 35px;
   font-weight: 600;
   color: #0000A5;
+  margin: 0;
   margin-bottom: 10px;
+  /* margin: 0; */
 }
 
 .con1 .txt-box p {
   font-size: 14px;
   font-weight: 600;
   color: #9E9E9E;
+  margin: 0;
   margin-bottom: 25px;
 }
 
@@ -105,6 +117,7 @@ body {}
   font-size: 18px;
   font-weight: 600;
   color: #000038;
+  margin: 0;
   margin-bottom: 15px;
 }
 
@@ -112,6 +125,7 @@ body {}
   font-size: 16px;
   font-weight: 600;
   color: #555;
+  margin: 0;
 }
 
 /* contents 2 */
@@ -167,7 +181,7 @@ body {}
 
 /* contents 3 */
 .con3 {
-  margin: 0px 20px;
+  padding: 0px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -194,10 +208,11 @@ body {}
   flex-direction: column;
   align-items: center;
   gap: 15px;
+  padding: 0;
 }
 
 .con3 .link-wrapper li {
-  width: 100%;
+  width: calc(100% - 40px);
   height: 160px;
   padding: 20px;
   border-radius: 15px;
@@ -261,6 +276,7 @@ body {}
   font-size: 16px;
   font-weight: 600;
   color: #fff;
+  margin: 0;
   margin-bottom: 2px;
 }
 
@@ -268,11 +284,12 @@ body {}
   font-size: 13px;
   font-weight: 400;
   color: #fff;
+  margin: 0;
 }
 
 /* contents 4 */
 .con4 {
-  margin: 40px 20px 80px;
+  padding: 0px 20px 80px;
 }
 
 .con4 .solution-info {
@@ -280,10 +297,12 @@ body {}
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin: 0;
+  padding: 0;
 }
 
 .con4 .solution-info li {
-  width: calc(50% - 5px);
+  width: calc(50% - 37px);
   height: 250px;
   border: 1px solid #00006B;
   border-radius: 15px;
@@ -304,6 +323,7 @@ body {}
   font-size: 16px;
   font-weight: 600;
   color: #000038;
+  margin: 0;
   margin-bottom: 10px;
 }
 
@@ -311,6 +331,7 @@ body {}
   font-size: 13px;
   font-weight: 600;
   color: #555;
+  margin: 0;
   margin-bottom: 13px;
 }
 
@@ -322,4 +343,3 @@ body {}
   padding: 5px 15px;
   border-radius: 15px;
 }
-

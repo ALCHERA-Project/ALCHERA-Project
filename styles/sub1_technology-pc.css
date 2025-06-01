@@ -28,6 +28,7 @@
   }
 
   .sub1-main .main-video {
+    width: calc(100% - 240px);
     display: flex;
     gap: 35px;
     padding: 120px 100px;
@@ -42,11 +43,13 @@
   .sub1-main .main-video .video-txt h3 {
     font-size: 38px;
     line-height: 50px;
+    margin: 0;
   }
 
   .sub1-main .main-video .video-txt p {
     font-size: 20px;
     line-height: 30px;
+    margin: 0;
     margin-top: 35px;
   }
 
@@ -72,16 +75,19 @@
 
   .con1 .txt-box h4 {
     font-size: 50px;
-    margin-bottom: 20px;
+    margin: 0;
+    margin-bottom: 5px;
   }
 
   .con1 .txt-box p {
     font-size: 16px;
+    margin: 0;
     margin-bottom: 35px;
   }
 
   .con1 .txt-box h5 {
     font-size: 22px;
+    margin: 0;
     margin-bottom: 20px;
   }
 
@@ -136,6 +142,7 @@
     text-align: left;
     padding: 0px 10px;
     margin: 0 auto;
+    padding: 0;
   }
 
   .con2 .txt-wrapper:nth-of-type(odd) {
@@ -159,13 +166,16 @@
 
   /* contents 3 */
   .con3 {
-    margin: 160px 80px 0px;
+    width: calc(100% - 160px);
+    padding: 160px 80px 0px;
+    /* padding: 0; */
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   .con3 .contents-title {
+    margin: 0;
     margin-bottom: 15px;
   }
 
@@ -175,6 +185,7 @@
 
   .con3 .link-wrapper {
     width: 100%;
+    margin: 0;
     display: grid;
     gap: 0;
     grid-template-columns: 1fr 40px 1fr 40px 1fr;
@@ -182,7 +193,7 @@
   }
 
   .con3 .link-wrapper li {
-    width: 100%;
+    width: calc(100% - 60px);
     height: 160px;
     padding: 30px;
     background-color: #ddd;
@@ -248,6 +259,7 @@
   /* contents 4 */
   .con4 {
     margin: 40px 80px 160px;
+    padding: 0;
   }
 
   .con4 .solution-info {
@@ -261,6 +273,7 @@
   .con4 .solution-info li {
     width: 100%;
     height: 330px;
+    padding: 0;
   }
 
   .con4 .solution-info li:nth-child(1) {}
@@ -276,9 +289,9 @@
   .con4 .solution-info li:nth-child(1) {}
 
   .con4 .solution-info li img {
-  width: 51px;
-  margin-bottom: 20px;
-}
+    width: 51px;
+    margin-bottom: 20px;
+  }
 
   .con4 .solution-info li h6 {
     font-size: 18px;
