@@ -9,6 +9,9 @@
 # ppt 탬플릿
 - google drive : https://drive.google.com/drive/folders/1jNLVl-mRead3KSveLNgLUBjFLA73RuBt?usp=drive_link
 > 0.ppt 탬플릿 폴더에 3개 업로드 해뒀었는데, 이중에서 골라서 쓰면 될듯?!
+- global.html 따로 작성해서 4가지 영역 작성해둠
+ㄴ> 여기에 header / chat+goToTOp / contact / footer 4가지 적어둠
+ㄴ> 'head' 영역에 들어가는 태그 작성해둠
 
 # 250601
 ### 서희
@@ -18,6 +21,7 @@
 
 ### 은혜
 - favicon 경로 변경
+- global.html 따로 작성
 - global > header / chat+goToTop 작성 (html, css)
 
 # 250531

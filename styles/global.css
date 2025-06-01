@@ -1,5 +1,47 @@
 @charset "utf-8";
 
+/****** mo ******/
+
+@media screen and (min-width: 390px) {
+/****** fix-icon ******/
+/*** chat ***/
+.fix-icon .chat {
+  width: 100%;
+  position: relative;
+}
+.fix-icon .chat a {
+  position: fixed;
+  top: 680px;
+  right: 15px;
+  z-index: 99999;
+}
+.fix-icon .chat a img {
+  width: 30px;
+  padding: 15px;
+  background: var(--color-mb);
+  border-radius: 50px;
+}
+
+/*** goToTop ***/
+.fix-icon .goToTop {
+  width: 100%;
+  position: relative;
+}
+.fix-icon .goToTop a {
+  position: fixed;
+  top: 750px;
+  right: 15px;
+  z-index: 9999;
+}
+.fix-icon .goToTop a img {
+  width: 30px;
+  padding: 15px;
+  background: var(--color-lg);
+  border: 1px solid transparent;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+}
+
 /****** header-mobile ******/
 header {
   width: 100vw;
@@ -273,11 +315,59 @@ footer .footer-bottom .family-site .active {
   border-radius: 15px;
   cursor: pointer;
 }
-
+}
 
 /****** pc ******/
 
-@media (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+
+  /****** fix-icon ******/
+  /*** chat ***/
+  .fix-icon .chat {
+    width: 100%;
+    position: relative;
+  }
+
+  .fix-icon .chat a {
+    position: fixed;
+    bottom: 120px;
+    right: 50px;
+    z-index: 99999;
+  }
+
+  .fix-icon .chat a img {
+    width: 38px;
+    padding: 20px;
+    background: var(--color-mb);
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+  }
+
+  /*** goToTop ***/
+  .fix-icon .goToTop {
+    width: 100%;
+    position: relative;
+  }
+
+  .fix-icon .goToTop a {
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    z-index: 9999;
+  }
+
+  .fix-icon .goToTop a img {
+    width: 38px;
+    padding: 20px;
+    background: var(--color-lg);
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .fix-icon .goToTop a img:hover {
+    background-color: var(--color-w);
+  }
+
 
   /****** contact ******/
   .contact {
