@@ -12,6 +12,10 @@
 - sub1 메인 영역 그라디언트 html 작성, css 적용
 - sub1 con3 영역 img hover 이벤트 적용
 
+### 은혜
+- favicon 경로 변경
+- global > header / chat+goToTop 작성
+
 # 250531
 ### 서희
 - footer 모바일, PC 버전 css 작성
