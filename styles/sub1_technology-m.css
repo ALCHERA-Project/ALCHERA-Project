@@ -24,6 +24,7 @@ a {
 .sub1-main {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .sub1-main .main-title {
@@ -51,6 +52,15 @@ a {
   color: #fff;
   text-align: center;
   margin: 0px 20px;
+}
+
+.gradient {
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(to top, #000038 0%, rgba(57, 114, 57, 0) 100%);
+  position: absolute;
+  top: 340px;
+  z-index: 99;
 }
 
 .sub1-main .main-video {
@@ -212,64 +222,34 @@ a {
 }
 
 .con3 .link-wrapper li {
-  width: calc(100% - 40px);
+  width: 100%;
   height: 160px;
-  padding: 20px;
+  padding: 0;
   border-radius: 15px;
+  cursor: pointer;
+  position: relative;
 }
 
-.con3 .link-wrapper li:nth-child(1) {
-  background: url(../assets/images/sub1_technology/con3/government.jpg) no-repeat center;
-  background-size: cover;
+.con3 .link-wrapper li img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  filter: brightness(0.8);
+  transition: filter 0.1s ease-in-out;
 }
 
-.con3 .link-wrapper li:nth-child(2) {
-  background: url(../assets/images/sub1_technology/con3/airport.JPG) no-repeat center;
-  background-size: cover;
-}
-
-.con3 .link-wrapper li:nth-child(3) {
-  background: url(../assets/images/sub1_technology/con3/education.jpg) no-repeat center;
-  background-size: cover;
-}
-
-.con3 .link-wrapper li:nth-child(4) {
-  background: url(../assets/images/sub1_technology/con3/police.jpeg) no-repeat center;
-  background-size: cover;
-}
-
-.con3 .link-wrapper li:nth-child(5) {
-  background: url(../assets/images/sub1_technology/con3/sinhan.jpg) no-repeat center;
-  background-size: cover;
-}
-
-.con3 .link-wrapper li:nth-child(6) {
-  background: url(../assets/images/sub1_technology/con3/toss.png) no-repeat center;
-  background-size: cover;
-}
-
-.con3 .link-wrapper li:nth-child(7) {
-  background: url(../assets/images/sub1_technology/con3/lotte.png) no-repeat center;
-  background-size: cover;
-}
-
-.con3 .link-wrapper li:nth-child(8) {
-  background: url(../assets/images/sub1_technology/con3/samsung.jpg) no-repeat center;
-  background-size: cover;
-}
-
-.con3 .link-wrapper li:nth-child(9) {
-  background: url(../assets/images/sub1_technology/con3/busan.png) no-repeat center;
-  background-size: cover;
+.con3 .link-wrapper li:hover img {
+  filter: none;
 }
 
 .con3 .link-wrapper li a {
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
+  width: calc(100% - 40px);
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  color: #fff;
+  z-index: 1;
 }
 
 .con3 .link-wrapper li a h5 {
