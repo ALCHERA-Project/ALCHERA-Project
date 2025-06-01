@@ -6,6 +6,10 @@
 - gsap 레퍼: https://madewithgsap.com/
 - google drive : https://drive.google.com/drive/folders/1jNLVl-mRead3KSveLNgLUBjFLA73RuBt?usp=drive_link
 
+# ppt 탬플릿
+- google drive : https://drive.google.com/drive/folders/1jNLVl-mRead3KSveLNgLUBjFLA73RuBt?usp=drive_link
+> 0.ppt 탬플릿 폴더에 3개 업로드 해뒀었는데, 이중에서 골라서 쓰면 될듯?!
+
 # 250601
 ### 서희
 - favicon 제작 후 적용
@@ -14,7 +18,7 @@
 
 ### 은혜
 - favicon 경로 변경
-- global > header / chat+goToTop 작성
+- global > header / chat+goToTop 작성 (html, css)
 
 # 250531
 ### 서희
