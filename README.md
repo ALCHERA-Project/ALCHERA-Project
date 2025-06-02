@@ -8,12 +8,13 @@
 
 # ppt 탬플릿
 - google drive : https://drive.google.com/drive/folders/1jNLVl-mRead3KSveLNgLUBjFLA73RuBt?usp=drive_link
-1) 0.ppt 탬플릿 폴더에 3개 업로드 해뒀었는데, 이중에서 골라서 쓰면 될듯?!
-- global.html 따로 작성해서 4가지 영역 작성해둠
-1) 여기에 header / chat+goToTOp / contact / footer 4가지 적어둠
-2) 이미지 오류나서 다시 수정할게요... ㅠ
-3) 'head' 영역에 들어가는 태그 작성해둠
+1) '0.ppt 탬플릿' 폴더에 3개 업로드 해뒀었는데, 이중에서 골라서 쓰면 될듯?!
 
+# global
+1) global.html 따로 작성해서 4가지 영역 작성해둠
+2) 여기에 header / chat+goToTOp / contact / footer 4가지 적어둠
+3) 이미지 오류나서 다시 수정할게요... ㅠ
+4) 'head' 영역에 들어가는 태그 작성해둠
 
 # 250601
 ### 서희
