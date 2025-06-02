@@ -16,8 +16,8 @@
   z-index: 99999;
 }
 .fix-icon .chat a img {
-  width: 30px;
-  padding: 15px;
+  width: 50px;
+  padding: 10px;
   background: var(--color-mb);
   border-radius: 50px;
 }
@@ -29,17 +29,15 @@
 }
 .fix-icon .goToTop a {
   position: fixed;
-  top: 750px;
+  top: 740px;
   right: 15px;
   z-index: 9999;
 }
 .fix-icon .goToTop a img {
-  width: 30px;
-  padding: 15px;
+  width: 50px;
+  padding: 10px;
   background: var(--color-lg);
-  border: 1px solid transparent;
   border-radius: 50px;
-  transition: 0.3s ease-in-out;
 }
 
 /****** header-mobile ******/
@@ -330,17 +328,16 @@ footer .footer-bottom .family-site .active {
 
   .fix-icon .chat a {
     position: fixed;
-    bottom: 120px;
+    bottom: 100px;
     right: 50px;
     z-index: 99999;
   }
 
   .fix-icon .chat a img {
-    width: 38px;
-    padding: 20px;
+    width: 70px;
+    padding: 15px;
     background: var(--color-mb);
     border-radius: 50px;
-    transition: 0.3s ease-in-out;
   }
 
   /*** goToTop ***/
@@ -351,14 +348,14 @@ footer .footer-bottom .family-site .active {
 
   .fix-icon .goToTop a {
     position: fixed;
-    bottom: 30px;
+    bottom: 5px;
     right: 50px;
     z-index: 9999;
   }
 
   .fix-icon .goToTop a img {
-    width: 38px;
-    padding: 20px;
+    width: 70px;
+    padding: 15px;
     background: var(--color-lg);
     border-radius: 50px;
     transition: 0.3s ease-in-out;
