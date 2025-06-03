@@ -13,8 +13,12 @@
 # global
 1) global.html 따로 작성해서 4가지 영역 작성해둠
 2) 여기에 header / chat+goToTOp / contact / footer 4가지 적어둠
-3) 이미지 오류나서 다시 수정할게요... ㅠ
-4) 'head' 영역에 들어가는 태그 작성해둠
+3) 'head' 영역에 들어가는 태그 작성해둠
+
+# 250603
+### 은혜
+- global > chat+goToTop 수정 완료
+- global > contact a태그 > img 추가
 
 # 250601
 ### 서희

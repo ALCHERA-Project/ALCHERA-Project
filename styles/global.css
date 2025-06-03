@@ -313,8 +313,15 @@ footer .footer-bottom .family-site .active {
   border-radius: 15px;
   cursor: pointer;
 }
+.contact a span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
+}
+
+/**************************** 구분 *****************************/
 /****** pc ******/
 
 @media screen and (min-width: 1280px) {
@@ -328,7 +335,7 @@ footer .footer-bottom .family-site .active {
 
   .fix-icon .chat a {
     position: fixed;
-    bottom: 100px;
+    top: 700px;
     right: 50px;
     z-index: 99999;
   }
@@ -338,6 +345,14 @@ footer .footer-bottom .family-site .active {
     padding: 15px;
     background: var(--color-mb);
     border-radius: 50px;
+    animation: float 1.2s ease-in-out infinite;
+  }
+
+  /* chat animaiton */
+  @keyframes float {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-10px);}
+    100% {transform: translateY(0px);}
   }
 
   /*** goToTop ***/
@@ -348,7 +363,7 @@ footer .footer-bottom .family-site .active {
 
   .fix-icon .goToTop a {
     position: fixed;
-    bottom: 5px;
+    top: 785px;
     right: 50px;
     z-index: 9999;
   }
@@ -394,6 +409,11 @@ footer .footer-bottom .family-site .active {
     padding: 13px 35px;
   }
 
+  .contact a span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   /****** footer ******/
   footer {
