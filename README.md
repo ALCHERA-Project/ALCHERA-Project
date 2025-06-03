@@ -17,8 +17,10 @@
 
 # 250603
 ### 은혜
-- global > chat+goToTop 수정 완료
-- global > contact a태그 > img 추가
+- global 수정
+1) chat+goToTop 수정 완료
+2) contact a태그 > img 추가
+3) header 영역 수정
 
 # 250601
 ### 서희
