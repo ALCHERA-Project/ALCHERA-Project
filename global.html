@@ -26,6 +26,7 @@
     <!-- jQuery -->
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/jquery-ui.min.js"></script>
+    <script src="./global.js" defer></script>
 
 </head>
 
@@ -45,9 +46,17 @@
 
     <!------ header ------>
     <header>
+        <!-- mo -->
+        <button class="ham" id="ham"></button>
+
+        <nav id="moNav">
+            <h1><a href="#"><img src="./assets/images/global/logo-w.svg" alt="logo-w"></a></h1>
+        </nav>
+        
+        <!-- pc -->
         <!---- nav ---->
         <nav>
-            <h1 class="logo"><a href=""><img src="./assets/images/global/logo.svg" alt="logo"></a></h1>
+            <!-- <h1 class="logo"><a href=""><img src="./assets/images/global/logo-b.svg" alt="logo-b"></a></h1> -->
 
             <!-- menu -->
             <ul class="main-menu">
@@ -90,7 +99,7 @@
             </ul>
 
             <ul class="main-menu2">
-                <li class="sub-item"><a href="#">문의하기</a></li>
+                <li class="sub-item"><a href="#">문의하기 |</a></li>
                 <li class="sub-item"><a href="#">데모 신청</a></li>
             </ul>
         </nav>
