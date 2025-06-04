@@ -15,6 +15,11 @@
 2) 여기에 header / chat+goToTOp / contact / footer 4가지 적어둠
 3) 'head' 영역에 들어가는 태그 작성해둠
 
+# 250604
+### 서희
+- favicon 수정
+- footer family-site 구조 수정
+
 # 250603
 ### 은혜
 - global 수정
