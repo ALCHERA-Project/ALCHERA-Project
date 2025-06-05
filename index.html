@@ -31,7 +31,7 @@
   <meta property="og:type" content="website">
 
   <!-- reset css -->
-  <link rel="stylesheet" href="./assets/style/reset.css">
+  <link rel="stylesheet" href="./styles/reset.css">
 
   <!-- 공통된 css style -->
   <link rel="stylesheet" href="./styles/global.css">
@@ -48,6 +48,7 @@
 
   <!-- page 별 사용되는 js -->
   <script src="./js/index.js"></script>
+  <script src="/global.js" defer></script>
 </head>
 
 <body>
@@ -64,58 +65,110 @@
     </div>
   </div>
 
-  <!------ header ------>
-  <header>
-    <!---- nav ---->
-    <nav>
-      <h1 class="logo"><a href=""><img src="./assets/images/global/logo.svg" alt="logo"></a></h1>
+    <!------ header ------>
+    <header>
 
-      <!-- menu -->
-      <ul class="main-menu">
-        <li><a href="#">기술</a>
-          <ul class="sub-menu">
-            <li><a href="#">얼굴인식</a></li>
-            <li><a href="#">OCR</a></li>
-            <li><a href="#">이상상황 감지</a></li>
-          </ul>
-        </li>
-        <li><a href="#">솔루션</a>
-          <ul class="sub-menu">
-            <li><a href="#">얼굴 본인인증</a></li>
-            <li><a href="#">신분증 본인인증</a></li>
-            <li><a href="#">재외국민 여권 신원확인</a></li>
-            <li><a href="#">바이오정보 분산관리</a></li>
-            <li><a href="#">ekYC</a></li>
-            <li><a href="#">출입통제</a></li>
-            <li><a href="#">산불 조기감지</a></li>
-            <li><a href="#">전기차 화재 조기감지</a></li>
-          </ul>
-        </li>
-        <li><a href="#">서비스</a>
-          <ul class="sub-menu">
-            <li><a href="#">AI 데이터</a></li>
-            <li><a href="#">소프트웨어 개발</a></li>
-            <li><a href="#">데이터바우처</a></li>
-          </ul>
-        </li>
-        <li><a href="#">사업영역</a>
-          <ul class="sub-menu">
-            <li><a href="#">금융</a></li>
-            <li><a href="#">환경</a></li>
-            <li><a href="#">정부/공공기관</a></li>
-            <li><a href="#">공항</a></li>
-            <li><a href="#">리테일</a></li>
-            <li><a href="#">통신</a></li>
-          </ul>
-        </li>
-      </ul>
+        <!---- mobile ---->
+        <!-- <div class="menu-bar"></div>
+        <a href="#"><img id="btn-menu" src="./assets/images/global/icon/btn-menu.svg" alt="btn-menu"></a>
 
-      <ul class="main-menu2">
-        <li class="sub-item"><a href="#">문의하기</a></li>
-        <li class="sub-item"><a href="#">데모 신청</a></li>
-      </ul>
-    </nav>
-  </header>
+        <nav>
+            <ul class="menu-mo">
+                <li><a href="#">기술</a>
+                    <ul class="sub-mo">
+                        <li><a href="#">얼굴인식</a></li>
+                        <li><a href="#">OCR</a></li>
+                        <li><a href="#">이상상황 감지</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">솔루션</a>
+                    <ul class="sub-mo">
+                        <li><a href="#">얼굴 본인인증</a></li>
+                        <li><a href="#">신분증 본인인증</a></li>
+                        <li><a href="#">재외국민 여권 신원확인</a></li>
+                        <li><a href="#">바이오정보 분산관리</a></li>
+                        <li><a href="#">ekYC</a></li>
+                        <li><a href="#">출입통제</a></li>
+                        <li><a href="#">산불 조기감지</a></li>
+                        <li><a href="#">전기차 화재 조기감지</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">서비스</a>
+                    <ul class="sub-mo">
+                        <li><a href="#">AI 데이터</a></li>
+                        <li><a href="#">소프트웨어 개발</a></li>
+                        <li><a href="#">데이터바우처</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">사업영역</a>
+                    <ul class="sub-mo">
+                        <li><a href="#">금융</a></li>
+                        <li><a href="#">환경</a></li>
+                        <li><a href="#">정부/공공기관</a></li>
+                        <li><a href="#">공항</a></li>
+                        <li><a href="#">리테일</a></li>
+                        <li><a href="#">통신</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="side-mo">
+                <li><a href="#">문의하기 |</a></li>
+                <li><a href="#">데모 신청</a></li>
+            </ul>
+        </nav> -->
+        
+        
+        <!---- pc ---->
+        <nav>
+            <h1 class="logo"><img src="./assets/images/global/logo-w.svg" alt="logo-w"></h1>
+
+            <ul class="main-menu">
+                <li><a href="#">기술</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">얼굴인식</a></li>
+                        <li><a href="#">OCR</a></li>
+                        <li><a href="#">이상상황 감지</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">솔루션</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">얼굴 본인인증</a></li>
+                        <li><a href="#">신분증 본인인증</a></li>
+                        <li><a href="#">재외국민 여권 신원확인</a></li>
+                        <li><a href="#">바이오정보 분산관리</a></li>
+                        <li><a href="#">ekYC</a></li>
+                        <li><a href="#">출입통제</a></li>
+                        <li><a href="#">산불 조기감지</a></li>
+                        <li><a href="#">전기차 화재 조기감지</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">서비스</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">AI 데이터</a></li>
+                        <li><a href="#">소프트웨어 개발</a></li>
+                        <li><a href="#">데이터바우처</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">사업영역</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">금융</a></li>
+                        <li><a href="#">환경</a></li>
+                        <li><a href="#">정부/공공기관</a></li>
+                        <li><a href="#">공항</a></li>
+                        <li><a href="#">리테일</a></li>
+                        <li><a href="#">통신</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="side-menu">
+                <li class="side-item"><a href="#">문의하기</a></li>
+                <li class="side-item"><a href="#">데모 신청</a></li>
+            </ul>
+        </nav>
+        
+    </header>
 
   <!------ main ------>
   <main>
