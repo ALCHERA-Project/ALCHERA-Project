@@ -1,1 +1,46 @@
 @charset "utf-8";
+
+/* sub2-main */
+.sub2-main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.sub2-main .main-title {
+  background: url(../assets/images/sub2_solution/sub2-main.png) no-repeat center;
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub2-main .main-title h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sub2-main .main-title p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  margin: 0px 20px;
+}
+
+.gradient {
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(to top, #828181 0%, rgba(57, 114, 57, 0) 100%);
+  position: absolute;
+  top: 640px;
+  z-index: 99;
+}
+
+/* contents 1 */
