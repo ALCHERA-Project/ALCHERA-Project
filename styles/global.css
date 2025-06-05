@@ -138,7 +138,7 @@
     left: 0;
   }
 
-  .m-menu .side-menu .main-mo {}
+  .m-menu .side-menu .main-mo {} /* 슬라이드되는 햄버거 메뉴 여기부터 css 수정하면 됨 */
 
   .m-menu .side-menu .main-mo li {}
 
