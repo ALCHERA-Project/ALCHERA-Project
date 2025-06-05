@@ -18,16 +18,12 @@
 # 250605 9차 미팅
 1. 해올 것
 1) css
-- a태그 
-- 간단한 스크롤 이벤트 구현
-- 
-css 완성
-트랜지션 / 애니메이션 등..
-global 4개 css 작성
-은혜 : 헤더 / 채팅 + GoToTop
-서희 : 컨택트 / 푸터 / 파비콘 만들기
-js 공부
-메인에 3가지 종류
+- a 태그 / alt 값 / globalVar 적용(color, font-weight) 
+- 간단한 스크롤 이벤트 구현 (trasition, animaion 등)
+- 은혜 -> sub2,3,4 css 다 해와라.. / global 체크!!(모바일 헤더)
+2) js 최선을 다해서 완성(?)
+- 메인에 3가지 종류
+- index_js.html 에 따로 작성!!
 
 2. 미팅 내용
 1) global
