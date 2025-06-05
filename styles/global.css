@@ -313,7 +313,7 @@ footer .footer-bottom .family-site .active {
 /****** contact-mobile ******/
 .contact {
   height: 340px;
-  width: calc(100% - 80px);
+  /* width: calc(100% - 80px); */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -381,7 +381,7 @@ footer .footer-bottom .family-site .active {
 
   .fix-icon .chat a {
     position: fixed;
-    top: 700px;
+    top: 600px;
     right: 50px;
     z-index: 99999;
   }
@@ -401,7 +401,7 @@ footer .footer-bottom .family-site .active {
 
   .fix-icon .goToTop a {
     position: fixed;
-    top: 785px;
+    top: 675px;
     right: 50px;
     z-index: 9999;
   }
@@ -410,12 +410,14 @@ footer .footer-bottom .family-site .active {
     width: 70px;
     padding: 15px;
     background: var(--color-lg);
+    border: 1px solid transparent;
     border-radius: 50px;
     transition: 0.3s ease-in-out;
   }
 
   .fix-icon .goToTop a img:hover {
     background-color: var(--color-w);
+    border: 1px solid var(--color-b);
   }
 
 
