@@ -57,7 +57,7 @@ header nav {
   right: -100%;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.85); /* 어두운 오버레이 */
+  background-color: rgba(0, 0, 0, 0.85);
   color: white;
   transition: right 0.3s ease-in-out;
   z-index: 1000;
@@ -118,8 +118,6 @@ header nav.active {
   color: var(--color-mg);
   padding: 0 5px 0 5px;
   border-right: 1px solid var(--color-mg);
-}
-.sub-menu li a:first-child {
 }
 
 /* 문의하기 / 데모신청 */
