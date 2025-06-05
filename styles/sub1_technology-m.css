@@ -64,7 +64,7 @@ a {
 }
 
 .sub1-main .main-video {
-  width: calc(100% - 40px);
+  width: 100%;
   padding: 50px 20px;
   background-color: #000038;
 }

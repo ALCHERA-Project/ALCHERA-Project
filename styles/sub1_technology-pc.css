@@ -33,7 +33,7 @@
   }
 
   .sub1-main .main-video {
-    width: calc(100% - 195px);
+    width: 100%;
     display: flex;
     gap: 35px;
     padding: 120px 100px;

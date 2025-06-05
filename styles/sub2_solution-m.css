@@ -47,6 +47,9 @@
 .con1 {
   padding: 65px 20px 0 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column; /* pc에서는 display grid로 변경해서 정렬 */
+  align-items: center;
 }
 .con1 .con1-subTitle {
   font-size: 16px;
@@ -59,6 +62,7 @@
 }
 .con1 .txt-box-wrapper {
   /* 중앙 정렬... */
+  width: 350px;
 }
 .con1 .txt-box-wrapper .txt-box {
   width: 350px;
