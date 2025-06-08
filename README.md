@@ -17,18 +17,18 @@
 
 # 250605 9차 미팅
 1. 해올 것
-1) css
+(1) css
 - a 태그 / alt 값 / globalVar 적용(color, font-weight) 
 - 간단한 스크롤 이벤트 구현 (trasition, animaion 등)
 - 은혜 -> sub2,3,4 css 다 해와라.. / global 체크!!(모바일 헤더)
-2) js 최선을 다해서 완성(?)
+(2) js 최선을 다해서 완성(?)
 - 메인에 3가지 종류
 - index_js.html 에 따로 작성!!
 
 2. 미팅 내용
-1) global
+(1) global
 - 햄버거 메뉴 구현
-2) js 3가지 먼저 구현!!
+(2) js 3가지 먼저 구현!!
 - about, 01_tech(가로 스크롤), 02_solution(6분할 사진)
 - index_js.html >> 여기에 작성
 
