@@ -2,6 +2,7 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 /****** intro ******/
@@ -306,6 +307,12 @@ body {
 
 .solution .photoDump .photoDump-img li img {}
 
+.solution .img-slide {
+  width: 100%;
+  overflow: hidden;
+  cursor: grab;
+}
+
 .solution .img-menu-wrapper {
   width: 2090px;
   padding: 0;
@@ -315,6 +322,12 @@ body {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
+  overflow-x: scroll;
+}
+
+.img-menu-wrapper.dragging {
+  cursor: grabbing;
+  user-select: none;
 }
 
 .solution .img-menu-wrapper li {
@@ -470,8 +483,23 @@ body {
   margin: 80px 0px 50px;
 }
 
+.press-slide-wrapper {
+  width: 100%;
+  overflow: hidden;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  scrollbar-width: none;
+}
+
+.press-slide-wrapper.dragging {
+  cursor: grabbing;
+  user-select: none;
+}
+
 .press .press-slide {
-  width: 880px;
   padding: 20px 0px;
   margin: 0;
   display: flex;
@@ -480,6 +508,11 @@ body {
   border-top: 1px solid var(--color-g);
   border-bottom: 1px solid var(--color-g);
   margin-bottom: 80px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  cursor: grab;
+  user-select: none;
 }
 
 .press .press-slide li {

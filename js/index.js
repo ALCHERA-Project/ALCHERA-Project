@@ -25,9 +25,62 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+// 2-solution 모바일 메뉴
+document.addEventListener("DOMContentLoaded", () => {
+  const slider = document.querySelector('.img-slide');
+  if (!slider) return;
+
+  let isDragging = false;
+  let startX;
+  let scrollLeft;
+
+  slider.addEventListener('mousedown', e => {
+    isDragging = true;
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+    slider.classList.add('dragging');
+  });
+
+  slider.addEventListener('mouseleave', () => {
+    isDragging = false;
+    slider.classList.remove('dragging');
+  });
+
+  slider.addEventListener('mouseup', () => {
+    isDragging = false;
+    slider.classList.remove('dragging');
+  });
+
+  slider.addEventListener('mousemove', e => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = x - startX;
+    slider.scrollLeft = scrollLeft - walk;
+  });
+
+  slider.addEventListener('touchstart', e => {
+    isDragging = true;
+    startX = e.touches[0].pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+    slider.classList.add('dragging');
+  }, { passive: true });
+
+  slider.addEventListener('touchend', () => {
+    isDragging = false;
+    slider.classList.remove('dragging');
+  });
+
+  slider.addEventListener('touchmove', e => {
+    if (!isDragging) return;
+    const x = e.touches[0].pageX - slider.offsetLeft;
+    const walk = x - startX;
+    slider.scrollLeft = scrollLeft - walk;
+  }, { passive: true });
+});
 
 
-// 2-solution 영역 메뉴 사이즈 조정 이벤트
+// 2-solution PC 메뉴
 document.addEventListener("DOMContentLoaded", () => {
   const ul = document.querySelector('.img-menu-wrapper');
   if (!ul) {
@@ -39,11 +92,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const totalItems = lis.length;
 
   function onMouseEnter(e) {
-    if(window.innerWidth < 1280) return; // 1280px 미만일 땐 작동 안 함
+    if (window.innerWidth < 1280) return; // 1280px 미만일 땐 작동 안 함
     const li = e.currentTarget;
     lis.forEach((item) => {
-      if(item === li) {
-        item.style.flex = '2';
+      if (item === li) {
+        item.style.flex = '1.8';
       } else {
         item.style.flex = (4 / (totalItems - 1)).toString();
       }
@@ -63,8 +116,50 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener('resize', () => {
     // 윈도우가 작아지면 flex 초기화
-    if(window.innerWidth < 1280) {
+    if (window.innerWidth < 1280) {
       lis.forEach(li => li.style.flex = '1');
     }
   });
 });
+
+
+// press slide
+document.addEventListener('DOMContentLoaded', () => {
+  const slider = document.querySelector('.press-slide');
+  if (!slider) return;
+
+  let isDragging = false;
+  let startX;
+  let scrollLeft;
+
+  slider.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+    slider.classList.add('dragging');
+  });
+
+  document.addEventListener('mouseup', () => {
+    if (isDragging) {
+      isDragging = false;
+      slider.classList.remove('dragging');
+    }
+  });
+
+  slider.addEventListener('mouseleave', () => {
+    if (isDragging) {
+      isDragging = false;
+      slider.classList.remove('dragging');
+    }
+  });
+
+  slider.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+
+    const x = e.pageX - slider.offsetLeft;
+    const walk = x - startX;  // 현재 위치에서 시작 위치 차이 계산
+    slider.scrollLeft = scrollLeft - walk;  // 시작 스크롤 위치에서 차이만큼 이동
+  });
+});
+

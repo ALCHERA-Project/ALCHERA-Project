@@ -37,7 +37,7 @@
 - global.html, index.html, sub1.html a태그 연결 및 img alt 작성
 - index, sub1 css font-weight, color, background-color globalVar 적용
 - sub1 js 작성
-- index js 두 가지 작성했는데 뭔가 잘못됨..
+- index js(press 슬라이드, solution 메뉴 모바일&PC) 작성했는데 뭔가 잘못됨..
 
 # 250604
 ### 서희
