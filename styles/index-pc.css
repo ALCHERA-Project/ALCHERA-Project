@@ -3,6 +3,10 @@
 /***** pc *****/
 @media (min-width: 1280px) {
 
+  html {
+    width: 100%;
+  }
+
 
   /****** intro ******/
   .intro {
@@ -134,11 +138,11 @@
   .tech .tech-scroll .img-list li {
     width: 100%;
     height: 300px;
-    background-color: #ddd;
+    background-color: var(--color-lg);
     border-radius: 15px;
-    color: #fff;
+    color: var(--color-w);
     font-size: 20px;
-    font-weight: 700;
+    font-weight: var(--weight-lg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -216,17 +220,22 @@
   .solution .photoDump .photoDump-img li img {}
 
   .solution .img-menu-wrapper {
-    width: 100vw;
+    width: 100%;
     margin: 0;
     gap: 0;
+    display: flex;
+    padding: 0;
   }
 
   .solution .img-menu-wrapper li {
-    width: calc(100vw / 6);
     height: 560px;
     padding: 30px;
-    background-color: #adadad;
     border-radius: 0px;
+    flex: 1;
+    cursor: pointer;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: flex 0.2s ease;
   }
 
   .solution .img-menu-wrapper li h5 {
@@ -236,6 +245,11 @@
   .solution .img-menu-wrapper li p {
     font-size: 18px;
     margin-bottom: 10px;
+    display: none;
+  }
+
+  .solution .img-menu-wrapper li:hover p {
+    display: block;
   }
 
   /****** 3-history ******/
@@ -291,7 +305,7 @@
     top: 10px;
     width: 2px;
     height: 80%;
-    background: #000038;
+    background: var(--color-b);
   }
 
   .history .history-wrapper dl:first-child:after {
@@ -302,7 +316,7 @@
   .history .history-wrapper dt {
     position: relative;
     font-weight: bold;
-    color: #000038;
+    color: var(--color-b);
     line-height: 1;
     width: 15%;
   }
@@ -316,7 +330,7 @@
     width: 10px;
     height: 10px;
     border-radius: 100%;
-    background: #000038;
+    background: var(--color-b);
     box-sizing: border-box;
   }
 
@@ -338,8 +352,8 @@
 
   .history .history-wrapper .history-right dt {
     position: relative;
-    font-weight: bold;
-    color: #000038;
+    font-weight: var(--weight-lg);
+    color: var(--color-b);
   }
 
   .history .history-wrapper .history-right dt:after {
@@ -351,7 +365,7 @@
     width: 10px;
     height: 10px;
     border-radius: 100%;
-    background: #000038;
+    background: var(--color-b);
     box-sizing: border-box;
   }
 
@@ -363,8 +377,8 @@
   .press h2 {
     margin: 0;
     font-size: 40px;
-    font-weight: 700;
-    color: #000038;
+    font-weight: var(--weight-lg);
+    color: var(--color-b);
     margin: 80px 0px 70px;
   }
 
@@ -393,8 +407,8 @@
 
   .press .press-slide li p span {
     font-size: 15px;
-    font-weight: 600;
-    color: #000038;
+    font-weight: var(--weight-md);
+    color: var(--color-b);
   }
 
   /****** location ******/

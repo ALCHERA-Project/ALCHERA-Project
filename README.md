@@ -32,6 +32,13 @@
 - about, 01_tech(가로 스크롤), 02_solution(6분할 사진)
 - index_js.html >> 여기에 작성
 
+# 250613
+### 서희
+- global.html, index.html, sub1.html a태그 연결 및 img alt 작성
+- index, sub1 css font-weight, color, background-color globalVar 적용
+- sub1 js 작성
+- index js 두 가지 작성했는데 뭔가 잘못됨..
+
 # 250604
 ### 서희
 - favicon 수정

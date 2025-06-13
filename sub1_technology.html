@@ -23,15 +23,23 @@
   <link rel="stylesheet" href="./styles/global.css">
   <link rel="stylesheet" href="./styles/globalVar.css">
   <link rel="stylesheet" href="">
-  
+
   <!-- page 별 css style -->
   <link rel="stylesheet" href="./styles/sub1_technology-m.css">
   <link rel="stylesheet" href="./styles/sub1_technology-pc.css">
+
+  <!-- GSAP&ScrollTrigger -->
+  <!-- GSAP Core -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <!-- ScrollTrigger Plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
   <!-- jQuery -->
   <script src="./js/jquery-3.7.1.min.js"></script>
   <script src="./js/jquery-ui.min.js"></script>
   <!-- page 별 사용되는 js -->
-  <script src=""></script>
+  <script src="js/global.js"></script>
+  <script src="./js/sub1_technology.js"></script>
 </head>
 
 <body>
@@ -49,7 +57,116 @@
   </div>
 
   <!------ header ------>
+  <header>
 
+    <!---- mobile ---->
+    <nav class="m-menu">
+      <div class="main-menu">
+        <h1 class="logo"><a href="./index.html"><img src="./assets/images/global/logo-w.svg" alt="logo-w"></a></h1>
+        <div class="hamburger-menu" id="hamburger-menu">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="slide-menu" id="slide-menu">
+        <ul class="main-mo">
+          <li><a href="./sub1_technology.html">기술</a>
+            <ul class="sub-mo">
+              <li><a href="#">얼굴인식</a></li>
+              <li><a href="#">OCR</a></li>
+              <li><a href="#">이상상황 감지</a></li>
+            </ul>
+          </li>
+          <li><a href="./sub2_solution.html">솔루션</a>
+            <ul class="sub-mo">
+              <li><a href="#">얼굴 본인인증</a></li>
+              <li><a href="#">신분증 본인인증</a></li>
+              <li><a href="#">재외국민 여권 신원확인</a></li>
+              <li><a href="#">바이오정보 분산관리</a></li>
+              <li><a href="#">ekYC</a></li>
+              <li><a href="#">출입통제</a></li>
+              <li><a href="#">산불 조기감지</a></li>
+              <li><a href="#">전기차 화재 조기감지</a></li>
+            </ul>
+          </li>
+          <li><a href="./sub3_service.html">서비스</a>
+            <ul class="sub-mo">
+              <li><a href="#">AI 데이터</a></li>
+              <li><a href="#">소프트웨어 개발</a></li>
+              <li><a href="#">데이터바우처</a></li>
+            </ul>
+          </li>
+          <li><a href="./sub4_business.html">사업영역</a>
+            <ul class="sub-mo">
+              <li><a href="#">금융</a></li>
+              <li><a href="#">환경</a></li>
+              <li><a href="#">정부/공공기관</a></li>
+              <li><a href="#">공항</a></li>
+              <li><a href="#">리테일</a></li>
+              <li><a href="#">통신</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="side-mo">
+          <li><a href="#">문의하기 |</a></li>
+          <li><a href="#">데모 신청</a></li>
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <!---- pc ---->
+    <nav class="pc-menu">
+      <h1 class="logo"><a href="./index.html"><img src="./assets/images/global/logo-w.svg" alt="logo-w"></a></h1>
+
+      <ul class="main-menu">
+        <li><a href="./sub1_technology.html">기술</a>
+          <ul class="sub-menu">
+            <li><a href="#">얼굴인식</a></li>
+            <li><a href="#">OCR</a></li>
+            <li><a href="#">이상상황 감지</a></li>
+          </ul>
+        </li>
+        <li><a href="./sub2_solution.html">솔루션</a>
+          <ul class="sub-menu">
+            <li><a href="#">얼굴 본인인증</a></li>
+            <li><a href="#">신분증 본인인증</a></li>
+            <li><a href="#">재외국민 여권 신원확인</a></li>
+            <li><a href="#">바이오정보 분산관리</a></li>
+            <li><a href="#">ekYC</a></li>
+            <li><a href="#">출입통제</a></li>
+            <li><a href="#">산불 조기감지</a></li>
+            <li><a href="#">전기차 화재 조기감지</a></li>
+          </ul>
+        </li>
+        <li><a href="./sub3_service.html">서비스</a>
+          <ul class="sub-menu">
+            <li><a href="#">AI 데이터</a></li>
+            <li><a href="#">소프트웨어 개발</a></li>
+            <li><a href="#">데이터바우처</a></li>
+          </ul>
+        </li>
+        <li><a href="./sub4_business.html">사업영역</a>
+          <ul class="sub-menu">
+            <li><a href="#">금융</a></li>
+            <li><a href="#">환경</a></li>
+            <li><a href="#">정부/공공기관</a></li>
+            <li><a href="#">공항</a></li>
+            <li><a href="#">리테일</a></li>
+            <li><a href="#">통신</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="side-menu">
+        <li class="side-item"><a href="#">문의하기</a></li>
+        <li class="side-item"><a href="#">데모 신청</a></li>
+      </ul>
+    </nav>
+
+  </header>
 
   <!------- sub1-main ------>
   <section class="sub1-main">
@@ -103,10 +220,10 @@
     <h3 class="contents-title">얼굴인식의 핵심 기술</h3>
     <div class="con2-wrapper">
       <!-- contents 2 images -->
-      <img src="./assets/images/sub1_technology/con2/detection.jpg" alt="">
-      <img src="./assets/images/sub1_technology/con2/Matching.jpeg" alt="">
-      <img src="./assets/images/sub1_technology/con2/antiSpopfing.png" alt="">
-      <img src="./assets/images/sub1_technology/con2/AGE.jpg" alt="">
+      <img src="./assets/images/sub1_technology/con2/detection.jpg" alt="tech-img">
+      <img src="./assets/images/sub1_technology/con2/Matching.jpeg" alt="tech-img">
+      <img src="./assets/images/sub1_technology/con2/antiSpopfing.png" alt="tech-img">
+      <img src="./assets/images/sub1_technology/con2/AGE.jpg" alt="tech-img">
       <!-- contents 2 text -->
       <div class="txt-wrapper">
         <h5>Face Detection</h5>
@@ -139,71 +256,71 @@
   <!------ contents 3 ------>
   <section class="con3">
     <h3 class="contents-title">얼굴인식 AI 기술 활용 사례</h3>
-    <a href="" class="readmore-btn">Read More ></a>
+    <a href="#" class="readmore-btn">Read More ></a>
     <!-- link -->
     <ul class="link-wrapper">
       <li>
-        <a href="">
+        <a href="#">
           <h5>행정안전부 정부청사관리본부</h5>
           <p>스마트 정부청사 통합관리체계 구축사업</p>
         </a>
-        <img src="./assets/images/sub1_technology/con3/government.jpg" alt="">
+        <img src="./assets/images/sub1_technology/con3/government.jpg" alt="con3-img">
       </li>
       <li>
-        <a href="">
+        <a href="#">
           <h5>인천국제공항공사</h5>
           <p>스마트패스 구축사업</p>
         </a>
-        <img src="./assets/images/sub1_technology/con3/airport.JPG" alt="">
+        <img src="./assets/images/sub1_technology/con3/airport.JPG" alt="con3-img">
       </li>
       <li>
-        <a href="">
+        <a href="#">
           <h5>한국교육과정평가원</h5>
           <p>이미지 적합성 판별 AI 솔루션</p>
         </a>
-        <img src="./assets/images/sub1_technology/con3/education.jpg" alt="">
+        <img src="./assets/images/sub1_technology/con3/education.jpg" alt="con3-img">
       </li>
       <li>
-        <a href="">
+        <a href="#">
           <h5>경찰청</h5>
           <p>얼굴인식 AI 솔루션</p>
         </a>
-        <img src="./assets/images/sub1_technology/con3/police.jpeg" alt="">
+        <img src="./assets/images/sub1_technology/con3/police.jpeg" alt="con3-img">
       </li>
       <li>
-        <a href="">
+        <a href="#">
           <h5>신한카드</h5>
           <p>페이스페이(FacePay) 얼굴인식 AI 솔루션</p>
         </a>
-        <img src="./assets/images/sub1_technology/con3/sinhan.jpg" alt="">
+        <img src="./assets/images/sub1_technology/con3/sinhan.jpg" alt="con3-img">
       </li>
       <li>
-        <a href="">
+        <a href="#">
           <h5>토스증권</h5>
           <p>신분증 진위확인 솔루션</p>
         </a>
-        <img src="./assets/images/sub1_technology/con3/toss.png" alt="">
+        <img src="./assets/images/sub1_technology/con3/toss.png" alt="con3-img">
       </li>
       <li>
-        <a href="">
+        <a href="#">
           <h5>롯데정보통신</h5>
           <p>얼굴인식 AI 솔루션</p>
         </a>
-        <img src="./assets/images/sub1_technology/con3/lotte.png" alt="">
+        <img src="./assets/images/sub1_technology/con3/lotte.png" alt="con3-img">
       </li>
       <li>
-        <a href="">
+        <a href="#">
           <h5>삼성 SDS</h5>
           <p>얼굴인식 AI 솔루션</p>
         </a>
-        <img src="./assets/images/sub1_technology/con3/samsung.jpg" alt="">
+        <img src="./assets/images/sub1_technology/con3/samsung.jpg" alt="con3-img">
       </li>
       <li>
-        <a href="">
+        <a href="#">
           <h5>부산은행</h5>
           <p>신분증 OCR 및 사본판별 솔루션</p>
         </a>
-        <img src="./assets/images/sub1_technology/con3/busan.png" alt="">
+        <img src="./assets/images/sub1_technology/con3/busan.png" alt="con3-img">
       </li>
     </ul>
   </section>
@@ -214,40 +331,40 @@
     <!-- solution info -->
     <ul class="solution-info">
       <li>
-        <img src="./assets/images/sub1_technology/con4/face.svg" alt="">
+        <img src="./assets/images/sub1_technology/con4/face.svg" alt="icon">
         <h6>얼굴 본인인증</h6>
         <p>높은 보안성과 편리함을 보장하는 얼굴 본인인증 솔루션</p>
-        <a href="">더 알아보기</a>
+        <a href="#">더 알아보기</a>
       </li>
       <li>
-        <img src="./assets/images/sub1_technology/con4/id.svg" alt="">
+        <img src="./assets/images/sub1_technology/con4/id.svg" alt="icon">
         <h6>신분증 본인인증</h6>
         <p>위조와 도용의 위험을 예방하는 신분증 본인인증 솔루션</p>
-        <a href="">더 알아보기</a>
+        <a href="#">더 알아보기</a>
       </li>
       <li>
-        <img src="./assets/images/sub1_technology/con4/etc.svg" alt="">
+        <img src="./assets/images/sub1_technology/con4/etc.svg" alt="icon">
         <h6>바이오정보 분산관리</h6>
         <p>개인정보 유출 방지를 위한 분산형 얼굴 정보 저장 방식</p>
-        <a href="">더 알아보기</a>
+        <a href="#">더 알아보기</a>
       </li>
       <li>
-        <img src="./assets/images/sub1_technology/con4/etc.svg" alt="">
+        <img src="./assets/images/sub1_technology/con4/etc.svg" alt="icon">
         <h6>eKYC</h6>
         <p>고객확인제도 구현을 위한 통합 보안 솔루션</p>
-        <a href="">더 알아보기</a>
+        <a href="#">더 알아보기</a>
       </li>
       <li>
-        <img src="./assets/images/sub1_technology/con4/etc.svg" alt="">
+        <img src="./assets/images/sub1_technology/con4/etc.svg" alt="icon">
         <h6>재외국민 여권 신원확인</h6>
         <p>재외국민 비대면 본인인증이 가능한 신원확인 솔루션</p>
-        <a href="">더 알아보기</a>
+        <a href="#">더 알아보기</a>
       </li>
       <li>
-        <img src="./assets/images/sub1_technology/con4/enter.svg" alt="">
+        <img src="./assets/images/sub1_technology/con4/enter.svg" alt="icon">
         <h6>출입통제</h6>
         <p>안전하고 편리한 출입통제 솔루션</p>
-        <a href="">더 알아보기</a>
+        <a href="#">더 알아보기</a>
       </li>
     </ul>
   </section>
@@ -257,7 +374,8 @@
     <p>Contact Us</p>
     <h3>얼굴인식 AI 기술로 비즈니스를 업그레이드하세요</h3>
     <h4>알체라의 세일즈 컨설턴트가<br>고객님에게 최적의 솔루션을 제안 드립니다.</h4>
-    <a href="#">문의하기 →</a>
+    <a href="#">문의하기 <span><img src="./assets/images/global/icon/arrow_right.svg" alt="arrow_right"></span>
+    </a>
   </section>
 
   <!------ footer ------>
@@ -265,51 +383,53 @@
     <!-- footer menu wrapper -->
     <div class="footer-menu-wrapper">
       <ul class="link-list">
-        <li><a href="">솔루션 문의하기<img src="./assets/images/global/icon/aroow_up_right.svg" alt=""></a></li>
-        <li><a href="">데모 신청하기<img src="./assets/images/global/icon/aroow_up_right.svg" alt=""></a></li>
+        <li><a href="#">솔루션 문의하기<img src="./assets/images/global/icon/aroow_up_right.svg" alt="icon"></a></li>
+        <li><a href="#">데모 신청하기<img src="./assets/images/global/icon/aroow_up_right.svg" alt="icon"></a></li>
         <li><a href="./assets/images/global/icon/aroow_up_right.svg">회사소개서 다운로드<img
-              src="./assets/images/global/icon/aroow_up_right.svg" alt=""></a></li>
+              src="./assets/images/global/icon/aroow_up_right.svg" alt="icon"></a></li>
       </ul>
       <ul class="site-map">
-        <li><a href="">기술</a></li>
-        <li><a href="">솔루션</a></li>
-        <li><a href="">서비스</a></li>
-        <li><a href="">사업영역</a></li>
+        <li><a href="./sub1_technology.html">기술</a></li>
+        <li><a href="./sub2_solution.html">솔루션</a></li>
+        <li><a href="./sub3_service.html">서비스</a></li>
+        <li><a href="./sub4_business.html">사업영역</a></li>
       </ul>
     </div>
     <!-- footer-bottom -->
     <div class="footer-bottom">
       <!-- address -->
       <div class="address">
-        <h2><a href=""><img src="./assets/images/global/logo-w.svg" alt="logo"></a></h2>
+        <h2><a href="./index.html"><img src="./assets/images/global/logo-w.svg" alt="logo"></a></h2>
         <p>(주)알체라 (대표이사: 황영규) ㅣ 경기도 성남시 분당구 판교로256번길 25 GB2빌딩 C동 7층 ㅣ 사업자등록번호: 643-87-00337<br>ⓒ 2025. Alchera Inc.</p>
       </div>
       <div class="footer-info">
         <!-- language -->
         <div class="lang">
-          <a href="">KOR</a>
-          <a href="">ENG</a>
+          <a href="#">KOR</a>
+          <a href="#">ENG</a>
         </div>
         <!-- policy -->
         <div class="policy">
-          <a href="">개인정보처리방침</a>
-          <a href="">내부정보관리규정</a>
+          <a href="#">개인정보처리방침</a>
+          <a href="#">내부정보관리규정</a>
         </div>
         <!-- family-site -->
         <ul class="family-site">
           <li class="active">Family Site</li>
-          <li><a href="">FireScout</a></li>
-          <li><a href="">useB</a></li>
-          <li><a href="">AI HEROES</a></li>
-          <li><a href="">Workple</a></li>
+          <li><a href="https://firescout.ai/">FireScout</a></li>
+          <li><a href="https://useb.co.kr/">useB</a></li>
+          <li><a href="https://aiheroes.ai/">AI HEROES</a></li>
+          <li><a href="https://www.workple.ai/">Workple</a></li>
         </ul>
         <ul class="sns">
-          <li><a href=""><img src="./assets/images/global/icon/youtube.svg" alt=""></a></li>
-          <li><a href=""><img src="./assets/images/global/icon/linkedin.svg" alt=""></a></li>
-          <li><a href=""><img src="./assets/images/global/icon/blog.svg" alt=""></a></li>
+          <li><a href="https://www.youtube.com/c/AlcheraInc/featured"><img src="./assets/images/global/icon/youtube.svg"
+                alt="icon"></a></li>
+          <li><a href="https://www.linkedin.com/company/alchera-inc"><img src="./assets/images/global/icon/linkedin.svg"
+                alt="icon"></a></li>
+          <li><a href="https://blog.naver.com/alcherads"><img src="./assets/images/global/icon/blog.svg" alt="icon"></a>
+          </li>
         </ul>
       </div>
-
     </div>
   </footer>
 

@@ -138,7 +138,9 @@
     left: 0;
   }
 
-  .m-menu .side-menu .main-mo {} /* 슬라이드되는 햄버거 메뉴 여기부터 css 수정하면 됨 */
+  .m-menu .side-menu .main-mo {}
+
+  /* 슬라이드되는 햄버거 메뉴 여기부터 css 수정하면 됨 */
 
   .m-menu .side-menu .main-mo li {}
 
@@ -396,6 +398,15 @@
 @media screen and (min-width: 1280px) {
 
   /**** header ****/
+  /* 모바일 메뉴 숨김 */
+  .m-menu {
+    display: none;
+  }
+
+  .pc-menu {
+    display: block;
+  }
+
   /* nav */
   header {
     width: 100%;
@@ -420,7 +431,7 @@
   }
 
   /* main-menu */
-  header nav {
+  header .pc-menu {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -428,21 +439,21 @@
     color: var(--color-w);
   }
 
-  header nav .main-menu {
+  header .pc-menu .main-menu {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
   }
 
-  header nav .main-menu li {
+  header .pc-menu .main-menu li {
     width: 160px;
     font-size: 14px;
     position: relative;
   }
 
   /* sub-menu */
-  header nav .sub-menu {
+  header .pc-menu .sub-menu {
     width: 100%;
     background-color: var(--color-b);
     z-index: 9999;
@@ -456,11 +467,11 @@
     overflow: hidden;
   }
 
-  header nav .sub-menu li {
+  header .pc-menu .sub-menu li {
     line-height: 3.5;
   }
 
-  header nav .sub-menu li a {
+  header .pc-menu .sub-menu li a {
     /* 들여쓰기 */
     padding-left: 15px;
     display: block;
@@ -475,26 +486,26 @@
     align-items: center;
   }
 
-  header nav .sub-menu li:hover a {
+  header .pc-menu .sub-menu li:hover a {
     /* border-bottom: 1px solid var(--color-lg); */
     background-color: var(--color-w);
     color: var(--color-b);
   }
 
   /* side-menu */
-  header nav .side-menu {
+  header .pc-menu .side-menu {
     font-size: 14px;
 
     display: flex;
     align-items: center;
   }
 
-  header nav .side-menu li:first-of-type {
+  header .pc-menu .side-menu li:first-of-type {
     padding-right: 10px;
     border-right: 1px solid var(--color-w);
   }
 
-  header nav .side-menu li:last-of-type {
+  header .pc-menu .side-menu li:last-of-type {
     padding-left: 10px;
   }
 

@@ -48,6 +48,7 @@
 
   <!-- page 별 사용되는 js -->
   <script src="./js/index.js"></script>
+  <script src="./js/global.js"></script>
 </head>
 
 <body>
@@ -69,69 +70,76 @@
     <header>
 
         <!---- mobile ---->
-        <!-- <div class="menu-bar"></div>
-        <a href="#"><img id="btn-menu" src="./assets/images/global/icon/btn-menu.svg" alt="btn-menu"></a>
+        <nav class="m-menu">
+            <div class="main-menu">
+                <h1 class="logo"><a href="./index.html"><img src="./assets/images/global/logo-w.svg" alt="logo-w"></a></h1>
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="slide-menu" id="slide-menu">
+                <ul class="main-mo">
+                    <li><a href="./sub1_technology.html">기술</a>
+                        <ul class="sub-mo">
+                            <li><a href="#">얼굴인식</a></li>
+                            <li><a href="#">OCR</a></li>
+                            <li><a href="#">이상상황 감지</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./sub2_solution.html">솔루션</a>
+                        <ul class="sub-mo">
+                            <li><a href="#">얼굴 본인인증</a></li>
+                            <li><a href="#">신분증 본인인증</a></li>
+                            <li><a href="#">재외국민 여권 신원확인</a></li>
+                            <li><a href="#">바이오정보 분산관리</a></li>
+                            <li><a href="#">ekYC</a></li>
+                            <li><a href="#">출입통제</a></li>
+                            <li><a href="#">산불 조기감지</a></li>
+                            <li><a href="#">전기차 화재 조기감지</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./sub3_service.html">서비스</a>
+                        <ul class="sub-mo">
+                            <li><a href="#">AI 데이터</a></li>
+                            <li><a href="#">소프트웨어 개발</a></li>
+                            <li><a href="#">데이터바우처</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./sub4_business.html">사업영역</a>
+                        <ul class="sub-mo">
+                            <li><a href="#">금융</a></li>
+                            <li><a href="#">환경</a></li>
+                            <li><a href="#">정부/공공기관</a></li>
+                            <li><a href="#">공항</a></li>
+                            <li><a href="#">리테일</a></li>
+                            <li><a href="#">통신</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="side-mo">
+                    <li><a href="#">문의하기 |</a></li>
+                    <li><a href="#">데모 신청</a></li>
+                </ul>
 
-        <nav>
-            <ul class="menu-mo">
-                <li><a href="#">기술</a>
-                    <ul class="sub-mo">
-                        <li><a href="#">얼굴인식</a></li>
-                        <li><a href="#">OCR</a></li>
-                        <li><a href="#">이상상황 감지</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">솔루션</a>
-                    <ul class="sub-mo">
-                        <li><a href="#">얼굴 본인인증</a></li>
-                        <li><a href="#">신분증 본인인증</a></li>
-                        <li><a href="#">재외국민 여권 신원확인</a></li>
-                        <li><a href="#">바이오정보 분산관리</a></li>
-                        <li><a href="#">ekYC</a></li>
-                        <li><a href="#">출입통제</a></li>
-                        <li><a href="#">산불 조기감지</a></li>
-                        <li><a href="#">전기차 화재 조기감지</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">서비스</a>
-                    <ul class="sub-mo">
-                        <li><a href="#">AI 데이터</a></li>
-                        <li><a href="#">소프트웨어 개발</a></li>
-                        <li><a href="#">데이터바우처</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">사업영역</a>
-                    <ul class="sub-mo">
-                        <li><a href="#">금융</a></li>
-                        <li><a href="#">환경</a></li>
-                        <li><a href="#">정부/공공기관</a></li>
-                        <li><a href="#">공항</a></li>
-                        <li><a href="#">리테일</a></li>
-                        <li><a href="#">통신</a></li>
-                    </ul>
-                </li>
-            </ul>
+            </div>
 
-            <ul class="side-mo">
-                <li><a href="#">문의하기 |</a></li>
-                <li><a href="#">데모 신청</a></li>
-            </ul>
-        </nav> -->
-        
-        
+        </nav>
+
         <!---- pc ---->
-        <nav>
-            <h1 class="logo"><img src="./assets/images/global/logo-w.svg" alt="logo-w"></h1>
+        <nav class="pc-menu">
+            <h1 class="logo"><a href="./index.html"><img src="./assets/images/global/logo-w.svg" alt="logo-w"></a></h1>
 
             <ul class="main-menu">
-                <li><a href="#">기술</a>
+                <li><a href="./sub1_technology.html">기술</a>
                     <ul class="sub-menu">
                         <li><a href="#">얼굴인식</a></li>
                         <li><a href="#">OCR</a></li>
                         <li><a href="#">이상상황 감지</a></li>
                     </ul>
                 </li>
-                <li><a href="#">솔루션</a>
+                <li><a href="./sub2_solution.html">솔루션</a>
                     <ul class="sub-menu">
                         <li><a href="#">얼굴 본인인증</a></li>
                         <li><a href="#">신분증 본인인증</a></li>
@@ -143,14 +151,14 @@
                         <li><a href="#">전기차 화재 조기감지</a></li>
                     </ul>
                 </li>
-                <li><a href="#">서비스</a>
+                <li><a href="./sub3_service.html">서비스</a>
                     <ul class="sub-menu">
                         <li><a href="#">AI 데이터</a></li>
                         <li><a href="#">소프트웨어 개발</a></li>
                         <li><a href="#">데이터바우처</a></li>
                     </ul>
                 </li>
-                <li><a href="#">사업영역</a>
+                <li><a href="./sub4_business.html">사업영역</a>
                     <ul class="sub-menu">
                         <li><a href="#">금융</a></li>
                         <li><a href="#">환경</a></li>
@@ -167,7 +175,7 @@
                 <li class="side-item"><a href="#">데모 신청</a></li>
             </ul>
         </nav>
-        
+
     </header>
 
   <!------ main ------>
@@ -189,7 +197,7 @@
         <div class="about-info">
           <p>알체라는 고성능 인공지능 모델 개발을 위해 AI 데이터 구축 서비스를 제공합니다. 국내외 자체 데이터 센터의 인하우스 리소스를 활용해 대규모 데이터 수집과 라벨링 작업을 수행하며, 고객 맞춤형
             AI 데이터를 구축해 제공하고 있습니다.</p>
-          <a href="">VIEW MORE</a>
+          <a href="#">VIEW MORE</a>
         </div>
         <img src="./assets/images/global/logo-b.svg" alt="main-logo">
       </div>
@@ -394,31 +402,31 @@
       <h2>보도자료</h2>
       <ul class="press-slide">
         <li>
-          <img src="./assets/images/index/04_press/press-1.png" alt="">
+          <img src="./assets/images/index/04_press/press-1.png" alt="press-img">
           <p>알체라, 호주에 화재 조기감지 AI 솔루션 '파이어스카우트' 공급 확대<br><span>April 24, 2025</span></p>
         </li>
         <li>
-          <img src="./assets/images/index/04_press/press-2.png" alt="">
+          <img src="./assets/images/index/04_press/press-2.png" alt="press-img">
           <p>산불과 전기차 화재 감지, 두마리 토끼 AI가 잡는다<br><span>April 22, 2025</span></p>
         </li>
         <li>
-          <img src="./assets/images/index/04_press/press-3.png" alt="">
+          <img src="./assets/images/index/04_press/press-3.png" alt="press-img">
           <p>알체라, 아파트 지하 주차장에 전기차 화재 감지 AI 솔루션 시연<br><span>March 24, 2025</span></p>
         </li>
         <li>
-          <img src="./assets/images/index/04_press/press-4.png" alt="">
+          <img src="./assets/images/index/04_press/press-4.png" alt="press-img">
           <p>알체라-주한 슬로베니아 대사관-이니텍, AI 산업 혁신 및 공동 사업 개발 MOU 체결결<br><span>Feb 26, 2025</span></p>
         </li>
         <li>
-          <img src="./assets/images/index/04_press/press-5.png" alt="">
+          <img src="./assets/images/index/04_press/press-5.png" alt="press-img">
           <p>알체라, AI 기반 근태 관리 솔루션으로 소상공인스마트상점기술보급사업 선정정<br><span>Feb 19, 2025</span></p>
         </li>
         <li>
-          <img src="./assets/images/index/04_press/press-6.png" alt="">
+          <img src="./assets/images/index/04_press/press-6.png" alt="press-img">
           <p>유증 앞둔 알체라 "세계 5위권 기술력.. 매출 다변화로 올해 새 도약"<br><span>Jan 31, 2025</span></p>
         </li>
         <li>
-          <img src="./assets/images/index/04_press/press-7.png" alt="">
+          <img src="./assets/images/index/04_press/press-7.png" alt="press-img">
           <p>알체라 '웍플', AI 바우처 최종평가 우수 과제 선정<br><span>Jan 21, 2025</span></p>
         </li>
       </ul>
@@ -431,62 +439,56 @@
     </section>
   </main>
 
-  <!------ footer ------>
-  <footer>
-    <!-- footer menu wrapper -->
-    <div class="footer-menu-wrapper">
-      <ul class="link-list">
-        <li><a href="">솔루션 문의하기<img src="./assets/images/global/icon/aroow_up_right.svg" alt=""></a></li>
-        <li><a href="">데모 신청하기<img src="./assets/images/global/icon/aroow_up_right.svg" alt=""></a></li>
-        <li><a href="./assets/images/global/icon/aroow_up_right.svg">회사소개서 다운로드<img
-              src="./assets/images/global/icon/aroow_up_right.svg" alt=""></a></li>
-      </ul>
-      <ul class="site-map">
-        <li><a href="">기술</a></li>
-        <li><a href="">솔루션</a></li>
-        <li><a href="">서비스</a></li>
-        <li><a href="">사업영역</a></li>
-      </ul>
-    </div>
-    <!-- footer-bottom -->
-    <div class="footer-bottom">
-      <!-- address -->
-      <div class="address">
-        <h2><a href=""><img src="./assets/images/global/logo-w.svg" alt="logo"></a></h2>
-        <p>(주)알체라 (대표이사: 황영규) ㅣ 경기도 성남시 분당구 판교로256번길 25 GB2빌딩 C동 7층 ㅣ 사업자등록번호: 643-87-00337<br>ⓒ 2025. Alchera Inc.</p>
-      </div>
-      <div class="footer-info">
-        <!-- language -->
-        <div class="lang">
-          <a href="">KOR</a>
-          <a href="">ENG</a>
-        </div>
-        <!-- policy -->
-        <div class="policy">
-          <a href="">개인정보처리방침</a>
-          <a href="">내부정보관리규정</a>
-        </div>
-        <!-- family-site -->
-        <ul class="family-site">
-          <li class="toggle-btn">Family Site
-            <ul class="family-site-list">
-              <li class="active"><a href="">FireScout</a></li>
-              <li><a href="">useB</a></li>
-              <li><a href="">AI HEROES</a></li>
-              <li><a href="">Workple</a></li>
+    <!------ footer ------>
+    <footer>
+        <!-- footer menu wrapper -->
+        <div class="footer-menu-wrapper">
+            <ul class="link-list">
+                <li><a href="">솔루션 문의하기<img src="./assets/images/global/icon/aroow_up_right.svg" alt="icon"></a></li>
+                <li><a href="">데모 신청하기<img src="./assets/images/global/icon/aroow_up_right.svg" alt="icon"></a></li>
+                <li><a href="./assets/images/global/icon/aroow_up_right.svg">회사소개서 다운로드<img  src="./assets/images/global/icon/aroow_up_right.svg" alt="icon"></a></li>
             </ul>
-          </li>
-        </ul>
-
-        <ul class="sns">
-          <li><a href=""><img src="./assets/images/global/icon/youtube.svg" alt=""></a></li>
-          <li><a href=""><img src="./assets/images/global/icon/linkedin.svg" alt=""></a></li>
-          <li><a href=""><img src="./assets/images/global/icon/blog.svg" alt=""></a></li>
-        </ul>
-      </div>
-
-    </div>
-  </footer>
+            <ul class="site-map">
+                <li><a href="#">기술</a></li>
+                <li><a href="#">솔루션</a></li>
+                <li><a href="#">서비스</a></li>
+                <li><a href="#">사업영역</a></li>
+            </ul>
+        </div>
+        <!-- footer-bottom -->
+        <div class="footer-bottom">
+            <!-- address -->
+            <div class="address">
+                <h2><a href="./index.html"><img src="./assets/images/global/logo-w.svg" alt="logo"></a></h2>
+                <p>(주)알체라 (대표이사: 황영규) ㅣ 경기도 성남시 분당구 판교로256번길 25 GB2빌딩 C동 7층 ㅣ 사업자등록번호: 643-87-00337<br>ⓒ 2025. Alchera Inc.</p>
+            </div>
+            <div class="footer-info">
+                <!-- language -->
+                <div class="lang">
+                    <a href="#">KOR</a>
+                    <a href="#">ENG</a>
+                </div>
+                <!-- policy -->
+                <div class="policy">
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">내부정보관리규정</a>
+                </div>
+                <!-- family-site -->
+                <ul class="family-site">
+                    <li class="active">Family Site</li>
+                    <li><a href="https://firescout.ai/">FireScout</a></li>
+                    <li><a href="https://useb.co.kr/">useB</a></li>
+                    <li><a href="https://aiheroes.ai/">AI HEROES</a></li>
+                    <li><a href="https://www.workple.ai/">Workple</a></li>
+                </ul>
+                <ul class="sns">
+                    <li><a href="https://www.youtube.com/c/AlcheraInc/featured"><img src="./assets/images/global/icon/youtube.svg" alt="icon"></a></li>
+                    <li><a href="https://www.linkedin.com/company/alchera-inc"><img src="./assets/images/global/icon/linkedin.svg" alt="icon"></a></li>
+                    <li><a href="https://blog.naver.com/alcherads"><img src="./assets/images/global/icon/blog.svg" alt="icon"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
