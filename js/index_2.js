@@ -1,27 +1,63 @@
 // about-video 영역 text 이벤트
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
-document.addEventListener("DOMContentLoaded", () => {
-  const listItems = gsap.utils.toArray('.about-video ul li');
-  if (!listItems.length) return;
+// document.addEventListener("DOMContentLoaded", () => {
+//   const listItems = gsap.utils.toArray('.about-video ul li');
+//   if (!listItems.length) return;
 
-  gsap.set(listItems, { opacity: 0, y: 20 });
+//   gsap.set(listItems, { opacity: 0, y: 20 });
 
-  listItems.forEach((li) => {
-    gsap.to(li, {
-      opacity: 1,
-      y: 0,
-      duration: 0.5,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: li,
-        start: "top 50%",   // li가 화면 아래 90%에 닿을 때 시작
-        toggleActions: "play none none reverse",
-        markers: false,
-      }
-    });
+//   listItems.forEach((li) => {
+//     gsap.to(li, {
+//       opacity: 1,
+//       y: 0,
+//       duration: 0.5,
+//       ease: "power2.out",
+//       scrollTrigger: {
+//         trigger: li,
+//         start: "top 50%",
+//         toggleActions: "play none none reverse",
+//         markers: false,
+//       }
+//     });
+//   });
+// });
+
+
+
+// about-video
+  gsap.registerPlugin(ScrollTrigger);
+
+  // 🎥 영상 패럴럭스 (선택사항)
+  gsap.to(".about-video video", {
+    y: 100,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".about-video",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: true
+    }
   });
-});
+
+  // ✨ 텍스트 stagger 등장 + 사라짐
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".about-video",
+      start: "top 40%",
+      end: "bottom 20%",
+      toggleActions: "play reverse play reverse",
+      // markers: true // 디버깅 원할 때 켜기
+    }
+  });
+
+  tl.from(".about-video ul li h4, .about-video ul li p", {
+    opacity: 0,
+    y: 30,
+    stagger: 0.2,
+    duration: 0.7,
+    ease: "power2.out"
+  });
 
 
 // 2-solution 모바일 메뉴
@@ -80,20 +116,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // 2-solution PC 메뉴
-  document.addEventListener('DOMContentLoaded', () => {
-    const listItems = document.querySelectorAll('.img-menu-wrapper li');
-
-    listItems.forEach(item => {
-      item.addEventListener('mouseenter', () => {
-        listItems.forEach(li => li.classList.remove('active'));
-        item.classList.add('active');
-      });
-
-      item.addEventListener('mouseleave', () => {
-        item.classList.remove('active');
-      });
+document.addEventListener('DOMContentLoaded', () => {
+  const listItems = document.querySelectorAll('.img-menu-wrapper li');
+  listItems.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      listItems.forEach(li => li.classList.remove('active'));
+      item.classList.add('active');
+    });
+    item.addEventListener('mouseleave', () => {
+      item.classList.remove('active');
     });
   });
+});
 
 
 
