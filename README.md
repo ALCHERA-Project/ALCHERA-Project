@@ -7,13 +7,32 @@
 - google drive : https://drive.google.com/drive/folders/1jNLVl-mRead3KSveLNgLUBjFLA73RuBt?usp=drive_link
 
 # ppt 탬플릿
-- google drive : https://drive.google.com/drive/folders/1jNLVl-mRead3KSveLNgLUBjFLA73RuBt?usp=drive_link
-1) '0.ppt 탬플릿' 폴더에 3개 업로드 해뒀었는데, 이중에서 골라서 쓰면 될듯?!
+1) 구글드라이브 > '0.ppt 탬플릿' 폴더에 3개 업로드 해뒀었는데, 이중에서 골라서 쓰면 될듯
 
 # global
 1) global.html 따로 작성해서 4가지 영역 작성해둠
 2) 여기에 header / chat+goToTOp / contact / footer 4가지 적어둠
 3) 'head' 영역에 들어가는 태그 작성해둠
+
+# 250614 10차 미팅
+### 해올 것
+0) 공통
+- W3C 유효성 검사 / 코드 수정
+- global 최종 버전으로 전체 적용
+
+1) index
+- js 완성 : 은혜(intro ~ about), 서희(01_tech)
+- js 연구 : photo Dump 영역
+
+2) sub 수정
+- 각 css 문서에 'globalVar : color, font-weight'로 수정 
+- transition : ease-in-out 통일
+- global 최종본으로 통일 (은혜가 수정후 적용시키겠어요)
+
+### 미팅 내용
+1) index 작업
+- solution, tech(가로스크롤), press(가로 슬라이드) 작업
+
 
 # 250605 9차 미팅
 ### 해올 것
@@ -31,6 +50,10 @@
 2) js 3가지 먼저 구현!!
 - about, 01_tech(가로 스크롤), 02_solution(6분할 사진)
 - index_js.html >> 여기에 작성
+
+# 250614
+### 은혜
+- index - solution 이미지 아코디언 수정 완료
 
 # 250613
 ### 서희

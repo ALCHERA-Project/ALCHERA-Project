@@ -509,7 +509,11 @@
     padding-left: 10px;
   }
 
-
+  /* ✅ 헤더 스크롤 시 숨기기 - 공통 적용 */
+  header.hide {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+  }
 
 
 
