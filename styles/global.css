@@ -84,7 +84,7 @@
   .m-menu .main-menu h1 {}
 
   .m-menu .main-menu h1 img {
-    width: 121px;
+    width: 120px;
   }
 
   .m-menu .main-menu .hamburger-menu {
@@ -159,7 +159,7 @@
 
 
 
-  /****** ffooter-mobile ******/
+  /****** footer-mobile ******/
   footer {
     background-color: var(--color-b);
     color: var(--color-w);
