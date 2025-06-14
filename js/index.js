@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // press slide
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   const slider = document.querySelector('.press-slide');
   if (!slider) return;
 
@@ -132,34 +132,56 @@ document.addEventListener('DOMContentLoaded', () => {
   let startX;
   let scrollLeft;
 
-  slider.addEventListener('mousedown', (e) => {
+  const SCROLL_SPEED = 1.5; // ← 드래그 가속도 조절
+
+  // 마우스 이벤트
+  slider.addEventListener('mousedown', e => {
     isDragging = true;
     startX = e.pageX - slider.offsetLeft;
     scrollLeft = slider.scrollLeft;
     slider.classList.add('dragging');
   });
 
-  document.addEventListener('mouseup', () => {
-    if (isDragging) {
-      isDragging = false;
-      slider.classList.remove('dragging');
-    }
-  });
-
   slider.addEventListener('mouseleave', () => {
-    if (isDragging) {
+    isDragging = false;
+    slider.classList.remove('dragging');
+  });
+
+  slider.addEventListener('mouseup', () => {
+    isDragging = false;
+    slider.classList.remove('dragging');
+  });
+
+  slider.addEventListener('mousemove', e => {
+    if (!isDragging) return;
+    if (e.buttons === 0) {
       isDragging = false;
       slider.classList.remove('dragging');
+      return;
     }
-  });
-
-  slider.addEventListener('mousemove', (e) => {
-    if (!isDragging) return;
     e.preventDefault();
-
     const x = e.pageX - slider.offsetLeft;
-    const walk = x - startX;  // 현재 위치에서 시작 위치 차이 계산
-    slider.scrollLeft = scrollLeft - walk;  // 시작 스크롤 위치에서 차이만큼 이동
+    const walk = (x - startX) * SCROLL_SPEED; // ← 여기 적용
+    slider.scrollLeft = scrollLeft - walk;
   });
-});
 
+  // 터치 이벤트
+  slider.addEventListener('touchstart', e => {
+    isDragging = true;
+    startX = e.touches[0].pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+    slider.classList.add('dragging');
+  }, { passive: true });
+
+  slider.addEventListener('touchend', () => {
+    isDragging = false;
+    slider.classList.remove('dragging');
+  });
+
+  slider.addEventListener('touchmove', e => {
+    if (!isDragging) return;
+    const x = e.touches[0].pageX - slider.offsetLeft;
+    const walk = (x - startX) * SCROLL_SPEED; // ← 여기도 동일하게
+    slider.scrollLeft = scrollLeft - walk;
+  }, { passive: true });
+});
