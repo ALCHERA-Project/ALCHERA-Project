@@ -37,7 +37,7 @@
     display: flex;
     gap: 35px;
     padding: 120px 100px;
-    background-color: #000038;
+    background-color: var(--color-b);
   }
 
   .sub1-main .main-video video {
@@ -171,7 +171,7 @@
 
   /* contents 3 */
   .con3 {
-    width: calc(100% - 160px);
+    width: 100%;
     padding: 160px 80px 0px;
     /* padding: 0; */
     display: flex;

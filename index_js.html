@@ -2,6 +2,7 @@
 <html lang="ko">
 
 <!-- js 연구용 -->
+
 <head>
   <meta charset="UTF-8">
   <title>Alchera</title>
@@ -26,17 +27,23 @@
   <!-- 공통된 css style -->
   <link rel="stylesheet" href="./styles/global.css">
   <link rel="stylesheet" href="./styles/globalVar.css">
-  <link rel="stylesheet" href="">
 
   <!-- page 별 css style -->
   <link rel="stylesheet" href="./styles/index-m.css">
   <link rel="stylesheet" href="./styles/index-pc.css">
+
+  <!-- GSAP&ScrollTrigger -->
+  <!-- GSAP Core -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <!-- ScrollTrigger Plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
   <!-- jQuery -->
   <script src="./js/jquery-3.7.1.min.js"></script>
   <script src="./js/jquery-ui.min.js"></script>
 
   <!-- page 별 사용되는 js -->
+  <script src="./js/global.js"></script>
   <script src="./js/index.js"></script>
 </head>
 
@@ -55,110 +62,117 @@
     </div>
   </div>
 
-    <!------ header ------>
-    <header>
+  <!------ header ------>
+  <header>
 
-        <!---- mobile ---->
-        <!-- <div class="menu-bar"></div>
-        <a href="#"><img id="btn-menu" src="./assets/images/global/icon/btn-menu.svg" alt="btn-menu"></a>
-
-        <nav>
-            <ul class="menu-mo">
-                <li><a href="#">기술</a>
-                    <ul class="sub-mo">
-                        <li><a href="#">얼굴인식</a></li>
-                        <li><a href="#">OCR</a></li>
-                        <li><a href="#">이상상황 감지</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">솔루션</a>
-                    <ul class="sub-mo">
-                        <li><a href="#">얼굴 본인인증</a></li>
-                        <li><a href="#">신분증 본인인증</a></li>
-                        <li><a href="#">재외국민 여권 신원확인</a></li>
-                        <li><a href="#">바이오정보 분산관리</a></li>
-                        <li><a href="#">ekYC</a></li>
-                        <li><a href="#">출입통제</a></li>
-                        <li><a href="#">산불 조기감지</a></li>
-                        <li><a href="#">전기차 화재 조기감지</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">서비스</a>
-                    <ul class="sub-mo">
-                        <li><a href="#">AI 데이터</a></li>
-                        <li><a href="#">소프트웨어 개발</a></li>
-                        <li><a href="#">데이터바우처</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">사업영역</a>
-                    <ul class="sub-mo">
-                        <li><a href="#">금융</a></li>
-                        <li><a href="#">환경</a></li>
-                        <li><a href="#">정부/공공기관</a></li>
-                        <li><a href="#">공항</a></li>
-                        <li><a href="#">리테일</a></li>
-                        <li><a href="#">통신</a></li>
-                    </ul>
-                </li>
+    <!---- mobile ---->
+    <nav class="m-menu">
+      <div class="main-menu">
+        <h1 class="logo"><a href="./index.html"><img src="./assets/images/global/logo-w.svg" alt="logo-w"></a></h1>
+        <div class="hamburger-menu" id="hamburger-menu">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="slide-menu" id="slide-menu">
+        <ul class="main-mo">
+          <li><a href="./sub1_technology.html">기술</a>
+            <ul class="sub-mo">
+              <li><a href="#">얼굴인식</a></li>
+              <li><a href="#">OCR</a></li>
+              <li><a href="#">이상상황 감지</a></li>
             </ul>
-
-            <ul class="side-mo">
-                <li><a href="#">문의하기 |</a></li>
-                <li><a href="#">데모 신청</a></li>
+          </li>
+          <li><a href="./sub2_solution.html">솔루션</a>
+            <ul class="sub-mo">
+              <li><a href="#">얼굴 본인인증</a></li>
+              <li><a href="#">신분증 본인인증</a></li>
+              <li><a href="#">재외국민 여권 신원확인</a></li>
+              <li><a href="#">바이오정보 분산관리</a></li>
+              <li><a href="#">ekYC</a></li>
+              <li><a href="#">출입통제</a></li>
+              <li><a href="#">산불 조기감지</a></li>
+              <li><a href="#">전기차 화재 조기감지</a></li>
             </ul>
-        </nav> -->
-        
-        
-        <!---- pc ---->
-        <nav>
-            <h1 class="logo"><img src="./assets/images/global/logo-w.svg" alt="logo-w"></h1>
-
-            <ul class="main-menu">
-                <li><a href="#">기술</a>
-                    <ul class="sub-menu">
-                        <li><a href="#">얼굴인식</a></li>
-                        <li><a href="#">OCR</a></li>
-                        <li><a href="#">이상상황 감지</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">솔루션</a>
-                    <ul class="sub-menu">
-                        <li><a href="#">얼굴 본인인증</a></li>
-                        <li><a href="#">신분증 본인인증</a></li>
-                        <li><a href="#">재외국민 여권 신원확인</a></li>
-                        <li><a href="#">바이오정보 분산관리</a></li>
-                        <li><a href="#">ekYC</a></li>
-                        <li><a href="#">출입통제</a></li>
-                        <li><a href="#">산불 조기감지</a></li>
-                        <li><a href="#">전기차 화재 조기감지</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">서비스</a>
-                    <ul class="sub-menu">
-                        <li><a href="#">AI 데이터</a></li>
-                        <li><a href="#">소프트웨어 개발</a></li>
-                        <li><a href="#">데이터바우처</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">사업영역</a>
-                    <ul class="sub-menu">
-                        <li><a href="#">금융</a></li>
-                        <li><a href="#">환경</a></li>
-                        <li><a href="#">정부/공공기관</a></li>
-                        <li><a href="#">공항</a></li>
-                        <li><a href="#">리테일</a></li>
-                        <li><a href="#">통신</a></li>
-                    </ul>
-                </li>
+          </li>
+          <li><a href="./sub3_service.html">서비스</a>
+            <ul class="sub-mo">
+              <li><a href="#">AI 데이터</a></li>
+              <li><a href="#">소프트웨어 개발</a></li>
+              <li><a href="#">데이터바우처</a></li>
             </ul>
-
-            <ul class="side-menu">
-                <li class="side-item"><a href="#">문의하기</a></li>
-                <li class="side-item"><a href="#">데모 신청</a></li>
+          </li>
+          <li><a href="./sub4_business.html">사업영역</a>
+            <ul class="sub-mo">
+              <li><a href="#">금융</a></li>
+              <li><a href="#">환경</a></li>
+              <li><a href="#">정부/공공기관</a></li>
+              <li><a href="#">공항</a></li>
+              <li><a href="#">리테일</a></li>
+              <li><a href="#">통신</a></li>
             </ul>
-        </nav>
-        
-    </header>
+          </li>
+        </ul>
+        <ul class="side-mo">
+          <li><a href="#">문의하기 |</a></li>
+          <li><a href="#">데모 신청</a></li>
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <!---- pc ---->
+    <nav class="pc-menu">
+      <h1 class="logo"><a href="./index.html"><img src="./assets/images/global/logo-w.svg" alt="logo-w"></a></h1>
+
+      <ul class="main-menu">
+        <li><a href="./sub1_technology.html">기술</a>
+          <ul class="sub-menu">
+            <li><a href="#">얼굴인식</a></li>
+            <li><a href="#">OCR</a></li>
+            <li><a href="#">이상상황 감지</a></li>
+          </ul>
+        </li>
+        <li><a href="./sub2_solution.html">솔루션</a>
+          <ul class="sub-menu">
+            <li><a href="#">얼굴 본인인증</a></li>
+            <li><a href="#">신분증 본인인증</a></li>
+            <li><a href="#">재외국민 여권 신원확인</a></li>
+            <li><a href="#">바이오정보 분산관리</a></li>
+            <li><a href="#">ekYC</a></li>
+            <li><a href="#">출입통제</a></li>
+            <li><a href="#">산불 조기감지</a></li>
+            <li><a href="#">전기차 화재 조기감지</a></li>
+          </ul>
+        </li>
+        <li><a href="./sub3_service.html">서비스</a>
+          <ul class="sub-menu">
+            <li><a href="#">AI 데이터</a></li>
+            <li><a href="#">소프트웨어 개발</a></li>
+            <li><a href="#">데이터바우처</a></li>
+          </ul>
+        </li>
+        <li><a href="./sub4_business.html">사업영역</a>
+          <ul class="sub-menu">
+            <li><a href="#">금융</a></li>
+            <li><a href="#">환경</a></li>
+            <li><a href="#">정부/공공기관</a></li>
+            <li><a href="#">공항</a></li>
+            <li><a href="#">리테일</a></li>
+            <li><a href="#">통신</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="side-menu">
+        <li class="side-item"><a href="#">문의하기</a></li>
+        <li class="side-item"><a href="#">데모 신청</a></li>
+      </ul>
+    </nav>
+
+  </header>
 
   <!------ main ------>
   <main>
@@ -265,32 +279,34 @@
           <li><img src="" alt=""></li>
         </ul>
       </div>
-      <ul class="img-menu-wrapper">
-        <li>
-          <h5>금융</h5>
-          <p>안전한 거래와 내부 보안 시스템 강화를 위한 고도화된 금융 보안 통합 솔루션을 제공합니다.</p>
-        </li>
-        <li>
-          <h5>환경</h5>
-          <p>효율적인 산불감지, 문화재 보호, 안전관리를 지원하고 환경과 자원 보호를 위한 최적의 솔루션을 제공합니다.</p>
-        </li>
-        <li>
-          <h5>공공기관</h5>
-          <p>국내 보안의 표준이 되는 기술력으로 시설 내 출입통제 및 물리보안 솔루션을 제공합니다.</p>
-        </li>
-        <li>
-          <h5>공항</h5>
-          <p>교통의 허브인 공항 내 여객 편의성을 높이고 안전과 보안을 보장하는 솔루션을 제공합니다.</p>
-        </li>
-        <li>
-          <h5>리테일</h5>
-          <p>스마트한 매장 관리를 위한 보안 및 결제 시스템부터 고객과 직원을 안전하게 관리하는 도난, 사고 감지 솔루션을 제공합니다.</p>
-        </li>
-        <li>
-          <h5>통신</h5>
-          <p>대포폰, 신분등 도용 등 금융사고 예방을 위한 비대면 본인인증 솔루션을 제공하여 안전한 거래 환경을 제공합니다.</p>
-        </li>
-      </ul>
+      <div class="img-slide">
+        <ul class="img-menu-wrapper">
+          <li>
+            <h5>금융</h5>
+            <p>안전한 거래와 내부 보안 시스템 강화를 위한 고도화된 금융 보안 통합 솔루션을 제공합니다.</p>
+          </li>
+          <li>
+            <h5>환경</h5>
+            <p>효율적인 산불감지, 문화재 보호, 안전관리를 지원하고 환경과 자원 보호를 위한 최적의 솔루션을 제공합니다.</p>
+          </li>
+          <li>
+            <h5>공공기관</h5>
+            <p>국내 보안의 표준이 되는 기술력으로 시설 내 출입통제 및 물리보안 솔루션을 제공합니다.</p>
+          </li>
+          <li>
+            <h5>공항</h5>
+            <p>교통의 허브인 공항 내 여객 편의성을 높이고 안전과 보안을 보장하는 솔루션을 제공합니다.</p>
+          </li>
+          <li>
+            <h5>리테일</h5>
+            <p>스마트한 매장 관리를 위한 보안 및 결제 시스템부터 고객과 직원을 안전하게 관리하는 도난, 사고 감지 솔루션을 제공합니다.</p>
+          </li>
+          <li>
+            <h5>통신</h5>
+            <p>대포폰, 신분등 도용 등 금융사고 예방을 위한 비대면 본인인증 솔루션을 제공하여 안전한 거래 환경을 제공합니다.</p>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <!---- 3-history ---->
@@ -382,36 +398,39 @@
     <!---- 4-press ---->
     <section class="press">
       <h2>보도자료</h2>
-      <ul class="press-slide">
-        <li>
-          <img src="./assets/images/index/04_press/press-1.png" alt="">
-          <p>알체라, 호주에 화재 조기감지 AI 솔루션 '파이어스카우트' 공급 확대<br><span>April 24, 2025</span></p>
-        </li>
-        <li>
-          <img src="./assets/images/index/04_press/press-2.png" alt="">
-          <p>산불과 전기차 화재 감지, 두마리 토끼 AI가 잡는다<br><span>April 22, 2025</span></p>
-        </li>
-        <li>
-          <img src="./assets/images/index/04_press/press-3.png" alt="">
-          <p>알체라, 아파트 지하 주차장에 전기차 화재 감지 AI 솔루션 시연<br><span>March 24, 2025</span></p>
-        </li>
-        <li>
-          <img src="./assets/images/index/04_press/press-4.png" alt="">
-          <p>알체라-주한 슬로베니아 대사관-이니텍, AI 산업 혁신 및 공동 사업 개발 MOU 체결결<br><span>Feb 26, 2025</span></p>
-        </li>
-        <li>
-          <img src="./assets/images/index/04_press/press-5.png" alt="">
-          <p>알체라, AI 기반 근태 관리 솔루션으로 소상공인스마트상점기술보급사업 선정정<br><span>Feb 19, 2025</span></p>
-        </li>
-        <li>
-          <img src="./assets/images/index/04_press/press-6.png" alt="">
-          <p>유증 앞둔 알체라 "세계 5위권 기술력.. 매출 다변화로 올해 새 도약"<br><span>Jan 31, 2025</span></p>
-        </li>
-        <li>
-          <img src="./assets/images/index/04_press/press-7.png" alt="">
-          <p>알체라 '웍플', AI 바우처 최종평가 우수 과제 선정<br><span>Jan 21, 2025</span></p>
-        </li>
-      </ul>
+      <div class="press-slide-wrapper">
+
+        <ul class="press-slide">
+          <li>
+            <img src="./assets/images/index/04_press/press-1.png" alt="">
+            <p>알체라, 호주에 화재 조기감지 AI 솔루션 '파이어스카우트' 공급 확대<br><span>April 24, 2025</span></p>
+          </li>
+          <li>
+            <img src="./assets/images/index/04_press/press-2.png" alt="">
+            <p>산불과 전기차 화재 감지, 두마리 토끼 AI가 잡는다<br><span>April 22, 2025</span></p>
+          </li>
+          <li>
+            <img src="./assets/images/index/04_press/press-3.png" alt="">
+            <p>알체라, 아파트 지하 주차장에 전기차 화재 감지 AI 솔루션 시연<br><span>March 24, 2025</span></p>
+          </li>
+          <li>
+            <img src="./assets/images/index/04_press/press-4.png" alt="">
+            <p>알체라-주한 슬로베니아 대사관-이니텍, AI 산업 혁신 및 공동 사업 개발 MOU 체결결<br><span>Feb 26, 2025</span></p>
+          </li>
+          <li>
+            <img src="./assets/images/index/04_press/press-5.png" alt="">
+            <p>알체라, AI 기반 근태 관리 솔루션으로 소상공인스마트상점기술보급사업 선정정<br><span>Feb 19, 2025</span></p>
+          </li>
+          <li>
+            <img src="./assets/images/index/04_press/press-6.png" alt="">
+            <p>유증 앞둔 알체라 "세계 5위권 기술력.. 매출 다변화로 올해 새 도약"<br><span>Jan 31, 2025</span></p>
+          </li>
+          <li>
+            <img src="./assets/images/index/04_press/press-7.png" alt="">
+            <p>알체라 '웍플', AI 바우처 최종평가 우수 과제 선정<br><span>Jan 21, 2025</span></p>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <!---- location ---->

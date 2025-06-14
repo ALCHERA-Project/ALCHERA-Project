@@ -41,7 +41,7 @@ a {
 .sub1-main .main-title h2 {
   font-size: 30px;
   font-weight: bold;
-  color: #fff;
+  color: var(--color-w);
   text-align: center;
   margin-bottom: 20px;
 }
@@ -49,7 +49,7 @@ a {
 .sub1-main .main-title p {
   font-size: 16px;
   font-weight: semi-bold;
-  color: #fff;
+  color: var(--color-w);
   text-align: center;
   margin: 0px 20px;
 }
@@ -66,7 +66,7 @@ a {
 .sub1-main .main-video {
   width: 100%;
   padding: 50px 20px;
-  background-color: #000038;
+  background-color: var(--color-b);
 }
 
 .sub1-main .main-video video {
@@ -97,7 +97,7 @@ a {
   margin: 25px 20px;
   padding: 0px 30px;
   height: 330px;
-  border: 1px solid #000038;
+  border: 1px solid var(--color-b);
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -108,8 +108,8 @@ a {
 
 .con1 .txt-box h4 {
   font-size: 35px;
-  font-weight: 600;
-  color: #0000A5;
+  font-weight: var(--weight-md);
+  color: var(--color-mb);
   margin: 0;
   margin-bottom: 10px;
   /* margin: 0; */
@@ -117,24 +117,24 @@ a {
 
 .con1 .txt-box p {
   font-size: 14px;
-  font-weight: 600;
-  color: #9E9E9E;
+  font-weight: var(--weight-md);
+  color: var(--color-mg);
   margin: 0;
   margin-bottom: 25px;
 }
 
 .con1 .txt-box h5 {
   font-size: 18px;
-  font-weight: 600;
-  color: #000038;
+  font-weight: var(--weight-md);
+  color: var(--color-b);
   margin: 0;
   margin-bottom: 15px;
 }
 
 .con1 .txt-box h6 {
   font-size: 16px;
-  font-weight: 600;
-  color: #555;
+  font-weight: var(--weight-md);
+  color: var(--color-g);
   margin: 0;
 }
 
@@ -177,15 +177,15 @@ a {
 
 .con2 .txt-wrapper h5 {
   font-size: 18px;
-  font-weight: 600;
-  color: #000038;
+  font-weight: var(--weight-md);
+  color: var(--color-b);
   margin: 30px 0px 10px;
 }
 
 .con2 .txt-wrapper p {
   font-size: 14px;
-  font-weight: 600;
-  color: #555;
+  font-weight: var(--weight-md);
+  color: var(--color-g);
   margin-bottom: 50px;
 }
 
@@ -204,8 +204,8 @@ a {
 
 .con3 .readmore-btn {
   font-size: 16px;
-  font-weight: 600;
-  color: #9E9E9E;
+  font-weight: var(--weight-md);
+  color: var(--color-mg);
   text-decoration: underline;
   text-align: center;
   width: 100%;
@@ -235,7 +235,7 @@ a {
   width: 100%;
   height: 100%;
   border-radius: 15px;
-  filter: brightness(0.8);
+  filter: brightness(0.6);
   transition: filter 0.1s ease-in-out;
 }
 
@@ -248,22 +248,22 @@ a {
   position: absolute;
   bottom: 0;
   padding: 20px;
-  color: #fff;
+  color: var(--color-w);
   z-index: 1;
 }
 
 .con3 .link-wrapper li a h5 {
   font-size: 16px;
-  font-weight: 600;
-  color: #fff;
+  font-weight: var(--weight-md);
+  color: var(--color-w);
   margin: 0;
   margin-bottom: 2px;
 }
 
 .con3 .link-wrapper li a p {
   font-size: 13px;
-  font-weight: 400;
-  color: #fff;
+  font-weight: var(--weight-xs);
+  color: var(--color-w);
   margin: 0;
 }
 
@@ -301,24 +301,24 @@ a {
 
 .con4 .solution-info li h6 {
   font-size: 16px;
-  font-weight: 600;
-  color: #000038;
+  font-weight: var(--weight-md);
+  color: var(--color-b);
   margin: 0;
   margin-bottom: 10px;
 }
 
 .con4 .solution-info li p {
   font-size: 13px;
-  font-weight: 600;
-  color: #555;
+  font-weight: var(--weight-md);
+  color: var(--color-g);
   margin: 0;
   margin-bottom: 13px;
 }
 
 .con4 .solution-info li a {
   font-size: 13px;
-  color: #fff;
-  background-color: #000038;
+  color: var(--color-w);
+  background-color: var(--color-b);
   display: block;
   padding: 5px 15px;
   border-radius: 15px;
