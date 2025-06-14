@@ -147,7 +147,10 @@ body {
 }
 
 /****** 1-tech ******/
-.tech {}
+.tech {
+  display: flex;
+  flex-direction: column;
+}
 
 .tech_ai {
   height: 250px;
@@ -501,6 +504,7 @@ body {
 
 .press .press-slide {
   padding: 20px 0px;
+  padding-right: 30px;
   margin: 0;
   display: flex;
   gap: 10px;

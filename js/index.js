@@ -185,3 +185,69 @@ document.addEventListener("DOMContentLoaded", () => {
     slider.scrollLeft = scrollLeft - walk;
   }, { passive: true });
 });
+
+// tech slide 스크롤 이벤트
+// document.addEventListener('DOMContentLoaded', function () {
+//   gsap.registerPlugin(ScrollTrigger);
+
+//   gsap.to(".tech_ai", {
+//     width: "50%",
+//     scrollTrigger: {
+//       trigger: ".tech",
+//       start: "top top",
+//       end: "+=1000",
+//       pin: true,
+//       scrub: true,
+//       markers: false
+//     }
+//   });
+// });
+
+ScrollTrigger.matchMedia({
+  "(min-width: 1280px)": function () {
+    document.addEventListener('DOMContentLoaded', function () {
+      gsap.registerPlugin(ScrollTrigger);
+
+      const techAi = document.querySelector(".tech_ai");
+      const techScroll = document.querySelector(".tech-scroll");
+
+      if (!techAi || !techScroll) return;
+
+      // 1. tech_ai 너비 줄이기
+      gsap.to(techAi, {
+        width: "50%",
+        scrollTrigger: {
+          trigger: ".tech",
+          start: "top top",
+          end: "+=600",
+          scrub: true
+        }
+      });
+
+      // 2. tech-scroll 등장
+      gsap.to(".tech-scroll", {
+        opacity: 1,
+        y: 0,
+        scrollTrigger: {
+          trigger: ".tech-scroll",
+          start: "top bottom",
+          end: "top center",
+          scrub: true
+        }
+      });
+
+      // 3. 고정 해제 지점 감지 → .tech_ai에 클래스 toggle
+      ScrollTrigger.create({
+        trigger: ".tech-scroll",
+        start: "bottom bottom", // .tech-scroll의 하단이 뷰포트 하단에 닿을 때
+        onEnter: () => {
+          techAi.classList.add("released");
+        },
+        onLeaveBack: () => {
+          techAi.classList.remove("released");
+        }
+      });
+    });
+  }
+});
+
