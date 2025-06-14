@@ -508,7 +508,7 @@ body {
   border-top: 1px solid var(--color-g);
   border-bottom: 1px solid var(--color-g);
   margin-bottom: 80px;
-  overflow-x: scroll;
+  overflow-x: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
   cursor: grab;
@@ -525,6 +525,7 @@ body {
   object-fit: cover;
   border-radius: 15px;
   margin-bottom: 10px;
+  pointer-events: none;
 }
 
 .press .press-slide li p {
