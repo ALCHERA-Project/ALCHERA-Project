@@ -51,16 +51,24 @@
 - about, 01_tech(가로 스크롤), 02_solution(6분할 사진)
 - index_js.html >> 여기에 작성
 
+# 250616
+### 서희
+- index - 01_tech 우측 콘텐츠 스크롤 구현
+
 # 250614
 ### 은혜
 - index - solution 이미지 아코디언 수정 완료
+### 서희
+- index - 01_tech 가로 스크롤 구현
 
 # 250613
 ### 서희
 - global.html, index.html, sub1.html a태그 연결 및 img alt 작성
 - index, sub1 css font-weight, color, background-color globalVar 적용
 - sub1 js 작성
-- index js(press 슬라이드, solution 메뉴 모바일&PC) 작성했는데 뭔가 잘못됨..
+- index-press 슬라이드(모바일, PC) 구현
+- index-solution 이미지 아코디언(모바일, PC) 구현
+- index-video 텍스트 효과 구현현
 
 # 250604
 ### 서희

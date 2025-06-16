@@ -105,30 +105,25 @@
 
   /****** 1-tech ******/
   .tech {
-    /* display: flex; */
-    /* flex-direction: row; */
     position: relative;
-    /* display: block; */
-    /* height: auto; */
-    /* min-height: 200vh; */
-    height: 200vh;
+    min-height: 325vh;
+  }
+
+  .tech-wrapper {
+    flex: 1;
+    position: relative;
   }
 
   .tech_ai {
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
     width: 100%;
     height: 100vh;
-    transition: width 0.1s ease;
     padding: 2rem;
-    box-sizing: border-box;
     background: url(../assets/images/index/01_tech/tehc_ai/tech_ai.jpg) no-repeat cover 50% 50%;
     z-index: 2;
-  }
-
-  .tech_ai.released {
-    position: static;
+    box-sizing: border-box;
+    transition: width 0.1s ease;
   }
 
   .tech-scroll {
@@ -141,6 +136,7 @@
     box-sizing: border-box;
     opacity: 0;
     z-index: 3;
+    transition: opacity 0.5s ease;
   }
 
   .tech .tech_ai h3 {
@@ -153,11 +149,6 @@
     font-size: 20px;
     margin: 0;
   }
-
-  /* .tech .tech-scroll {
-    width: 50vw;
-    margin: 65px;
-  } */
 
   .tech .tech-scroll .img-list {
     list-style: none;
