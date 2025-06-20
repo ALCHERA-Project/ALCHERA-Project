@@ -190,35 +190,86 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener('DOMContentLoaded', function () {
   gsap.registerPlugin(ScrollTrigger);
 
-  const techAi = document.querySelector('.tech_ai');
-  const techScroll = document.querySelector('.tech-scroll');
+  // ✅ PC 환경에서만 작동 (1280px 이상)
+  ScrollTrigger.matchMedia({
+    "(min-width: 1280px)": function () {
+      const techAi = document.querySelector('.tech_ai');
+      const techScroll = document.querySelector('.tech-scroll');
 
-  // 너비 줄이기
-  gsap.to(techAi, {
-    width: "50%",
-    scrollTrigger: {
-      trigger: techAi,
-      start: "top top",
-      end: "+=400",
-      scrub: true
-    }
-  });
+      if (techAi && techScroll) {
+        // 너비 줄이기
+        gsap.to(techAi, {
+          width: "50%",
+          scrollTrigger: {
+            trigger: techAi,
+            start: "top top",
+            end: "+=400",
+            scrub: true
+          }
+        });
 
-  // 오른쪽 콘텐츠 등장
-  gsap.to(techScroll, {
-    opacity: 1,
-    y: 0,
-    scrollTrigger: {
-      trigger: techScroll,
-      start: "top bottom",
-      end: "top center",
-      scrub: true
+        // 오른쪽 콘텐츠 등장
+        gsap.to(techScroll, {
+          opacity: 1,
+          y: 0,
+          scrollTrigger: {
+            trigger: techScroll,
+            start: "top bottom",
+            end: "top center",
+            scrub: true
+          }
+        });
+      }
     }
   });
 });
 
 
 
+// photoDump
+document.addEventListener('DOMContentLoaded', function () {
+  gsap.registerPlugin(ScrollTrigger);
 
+  const title = document.querySelector('.photoDump-title');
 
+  // 타이틀 고정/해제 제어
+  ScrollTrigger.create({
+    trigger: '.photoDump',
+    start: 'top 50%',
+    endTrigger: '.photoDump-wrapper',
+    end: 'bottom bottom',
+    onEnter: () => {
+      title.classList.add('fixed');
+      title.classList.remove('released');
+    },
+    onLeave: () => {
+      title.classList.remove('fixed');
+      title.classList.add('released');
+    },
+    onEnterBack: () => {
+      title.classList.add('fixed');
+      title.classList.remove('released');
+    },
+    onLeaveBack: () => {
+      title.classList.remove('fixed');
+      title.classList.remove('released');
+    }
+  });
 
+  // 이미지 등장 (스크롤 따라 올라오는 느낌)
+  gsap.utils.toArray('.photoDump-img').forEach((img) => {
+    gsap.fromTo(img,
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        scrollTrigger: {
+          trigger: img,
+          start: 'top 80%',
+          end: 'top 50%',
+          scrub: true
+        }
+      }
+    );
+  });
+});

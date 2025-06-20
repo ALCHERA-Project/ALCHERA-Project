@@ -57,3 +57,13 @@ document.addEventListener("DOMContentLoaded", function () {
     lastScrollY = currentScrollY;
   });
 });
+
+// footer family-site
+document.addEventListener('DOMContentLoaded', function () {
+  const familySite = document.querySelector('.family-site');
+  const activeItem = familySite.querySelector('.active');
+
+  activeItem.addEventListener('click', function () {
+    familySite.classList.toggle('open');
+  });
+});

@@ -51,6 +51,13 @@
 - about, 01_tech(가로 스크롤), 02_solution(6분할 사진)
 - index_js.html >> 여기에 작성
 
+# 250620
+### 서희
+- footer family-site 드롭다운 메뉴 구현
+- 수정된 footer sub 페이지, index에 일괄 적용
+- index, sub1, global html&css 안 쓰는 코드 정리, W3C 유효성 검사 완료
+- index photodump 이벤트 구현 중,, 높이값 때문인지 콘텐츠 겹쳐 보이는 문제 있음
+
 # 250616
 ### 서희
 - index - 01_tech 우측 콘텐츠 스크롤 구현
