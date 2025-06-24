@@ -269,29 +269,24 @@ body {
 
 /****** 2-solution ******/
 .solution {
-  /* height: 300vh; */
-}
-
-.photoDump {
+  width: 100%;
+  height: 300vh;
   position: relative;
-  height: 160vh;
-  background-color: var(--color-w);
-  padding: 0;
-  z-index: 1;
 }
 
-.photoDump-title {
-  margin: 0px;
-  padding: 0px 20px;
-  text-align: center;
-  z-index: 2;
+.solution .photoDump-title {
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  position: relative;
 }
 
-.solution .photoDump .photoDump-title h3 {
+
+.solution .photoDump-title h3 {
   margin: 0;
   font-size: 30px;
   font-weight: var(--weight-lg);
@@ -299,7 +294,7 @@ body {
   margin-bottom: 15px;
 }
 
-.solution .photoDump .photoDump-title p {
+.solution .photoDump-title p {
   margin: 0;
   font-size: 16px;
   font-weight: var(--weight-xs);
@@ -307,45 +302,73 @@ body {
 }
 
 .photoDump-title.fixed {
-  width: 100%;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.photoDump-title.released {
-  position: relative;
-  transform: none;
+  top: 0;
+  left: 0;
 }
 
 .photoDump-wrapper {
-  /* margin-top: 200vh; */
+  width: 100%;
+  height: 300vh;
+  position: absolute;
+  top: 130vh;
+  z-index: -99;
 }
 
-.photoDump-img {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  margin-bottom: 3rem;
-  text-align: center;
+.photoDump {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
-.photoDump-img img {
-  width: 50%;
-  max-width: 800px;
-  display: block;
-  margin: 0 auto;
+.photoDump li {
+  position: absolute;
+}
+
+.photoDump li img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+
+.photoDump li:nth-of-type(1) {
+  width: 45%;
+  top: 0%;
+  left: 12%;
+}
+
+.photoDump li:nth-of-type(2) {
+  width: 30%;
+  top: 15%;
+  right: 7%;
+}
+
+.photoDump li:nth-of-type(3) {
+  width: 40%;
+  top: 32%;
+  left: 6%;
+}
+
+.photoDump li:nth-of-type(4) {
+  width: 55%;
+  top: 45%;
+  right: 8%;
+}
+
+.photoDump li:nth-of-type(5) {
+  width: 35%;
+  top: 65%;
+  left: 13%;
 }
 
 /* 아코디언 메뉴 */
-.solution .img-slide {
+.img-slide {
   width: 100%;
   overflow: hidden;
   cursor: grab;
 }
 
-.solution .img-menu-wrapper {
+.img-menu-wrapper {
   width: 2090px;
   padding: 0;
   margin: 0;
@@ -362,7 +385,7 @@ body {
   user-select: none;
 }
 
-.solution .img-menu-wrapper li {
+.img-menu-wrapper li {
   width: 340px;
   height: 310px;
   padding: 30px;
@@ -372,46 +395,46 @@ body {
   justify-content: space-between;
 }
 
-.solution .img-menu-wrapper li h5 {
+.img-menu-wrapper li h5 {
   font-size: 20px;
   font-weight: var(--weight-md);
   color: var(--color-w);
   margin: 0;
 }
 
-.solution .img-menu-wrapper li p {
+.img-menu-wrapper li p {
   font-size: 14px;
   font-weight: var(--weight-xs);
   color: var(--color-w);
   margin: 0;
 }
 
-.solution .img-menu-wrapper li:nth-child(1) {
+.img-menu-wrapper li:nth-child(1) {
   background: url(../assets/images/index/02_solution/finance/finance.jpg) no-repeat center;
   background-size: cover;
 }
 
-.solution .img-menu-wrapper li:nth-child(2) {
+.img-menu-wrapper li:nth-child(2) {
   background: url(../assets/images/index/02_solution/environment/environment.jpg) no-repeat center;
   background-size: cover;
 }
 
-.solution .img-menu-wrapper li:nth-child(3) {
+.img-menu-wrapper li:nth-child(3) {
   background: url(../assets/images/index/02_solution/governance/gouvernance.jpg) no-repeat center;
   background-size: cover;
 }
 
-.solution .img-menu-wrapper li:nth-child(4) {
+.img-menu-wrapper li:nth-child(4) {
   background: url(../assets/images/index/02_solution/airport/airport.jpg) no-repeat center;
   background-size: cover;
 }
 
-.solution .img-menu-wrapper li:nth-child(5) {
+.img-menu-wrapper li:nth-child(5) {
   background: url(../assets/images/index/02_solution/retail/retail.jpg) no-repeat center;
   background-size: cover;
 }
 
-.solution .img-menu-wrapper li:nth-child(6) {
+.img-menu-wrapper li:nth-child(6) {
   background: url(../assets/images/index/02_solution/network/network.jpg) no-repeat center;
   background-size: cover;
 }

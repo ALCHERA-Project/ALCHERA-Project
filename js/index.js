@@ -1,4 +1,3 @@
-
 // about-video 영역 text 이벤트
 gsap.registerPlugin(ScrollTrigger);
 
@@ -186,6 +185,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }, { passive: true });
 });
 
+
 // tech slide 스크롤 이벤트
 document.addEventListener('DOMContentLoaded', function () {
   gsap.registerPlugin(ScrollTrigger);
@@ -225,51 +225,29 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
 // photoDump
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger);
 
-  const title = document.querySelector('.photoDump-title');
-
-  // 타이틀 고정/해제 제어
   ScrollTrigger.create({
-    trigger: '.photoDump',
-    start: 'top 50%',
-    endTrigger: '.photoDump-wrapper',
-    end: 'bottom bottom',
-    onEnter: () => {
-      title.classList.add('fixed');
-      title.classList.remove('released');
-    },
-    onLeave: () => {
-      title.classList.remove('fixed');
-      title.classList.add('released');
-    },
-    onEnterBack: () => {
-      title.classList.add('fixed');
-      title.classList.remove('released');
-    },
-    onLeaveBack: () => {
-      title.classList.remove('fixed');
-      title.classList.remove('released');
-    }
+    trigger: ".solution",
+    start: "top top",
+    endTrigger: ".img-slide",
+    end: "top 100%", 
+    pin: ".photoDump-title",
+    pinSpacing: true,
+    scrub: true
   });
 
-  // 이미지 등장 (스크롤 따라 올라오는 느낌)
-  gsap.utils.toArray('.photoDump-img').forEach((img) => {
-    gsap.fromTo(img,
-      { opacity: 0, y: 50 },
-      {
-        opacity: 1,
-        y: 0,
-        scrollTrigger: {
-          trigger: img,
-          start: 'top 80%',
-          end: 'top 50%',
-          scrub: true
-        }
-      }
-    );
+  gsap.to(".photoDump-wrapper", {
+    yPercent: -50, 
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".solution",
+      start: "top top",
+      endTrigger: ".img-slide",
+      end: "top 80%",
+      scrub: true
+    }
   });
 });
