@@ -1,27 +1,60 @@
-// about-video 영역 text 이벤트
-// gsap.registerPlugin(ScrollTrigger);
+// 부드러운 스크롤 전체 적용
+const lenis = new Lenis({
+  duration: 1,
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  smooth: true
+});
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
 
-// document.addEventListener("DOMContentLoaded", () => {
-//   const listItems = gsap.utils.toArray('.about-video ul li');
-//   if (!listItems.length) return;
+requestAnimationFrame(raf);
 
-//   gsap.set(listItems, { opacity: 0, y: 20 });
+// loading
+  window.addEventListener('load', () => {
+    gsap.to("#loading-overlay", {
+      y: "-100%",
+      duration: 1.3,
+      ease: "power2.inOut"
+    });
+  });
 
-//   listItems.forEach((li) => {
-//     gsap.to(li, {
-//       opacity: 1,
-//       y: 0,
-//       duration: 0.5,
-//       ease: "power2.out",
-//       scrollTrigger: {
-//         trigger: li,
-//         start: "top 50%",
-//         toggleActions: "play none none reverse",
-//         markers: false,
-//       }
-//     });
-//   });
-// });
+
+// intro - about 스크롤 
+gsap.registerPlugin(ScrollTrigger);
+
+// 텍스트 서서히 사라지기
+gsap.to(".intro-title", {
+  opacity: 0,
+  // scale: 1.2,
+  scrollTrigger: {
+    trigger: ".intro",
+    start: "top top",
+    end: "bottom top",
+    scrub: true
+  }
+});
+
+// 배경 비디오 어둡게 만들고 싶다면 추가
+gsap.to(".intro video", {
+  filter: "brightness(0)",
+  scrollTrigger: {
+    trigger: ".about",
+    start: "top 70%",  // about이 보이기 시작할 때
+    end: "top top",    // 화면의 중간까지 왔을 때
+    scrub: true
+  }
+});
+
+// 🔹 1. intro 섹션을 pin (고정)
+ScrollTrigger.create({
+  trigger: ".intro",
+  start: "top top",
+  end: "bottom top", // intro의 끝이 뷰포트 상단에 닿을 때 고정 해제
+  pin: true,
+  pinSpacing: false // 고정된 동안 아래 콘텐츠 밀리지 않게
+});
 
 
 

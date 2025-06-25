@@ -7,14 +7,45 @@
     width: 100%;
   }
 
-
-  /****** intro ******/
-  .intro {
-    height: 85vh;
+  #loading-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  z-index: 9999;
   }
 
-  .intro video {}
+  /****** intro ******/
+.intro {
+  position: relative;
+  height: 100vh; /* 고정 영역 */
+  overflow: hidden;
+}
 
+.intro video {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  /* height: 100vh; */
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+  filter: brightness(1);
+  transform-origin: center center;
+}
+
+  .intro .intro-title {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  transition: opacity 0.5s ease;
+  }
   .intro .intro-title h3 {
     margin: 0px;
     font-size: 60px;
@@ -28,9 +59,12 @@
 
   /****** about ******/
   .about {
+    position: relative;
     width: 100%;
     margin: 0;
     padding: 0;
+    background-color: var(--color-w);
+    z-index: 9999;
   }
 
   .about .about-txt {
@@ -273,7 +307,6 @@
     gap: 0;
   }
 
-<<<<<<< HEAD
   .solution .img-menu-wrapper li {
     position: relative;
     flex: 1;
@@ -288,22 +321,6 @@
     justify-content: flex-end;
     color: #fff;
   }
-=======
-.solution .img-menu-wrapper li {
-  position: relative;
-  flex: 1;
-  height: 560px;
-  overflow: hidden;
-  box-sizing: border-box;
-  border-radius: 0;
-  cursor: pointer;
-  transition: flex 0.5s ease-in-out;
-
-  display: flex;
-  flex-direction: column;
-  color: #fff;
-}
->>>>>>> 1e63313e2e2ca077db36ab1f04c0c341b8be87a4
 
   .solution .img-menu-wrapper li img {
     position: absolute;
