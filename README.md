@@ -34,6 +34,39 @@
 - solution, tech(가로스크롤), press(가로 슬라이드) 작업
 
 
+# 250625
+### 은혜
+- index _js 완성 : intro ~ about
+- global 완성
+
+
+# 250620
+### 서희
+- footer family-site 드롭다운 메뉴 구현
+- 수정된 footer sub 페이지, index에 일괄 적용
+- index, sub1, global html&css 안 쓰는 코드 정리, W3C 유효성 검사 완료
+- index photodump 이벤트 구현 중,, 높이값 때문인지 콘텐츠 겹쳐 보이는 문제 있음
+
+# 250616
+### 서희
+- index - 01_tech 우측 콘텐츠 스크롤 구현
+
+# 250614
+### 은혜
+- index - solution 이미지 아코디언 수정 완료
+
+### 서희
+- index - 01_tech 가로 스크롤 구현
+
+# 250613
+### 서희
+- global.html, index.html, sub1.html a태그 연결 및 img alt 작성
+- index, sub1 css font-weight, color, background-color globalVar 적용
+- sub1 js 작성
+- index-press 슬라이드(모바일, PC) 구현
+- index-solution 이미지 아코디언(모바일, PC) 구현
+- index-video 텍스트 효과 구현현
+
 # 250605 9차 미팅
 ### 해올 것
 1) css
@@ -50,32 +83,6 @@
 2) js 3가지 먼저 구현!!
 - about, 01_tech(가로 스크롤), 02_solution(6분할 사진)
 - index_js.html >> 여기에 작성
-
-# 250620
-### 서희
-- footer family-site 드롭다운 메뉴 구현
-- 수정된 footer sub 페이지, index에 일괄 적용
-- index, sub1, global html&css 안 쓰는 코드 정리, W3C 유효성 검사 완료
-- index photodump 이벤트 구현 중,, 높이값 때문인지 콘텐츠 겹쳐 보이는 문제 있음
-
-# 250616
-### 서희
-- index - 01_tech 우측 콘텐츠 스크롤 구현
-
-# 250614
-### 은혜
-- index - solution 이미지 아코디언 수정 완료
-### 서희
-- index - 01_tech 가로 스크롤 구현
-
-# 250613
-### 서희
-- global.html, index.html, sub1.html a태그 연결 및 img alt 작성
-- index, sub1 css font-weight, color, background-color globalVar 적용
-- sub1 js 작성
-- index-press 슬라이드(모바일, PC) 구현
-- index-solution 이미지 아코디언(모바일, PC) 구현
-- index-video 텍스트 효과 구현현
 
 # 250604
 ### 서희
