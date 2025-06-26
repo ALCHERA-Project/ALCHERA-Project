@@ -140,14 +140,14 @@
 
   /* 🎥 영상 */
   .about .about-video video {
-    /* position: absolute; */
-    top: 0;
-    left: 0;
     width: 100%;
-    /* height: 120%; */
+    height: 100%;
+
+    /* position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%); */
     object-fit: contain;
-    /* object-position: center top; */
-    transform: translateY(0);
     z-index: 0;
   }
 
@@ -156,8 +156,12 @@
     position: relative;
     z-index: 1;
     text-align: center;
+    /* height: 100%; */
 
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   /* 📌 텍스트 항목 */
@@ -169,7 +173,7 @@
   .about .about-video ul li h4,
   .about .about-video ul li p {
     opacity: 1;
-    transform: translateY(30px);
+    /* transform: translateY(-100px); */
   }
 
   /* 숫자 */
@@ -184,13 +188,6 @@
     font-size: 24px;
     margin: 0;
     color: var(--color-w);
-  }
-
-  /* 🎬 비디오 아래 검정 배경 */
-  .about-video-bg {
-    width: 100%;
-    height: 150vh;
-    background-color: var(--color-b);
   }
 
 

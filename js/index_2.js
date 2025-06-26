@@ -59,11 +59,11 @@ ScrollTrigger.create({
 
 
 // about-video
-  gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
-  // 🎥 영상 패럴럭스 (선택사항)
+  // 🎥 비디오 천천히 위로 이동 (패럴럭스 느낌)
   gsap.to(".about-video video", {
-    y: 100,
+    y: -500, // 전체 스크롤 구간 동안 150px 위로 이동
     ease: "none",
     scrollTrigger: {
       trigger: ".about-video",
@@ -73,24 +73,48 @@ ScrollTrigger.create({
     }
   });
 
-  // ✨ 텍스트 stagger 등장 + 사라짐
-  const tl = gsap.timeline({
+  // ✨ 텍스트 리스트 등장 애니메이션
+// 1. 텍스트를 글자 단위로 쪼개서 <span>으로 감싸기
+function splitTextToSpans(selector) {
+  document.querySelectorAll(selector).forEach((el) => {
+    const text = el.textContent;
+    el.innerHTML = "";
+
+    text.split("").forEach((char) => {
+      const span = document.createElement("span");
+      span.textContent = char;
+      span.style.display = "inline-block";
+      span.style.opacity = 0;
+      el.appendChild(span);
+    });
+  });
+}
+
+// 적용: h4, p에 한글자씩 span 씌우기
+splitTextToSpans(".about-video ul li h4");
+splitTextToSpans(".about-video ul li p");
+
+// 2. 각 li 단위로 글자 애니메이션 적용
+document.querySelectorAll(".about-video ul li").forEach((li) => {
+  const spans = li.querySelectorAll("span");
+
+  gsap.to(spans, {
+    opacity: 1,
+    stagger: 0.03, // 작을수록 빠르게
+    ease: "none",  // 자연스럽게 등장만 (움직임 없음)
     scrollTrigger: {
-      trigger: ".about-video",
-      start: "top 40%",
-      end: "bottom 20%",
-      toggleActions: "play reverse play reverse",
-      // markers: true // 디버깅 원할 때 켜기
+      trigger: li,
+      start: "top 80%",
+      end: "top 60%",
+      scrub: true
     }
   });
+});
 
-  tl.from(".about-video ul li h4, .about-video ul li p", {
-    opacity: 0,
-    y: 30,
-    stagger: 0.2,
-    duration: 0.7,
-    ease: "power2.out"
-  });
+
+
+
+
 
 
 // 2-solution 모바일 메뉴
