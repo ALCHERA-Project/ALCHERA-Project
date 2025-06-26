@@ -33,12 +33,15 @@
 1) index 작업
 - solution, tech(가로스크롤), press(가로 슬라이드) 작업
 
+# 250626
+### 은혜
+- index _js 완성 : 지구본 영상
+- global 수정 (높이, 폰트크기)
 
 # 250625
 ### 은혜
 - index _js 완성 : intro ~ about
-- global 완성
-
+- global 수정
 
 # 250620
 ### 서희
