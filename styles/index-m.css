@@ -292,6 +292,7 @@ body {
   font-weight: var(--weight-lg);
   color: var(--color-b);
   margin-bottom: 15px;
+  padding: 0px 20px;
 }
 
 .solution .photoDump-title p {
@@ -299,6 +300,7 @@ body {
   font-size: 16px;
   font-weight: var(--weight-xs);
   color: var(--color-b);
+  padding: 0px 20px;
 }
 
 .photoDump-title.fixed {
@@ -323,6 +325,7 @@ body {
 
 .photoDump li {
   position: absolute;
+  width: 50%;
 }
 
 .photoDump li img {
@@ -332,31 +335,26 @@ body {
 
 
 .photoDump li:nth-of-type(1) {
-  width: 45%;
   top: 0%;
   left: 12%;
 }
 
 .photoDump li:nth-of-type(2) {
-  width: 30%;
-  top: 15%;
+  top: 20%;
   right: 7%;
 }
 
 .photoDump li:nth-of-type(3) {
-  width: 40%;
-  top: 32%;
+  top: 30%;
   left: 6%;
 }
 
 .photoDump li:nth-of-type(4) {
-  width: 55%;
   top: 45%;
   right: 8%;
 }
 
 .photoDump li:nth-of-type(5) {
-  width: 35%;
   top: 65%;
   left: 13%;
 }
@@ -393,6 +391,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
 
 .img-menu-wrapper li h5 {
@@ -400,6 +399,9 @@ body {
   font-weight: var(--weight-md);
   color: var(--color-w);
   margin: 0;
+  position: absolute;
+  top: 30px;
+  left: 30px;
 }
 
 .img-menu-wrapper li p {
