@@ -1,25 +1,113 @@
-// about-video 영역 text 이벤트
+// 부드러운 스크롤 전체 적용
+const lenis = new Lenis({
+  duration: 1,
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  smooth: true
+});
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+
+
+// loading
+  window.addEventListener('load', () => {
+    gsap.to("#loading-overlay", {
+      y: "-100%",
+      duration: 1.3,
+      ease: "power2.inOut"
+    });
+  });
+
+// intro - about 스크롤 
 gsap.registerPlugin(ScrollTrigger);
 
-document.addEventListener("DOMContentLoaded", () => {
-  const listItems = gsap.utils.toArray('.about-video ul li');
-  if (!listItems.length) return;
+// 텍스트 서서히 사라지기
+gsap.to(".intro-title", {
+  opacity: 0,
+  // scale: 1.2,
+  scrollTrigger: {
+    trigger: ".intro",
+    start: "top top",
+    end: "bottom top",
+    scrub: true
+  }
+});
 
-  gsap.set(listItems, { opacity: 0, y: 20 });
+// 배경 비디오 어둡게 만들고 싶다면 추가
+gsap.to(".intro video", {
+  filter: "brightness(0)",
+  scrollTrigger: {
+    trigger: ".about",
+    start: "top 70%",  // about이 보이기 시작할 때
+    end: "top top",    // 화면의 중간까지 왔을 때
+    scrub: true
+  }
+});
 
-  listItems.forEach((li) => {
-    gsap.to(li, {
-      opacity: 1,
-      y: 0,
-      duration: 0.5,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: li,
-        start: "top 50%",   // li가 화면 아래 90%에 닿을 때 시작
-        toggleActions: "play none none reverse",
-        markers: false,
-      }
+// 🔹 1. intro 섹션을 pin (고정)
+ScrollTrigger.create({
+  trigger: ".intro",
+  start: "top top",
+  end: "bottom top", // intro의 끝이 뷰포트 상단에 닿을 때 고정 해제
+  pin: true,
+  pinSpacing: false // 고정된 동안 아래 콘텐츠 밀리지 않게
+});
+
+
+
+// about-video
+gsap.registerPlugin(ScrollTrigger);
+
+  // 🎥 비디오 천천히 위로 이동 (패럴럭스 느낌)
+  gsap.to(".about-video video", {
+    y: -500, // 전체 스크롤 구간 동안 150px 위로 이동
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".about-video",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: true
+    }
+  });
+
+  // ✨ 텍스트 리스트 등장 애니메이션
+// 1. 텍스트를 글자 단위로 쪼개서 <span>으로 감싸기
+function splitTextToSpans(selector) {
+  document.querySelectorAll(selector).forEach((el) => {
+    const text = el.textContent;
+    el.innerHTML = "";
+
+    text.split("").forEach((char) => {
+      const span = document.createElement("span");
+      span.textContent = char;
+      span.style.display = "inline-block";
+      span.style.opacity = 0;
+      el.appendChild(span);
     });
+  });
+}
+
+// 적용: h4, p에 한글자씩 span 씌우기
+splitTextToSpans(".about-video ul li h4");
+splitTextToSpans(".about-video ul li p");
+
+// 2. 각 li 단위로 글자 애니메이션 적용
+document.querySelectorAll(".about-video ul li").forEach((li) => {
+  const spans = li.querySelectorAll("span");
+
+  gsap.to(spans, {
+    opacity: 1,
+    stagger: 0.03, // 작을수록 빠르게
+    ease: "none",  // 자연스럽게 등장만 (움직임 없음)
+    scrollTrigger: {
+      trigger: li,
+      start: "top 80%",
+      end: "top 60%",
+      scrub: true
+    }
   });
 });
 
@@ -80,44 +168,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // 2-solution PC 메뉴
-document.addEventListener("DOMContentLoaded", () => {
-  const ul = document.querySelector('.img-menu-wrapper');
-  if (!ul) {
-    console.error('ul.img-menu-wrapper가 존재하지 않습니다.');
-    return;
-  }
-
-  const lis = ul.querySelectorAll('li');
-  const totalItems = lis.length;
-
-  function onMouseEnter(e) {
-    if (window.innerWidth < 1280) return; // 1280px 미만일 땐 작동 안 함
-    const li = e.currentTarget;
-    lis.forEach((item) => {
-      if (item === li) {
-        item.style.flex = '1.8';
-      } else {
-        item.style.flex = (4 / (totalItems - 1)).toString();
-      }
+document.addEventListener('DOMContentLoaded', () => {
+  const listItems = document.querySelectorAll('.img-menu-wrapper li');
+  listItems.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      listItems.forEach(li => li.classList.remove('active'));
+      item.classList.add('active');
     });
-  }
-
-  function onMouseLeave() {
-    lis.forEach((item) => {
-      item.style.flex = '1';
+    item.addEventListener('mouseleave', () => {
+      item.classList.remove('active');
     });
-  }
-
-  lis.forEach((li) => {
-    li.addEventListener('mouseenter', onMouseEnter);
-    li.addEventListener('mouseleave', onMouseLeave);
-  });
-
-  window.addEventListener('resize', () => {
-    // 윈도우가 작아지면 flex 초기화
-    if (window.innerWidth < 1280) {
-      lis.forEach(li => li.style.flex = '1');
-    }
   });
 });
 

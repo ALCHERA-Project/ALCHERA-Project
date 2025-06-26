@@ -47,17 +47,21 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <!-- ScrollTrigger Plugin -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis"></script>
+
 
   <!-- jQuery -->
   <script src="./js/jquery-3.7.1.min.js"></script>
   <script src="./js/jquery-ui.min.js"></script>
 
   <!-- page 별 사용되는 js -->
-  <script src="./js/index.js"></script>
+  <script src="./js/index.js" defer></script>
   <script src="./js/global.js"></script>
 </head>
 
 <body>
+  <!------ loading ------>
+  <div id="loading-overlay"></div>
 
   <!------ fix-icon ------->
   <!---- chat ---->
@@ -295,34 +299,43 @@
       </div>
     </section>
 
+    <!-- 수정 -->
     <!---- img-slide ---->
-    <section class="img-slide">
-      <ul class="img-menu-wrapper">
-        <li>
-          <h5>금융</h5>
-          <p>안전한 거래와 내부 보안 시스템 강화를 위한 고도화된 금융 보안 통합 솔루션을 제공합니다.</p>
-        </li>
-        <li>
-          <h5>환경</h5>
-          <p>효율적인 산불감지, 문화재 보호, 안전관리를 지원하고 환경과 자원 보호를 위한 최적의 솔루션을 제공합니다.</p>
-        </li>
-        <li>
-          <h5>공공기관</h5>
-          <p>국내 보안의 표준이 되는 기술력으로 시설 내 출입통제 및 물리보안 솔루션을 제공합니다.</p>
-        </li>
-        <li>
-          <h5>공항</h5>
-          <p>교통의 허브인 공항 내 여객 편의성을 높이고 안전과 보안을 보장하는 솔루션을 제공합니다.</p>
-        </li>
-        <li>
-          <h5>리테일</h5>
-          <p>스마트한 매장 관리를 위한 보안 및 결제 시스템부터 고객과 직원을 안전하게 관리하는 도난, 사고 감지 솔루션을 제공합니다.</p>
-        </li>
-        <li>
-          <h5>통신</h5>
-          <p>대포폰, 신분등 도용 등 금융사고 예방을 위한 비대면 본인인증 솔루션을 제공하여 안전한 거래 환경을 제공합니다.</p>
-        </li>
-      </ul>
+      <!-- 이미지 가로 확장 슬라이드 -->
+      <section class="img-slide">
+        <ul class="img-menu-wrapper">
+          <li class="active">
+            <div class="overlay"></div>
+            <h5>금융</h5>
+            <p>안전한 거래와 내부 보안 시스템 강화를 위한 고도화된 금융 보안 통합 솔루션을 제공합니다.</p>
+          </li>
+          <li>
+            <div class="overlay"></div>
+            <h5>환경</h5>
+            <p>효율적인 산불감지, 문화재 보호, 안전관리를 지원하고 환경과 자원 보호를 위한 최적의 솔루션을 제공합니다.</p>
+          </li>
+          <li>
+            <div class="overlay"></div>
+            <h5>공공기관</h5>
+            <p>국내 보안의 표준이 되는 기술력으로 시설 내 출입통제 및 물리보안 솔루션을 제공합니다.</p>
+          </li>
+          <li>
+            <div class="overlay"></div>
+            <h5>공항</h5>
+            <p>교통의 허브인 공항 내 여객 편의성을 높이고 안전과 보안을 보장하는 솔루션을 제공합니다.</p>
+          </li>
+          <li>
+            <div class="overlay"></div>
+            <h5>리테일</h5>
+            <p>스마트한 매장 관리를 위한 보안 및 결제 시스템부터 고객과 직원을 안전하게 관리하는 도난, 사고 감지 솔루션을 제공합니다.</p>
+          </li>
+          <li>
+            <div class="overlay"></div>
+            <h5>통신</h5>
+            <p>대포폰, 신분등 도용 등 금융사고 예방을 위한 비대면 본인인증 솔루션을 제공하여 안전한 거래 환경을 제공합니다.</p>
+          </li>
+        </ul>
+
     </section>
 
     <!---- 3-history ---->

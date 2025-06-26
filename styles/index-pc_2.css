@@ -304,12 +304,12 @@
 
 
 
-  /****** 2-solution ******/
-  .solution {
+  /****** 2-img-slide ******/
+  .img-slide {
     width: 100vw;
   }
 
-  .solution .img-menu-wrapper {
+  .img-slide .img-menu-wrapper {
     width: 100%;
     display: flex;
     padding: 0;
@@ -317,7 +317,7 @@
     gap: 0;
   }
 
-  .solution .img-menu-wrapper li {
+  .img-slide .img-menu-wrapper li {
     position: relative;
     flex: 1;
     height: 800px;
@@ -332,7 +332,7 @@
     color: var(--color-w);
   }
 
-  .solution .img-menu-wrapper li img {
+  .img-slide .img-menu-wrapper li img {
     position: absolute;
     top: 0;
     left: 0;
@@ -343,7 +343,7 @@
   }
 
   /* ✅ overlay: 이미지 위에 위치 */
-  .solution .img-menu-wrapper li .overlay {
+  .img-slide .img-menu-wrapper li .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -356,19 +356,19 @@
   }
 
   /* 텍스트는 이미지 + 오버레이 위로 */
-  .solution .img-menu-wrapper li h5,
-  .solution .img-menu-wrapper li p {
+  .img-slide .img-menu-wrapper li h5,
+  .img-slide .img-menu-wrapper li p {
     position: relative;
     z-index: 99;
   }
 
-  .solution .img-menu-wrapper li h5 {
+  .img-slide .img-menu-wrapper li h5 {
     position: absolute;
     top: 5%;
     font-size: 30px;
   }
 
-  .solution .img-menu-wrapper li p {
+  .img-slide .img-menu-wrapper li p {
     width: 300px;
     font-size: 18px;
     margin-bottom: 10px;
@@ -380,21 +380,20 @@
   }
 
   /*  hover 시 확장 */
-  .solution .img-menu-wrapper li.active {
+  .img-slide .img-menu-wrapper li.active {
     flex: 2.8;
   }
 
   /* overlay 등장 */
-  .solution .img-menu-wrapper li.active .overlay {
+  .img-slide .img-menu-wrapper li.active .overlay {
     background: rgba(0, 0, 0, 0.6);
   }
 
   /* 텍스트 등장 */
-  .solution .img-menu-wrapper li.active p {
+  .img-slide .img-menu-wrapper li.active p {
     line-height: 1.5;
     max-height: 300px;
     opacity: 1;
-
   }
 
 
