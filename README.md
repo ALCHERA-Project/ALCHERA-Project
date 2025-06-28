@@ -61,6 +61,10 @@
 1) index 작업
 - solution, tech(가로스크롤), press(가로 슬라이드) 작업
 
+# 250628
+### 서희
+- sub2 모바일, PC css 작업 중
+
 # 250626
 ### 은혜
 - index _js 완성 : 지구본 영상
@@ -71,6 +75,8 @@
 ### 은혜
 - index _js 완성 : intro ~ about
 - global 수정
+### 서희
+- GSAP, position값으로 photodump 스크롤 이벤트 구현 완료
 
 # 250620
 ### 서희

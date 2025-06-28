@@ -40,7 +40,7 @@ a {
 
 .sub1-main .main-title h2 {
   font-size: 30px;
-  font-weight: bold;
+  font-weight: var(--weight-md);
   color: var(--color-w);
   text-align: center;
   margin-bottom: 20px;
