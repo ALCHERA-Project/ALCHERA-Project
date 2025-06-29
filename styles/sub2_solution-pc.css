@@ -50,7 +50,7 @@
 
   /* contents 2 */
   .con2 {
-    padding: 160px 0 80px;
+    padding: 160px 0px;
   }
 
   .con2 .con2-title {
@@ -125,90 +125,56 @@
 
   /* contents 3 */
   .con3 {
-    padding: 0 0 80px;
-    text-align: center;
-  }
-
-  .con3 .con3-subTitle {
-    font-size: 16px;
-    color: var(--color-mb);
+    padding: 0px 0px 160px;
   }
 
   .con3 .con3-title {
-    margin: 0 auto;
-    padding: 20px 0 50px;
-    font-size: 22px;
-    color: var(--color-b);
+    padding: 20px 0 70px;
+    font-size: 38px;
   }
 
   /* content-box */
   .con3 .txt-box-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-    overflow-x: auto;
-    white-space: nowrap;
-    box-sizing: border-box;
-    padding: 0 85px;
-
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-
-  .con3 .txt-box-wrapper .txt-box {
+    width: 1060px;
     margin: 0 auto;
-    width: 220px;
-    height: 220px;
-    background-color: var(--color-wg);
-    border: 1px solid var(--color-b);
-    border-radius: 120px;
-  }
-
-  .con3 .txt-box-wrapper .txt-box .icon {
-    width: 40px;
-    margin: 0 auto;
-    padding: 50px 0 20px;
-  }
-
-  .con3 .txt-box-wrapper .txt-box p {
-    font-size: 12px;
-    padding: 8px 30px;
+    padding: 0px;
   }
 
   /* con4 */
   .con4 {
-    padding: 0 20px 80px;
+    padding: 0px 0px 160px;
     text-align: center;
   }
 
-  .con4 .con4-subTitle {
-    font-size: 16px;
-    color: var(--color-mb);
+  .con4 .con4-title {
+    font-size: 38px;
   }
 
-  .con4 .con4-title {
-    /* width: 250px; */
-    margin: 0 auto;
-    padding: 20px 0 15px;
-    font-size: 22px;
-    color: var(--color-b);
+  .con4 .con4-title br {
+    display: none;
   }
 
   .con4 .readmore-btn {
-    color: var(--color-mg);
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 110px;
   }
 
   /* list */
+
+  .con4 .resource-list {
+    padding: 0px 80px;
+  }
+
   .con4 ul {
     text-align: left;
     padding-top: 25px;
   }
 
   .con4 .resource-list .list {
-    padding: 25px 0;
-    border-bottom: 1px solid var(--color-lg);
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
   }
 
   .con4 .resource-list .list:last-child {
@@ -216,14 +182,12 @@
   }
 
   .con4 .resource-list .list h5 {
-    padding-bottom: 8px;
-    font-weight: 500;
-    color: var(--color-b);
+    padding: 0px;
+    padding-left: 30px;
   }
 
   .con4 .resource-list .list .date {
-    font-size: 14px;
-    color: var(--color-mg);
+    padding-right: 30px;
   }
 
   .con4 .resource-list .list .content-wrapper .text {
