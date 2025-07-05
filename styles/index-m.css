@@ -285,13 +285,13 @@ body {
   position: relative;
 }
 
-
 .solution .photoDump-title h3 {
   margin: 0;
   font-size: 30px;
   font-weight: var(--weight-lg);
   color: var(--color-b);
   margin-bottom: 15px;
+  padding: 0px 20px;
 }
 
 .solution .photoDump-title p {
@@ -299,6 +299,11 @@ body {
   font-size: 16px;
   font-weight: var(--weight-xs);
   color: var(--color-b);
+  padding: 0px 20px;
+}
+
+.solution .photoDump-title p br {
+  display: none;
 }
 
 .photoDump-title.fixed {
@@ -323,6 +328,7 @@ body {
 
 .photoDump li {
   position: absolute;
+  width: 220px;
 }
 
 .photoDump li img {
@@ -332,33 +338,28 @@ body {
 
 
 .photoDump li:nth-of-type(1) {
-  width: 45%;
   top: 0%;
-  left: 12%;
+  left: -10%;
 }
 
 .photoDump li:nth-of-type(2) {
-  width: 30%;
-  top: 15%;
-  right: 7%;
+  top: 10%;
+  right: 5%;
 }
 
 .photoDump li:nth-of-type(3) {
-  width: 40%;
-  top: 32%;
-  left: 6%;
+  top: 30%;
+  left: 10%;
 }
 
 .photoDump li:nth-of-type(4) {
-  width: 55%;
-  top: 45%;
-  right: 8%;
+  top: 40%;
+  right: 5%;
 }
 
 .photoDump li:nth-of-type(5) {
-  width: 35%;
-  top: 65%;
-  left: 13%;
+  top: 60%;
+  left: 15%;
 }
 
 /* 아코디언 메뉴 */
@@ -393,6 +394,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
 
 .img-menu-wrapper li h5 {
@@ -400,6 +402,9 @@ body {
   font-weight: var(--weight-md);
   color: var(--color-w);
   margin: 0;
+  position: absolute;
+  top: 30px;
+  left: 30px;
 }
 
 .img-menu-wrapper li p {

@@ -1,7 +1,7 @@
 # ALCHERA Project 작업일지
 - 리뉴얼 사이트: https://www.alchera.ai/
 - Alchera Youtube : https://www.youtube.com/@ALCHERAinc/videos
-- 레퍼 사이트(메인): https://convencion-hyundai.plastic.design/?utm_source=awwwards&utm_medium=web&utm_campaign=hyundai_convention&utm_content=awwwards_summit
+- 레퍼 사이트(메인): https://convencion-hyundai.plastic.design
 - 레퍼 사이트(서브) : https://www.pltt.xyz/pages/service/video.php
 - gsap 레퍼: https://madewithgsap.com/
 - google drive : https://drive.google.com/drive/folders/1jNLVl-mRead3KSveLNgLUBjFLA73RuBt?usp=drive_link
@@ -18,12 +18,12 @@
 ### 해올 것
 1) 서희
 - index 포토덤프 이미지사이즈 수정 + 교체
-- 서브2 pc CSS
+- 서브2 CSS
 
 2) 은혜
 - 포토덤프 이미지 먼저 업로드
 - 글로벌 수정 / 모두 적용
-- 서브페이지 제발 해오긔..
+- 서브페이지 제발 해오긔.. (sub2 js도 부탁해요!)
 - 유효성 검사
 
 3) 같이 만나서 (7/6 일)
@@ -61,6 +61,15 @@
 1) index 작업
 - solution, tech(가로스크롤), press(가로 슬라이드) 작업
 
+# 250629
+### 서희
+- index photoDump 이미지 교체, css 수정
+
+# 250628
+### 서희
+- sub2 모바일, PC css 작업
+- sub2 스크롤 이벤트 js 구현
+
 # 250626
 ### 은혜
 - index _js 완성 : 지구본 영상
@@ -71,6 +80,8 @@
 ### 은혜
 - index _js 완성 : intro ~ about
 - global 수정
+### 서희
+- GSAP, position값으로 photodump 스크롤 이벤트 구현 완료
 
 # 250620
 ### 서희
@@ -97,7 +108,7 @@
 - sub1 js 작성
 - index-press 슬라이드(모바일, PC) 구현
 - index-solution 이미지 아코디언(모바일, PC) 구현
-- index-video 텍스트 효과 구현현
+- index-video 텍스트 효과 구현
 
 # 250605 9차 미팅
 ### 해올 것

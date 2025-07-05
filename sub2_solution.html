@@ -30,16 +30,27 @@
   <link rel="stylesheet" href="./styles/global.css">
   <link rel="stylesheet" href="./styles/globalVar.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/sub2_solution-pc.css">
-  <link rel="stylesheet" href="./styles/sub2_solution-m.css">
 
-  <!------ jQuery ------>
+  <!-- page 별 css style -->
+  <link rel="stylesheet" href="./styles/sub2_solution-m.css">
+  <link rel="stylesheet" href="./styles/sub2_solution-pc.css">
+
+  <!------ jQuery UI ------>
   <script src="./assets/Js/jquery-3.7.1.min.js"></script>
   <script src="./assets/Js/jquery-ui.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script> -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script> -->
+
+  <!-- GSAP&ScrollTrigger -->
+  <!-- GSAP Core -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <!-- ScrollTrigger Plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis"></script>
+
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!-- <script src="./assets/Js/global.js" defer></script> -->
+
+  <!-- jQuery -->
+  <script src="./js/global.js" defer></script>
   <script src="./js/sub2_solution.js" defer></script>
 
   <!-- 곡선 - 직선 배경 변경 -->
@@ -51,31 +62,126 @@
   <!------ fix-icon ------->
   <!---- chat ---->
   <div class="fix-icon">
-      <div class="chat">
-          <a href="#"><img src="./assets/images/global/icon/chat.svg" alt="chat"></a>
-      </div>
-      <!---- goToTop ---->
-      <div class="goToTop">
-          <a href="#"><img src="./assets/images/global/icon/goToTop.svg" alt="goToTop"></a>
-      </div>
+    <div class="chat">
+      <a href="#"><img src="./assets/images/global/icon/chat.svg" alt="chat"></a>
+    </div>
+
+    <!---- goToTop ---->
+    <div class="goToTop">
+      <a href="#"><img src="./assets/images/global/icon/goToTop.svg" alt="goToTop"></a>
+    </div>
   </div>
 
   <!------ header ------>
   <header>
-    <!---- nav ---->
-    <nav>
-      <h1 class="logo"><a href=""><img src="" alt="logo"></a></h1>
+
+    <!---- mobile ---->
+    <nav class="m-menu">
+      <div class="main-menu">
+        <h1 class="logo"><a href="./index.html"><img src="./assets/images/global/logo-w.svg" alt="logo-w"></a></h1>
+        <div class="hamburger-menu" id="hamburger-menu">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="slide-menu" id="slide-menu">
+        <ul class="main-mo">
+          <li><a href="./sub1_technology.html">기술</a>
+            <ul class="sub-mo">
+              <li><a href="#">얼굴인식</a></li>
+              <li><a href="#">OCR</a></li>
+              <li><a href="#">이상상황 감지</a></li>
+            </ul>
+          </li>
+          <li><a href="./sub2_solution.html">솔루션</a>
+            <ul class="sub-mo">
+              <li><a href="#">얼굴 본인인증</a></li>
+              <li><a href="#">신분증 본인인증</a></li>
+              <li><a href="#">재외국민 여권 신원확인</a></li>
+              <li><a href="#">바이오정보 분산관리</a></li>
+              <li><a href="#">ekYC</a></li>
+              <li><a href="#">출입통제</a></li>
+              <li><a href="#">산불 조기감지</a></li>
+              <li><a href="#">전기차 화재 조기감지</a></li>
+            </ul>
+          </li>
+          <li><a href="./sub3_service.html">서비스</a>
+            <ul class="sub-mo">
+              <li><a href="#">AI 데이터</a></li>
+              <li><a href="#">소프트웨어 개발</a></li>
+              <li><a href="#">데이터바우처</a></li>
+            </ul>
+          </li>
+          <li><a href="./sub4_business.html">사업영역</a>
+            <ul class="sub-mo">
+              <li><a href="#">금융</a></li>
+              <li><a href="#">환경</a></li>
+              <li><a href="#">정부/공공기관</a></li>
+              <li><a href="#">공항</a></li>
+              <li><a href="#">리테일</a></li>
+              <li><a href="#">통신</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="side-mo">
+          <li><a href="#">문의하기 |</a></li>
+          <li><a href="#">데모 신청</a></li>
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <!---- pc ---->
+    <nav class="pc-menu">
+      <h1 class="logo"><a href="./index.html"><img src="./assets/images/global/logo-w.svg" alt="logo-w"></a></h1>
+
       <ul class="main-menu">
-        <li class="main-item"><a href="">기술</a></li>
-        <li class="main-item"><a href="">솔루션</a></li>
-        <li class="main-item"><a href="">서비스</a></li>
-        <li class="main-item"><a href="">사업영역</a></li>
+        <li><a href="./sub1_technology.html">기술</a>
+          <ul class="sub-menu">
+            <li><a href="#">얼굴인식</a></li>
+            <li><a href="#">OCR</a></li>
+            <li><a href="#">이상상황 감지</a></li>
+          </ul>
+        </li>
+        <li><a href="./sub2_solution.html">솔루션</a>
+          <ul class="sub-menu">
+            <li><a href="#">얼굴 본인인증</a></li>
+            <li><a href="#">신분증 본인인증</a></li>
+            <li><a href="#">재외국민 여권 신원확인</a></li>
+            <li><a href="#">바이오정보 분산관리</a></li>
+            <li><a href="#">ekYC</a></li>
+            <li><a href="#">출입통제</a></li>
+            <li><a href="#">산불 조기감지</a></li>
+            <li><a href="#">전기차 화재 조기감지</a></li>
+          </ul>
+        </li>
+        <li><a href="./sub3_service.html">서비스</a>
+          <ul class="sub-menu">
+            <li><a href="#">AI 데이터</a></li>
+            <li><a href="#">소프트웨어 개발</a></li>
+            <li><a href="#">데이터바우처</a></li>
+          </ul>
+        </li>
+        <li><a href="./sub4_business.html">사업영역</a>
+          <ul class="sub-menu">
+            <li><a href="#">금융</a></li>
+            <li><a href="#">환경</a></li>
+            <li><a href="#">정부/공공기관</a></li>
+            <li><a href="#">공항</a></li>
+            <li><a href="#">리테일</a></li>
+            <li><a href="#">통신</a></li>
+          </ul>
+        </li>
       </ul>
-      <ul class="sub-menu">
-        <li class="sub-item"><a href="">문의하기</a></li>
-        <li class="sub-item"><a href="">데모 신청</a></li>
+
+      <ul class="side-menu">
+        <li class="side-item"><a href="#">문의하기</a></li>
+        <li class="side-item"><a href="#">데모 신청</a></li>
       </ul>
     </nav>
+
   </header>
 
 
@@ -88,17 +194,18 @@
     </div>
   </section>
 
-  <div class="gradient"></div>
+  <div class="gradient1"></div>
 
   <!------ contents 1 ------>
   <section class="con1">
+    <div class="gradient2"></div>
     <h4 class="con1-subTitle">Feature</h4>
-    <h3 class="con1-title">업계 최고의 얼굴인식 정확도를 자랑하는 <br>얼굴 본인인증 AI 솔루션</h3>
-    
+    <h3 class="con1-title">업계 최고의 얼굴인식 정확도를 <br>자랑하는 얼굴 본인인증 AI 솔루션</h3>
+
     <div class="txt-box-wrapper">
       <!-- text 1 -->
       <div class="txt-box">
-        <h4>국내 최초 RGB 카메라 기반 iBeta PAD 테스트 통과</h4>
+        <h4>국내 최초 RGB 카메라 기반<br>iBeta PAD 테스트 통과</h4>
         <p>Passive 방식 <br> 위·변조 탐지 성능 테스트 통과</p>
         <div class="icon">
           <img src="./assets/images/sub2_solution/con1/1.svg" alt="icon1">
@@ -106,8 +213,8 @@
       </div>
       <!-- text 2 -->
       <div class="txt-box">
-        <h4>얼굴인식 테스트 NIST FRVT 국내 1위</h4>
-          <p>글로벌 최대 얼굴인식 테스트 NIST FRVT 2개 부문 국재 1위의 기술력</p>
+        <h4>얼굴인식 테스트<br>NIST FRVT 국내 1위</h4>
+        <p>글로벌 최대 얼굴인식 테스트 NIST FRVT<br>2개 부문 국재 1위의 기술력</p>
         <div class="icon">
           <img src="./assets/images/sub2_solution/con1/2.svg" alt="icon2">
         </div>
@@ -115,15 +222,15 @@
       <!-- text 3 -->
       <div class="txt-box">
         <h4>얼굴인식 정확도 <br> 99.99%</h4>
-          <p>알체라 얼굴인식 SDK의 <br> 정확도 99.9&의 높은 인식률을 자랑</p>
+        <p>알체라 얼굴인식 SDK의 <br> 정확도 99.9&의 높은 인식률을 자랑</p>
         <div class="icon">
           <img src="./assets/images/sub2_solution/con1/3.svg" alt="icon3">
         </div>
       </div>
       <!-- text 4 -->
       <div class="txt-box">
-        <h4>다양한 얼굴 변화도 높은 정확도로 인식 가능</h4>
-          <p>20년 이상의 노화, 안경 및 마스크 착용 등 변화에 99.9%의 인식 정확도</p>
+        <h4>다양한 얼굴 변화도<br>높은 정확도로 인식 가능</h4>
+        <p>20년 이상의 노화, 안경 및 마스크 착용 등<br> 변화에 99.9%의 인식 정확도</p>
         <div class="icon">
           <img src="./assets/images/sub2_solution/con1/4.svg" alt="icon4">
         </div>
@@ -131,15 +238,15 @@
       <!-- text 5 -->
       <div class="txt-box">
         <h4>Cross Platform <br> 지원 가능</h4>
-          <p>macOS, Windows, Linux, Unix 등 <br> PC, 서버, 모바일 기기 지원 가능</p>
+        <p>macOS, Windows, Linux, Unix 등 <br> PC, 서버, 모바일 기기 지원 가능</p>
         <div class="icon">
           <img src="./assets/images/sub2_solution/con1/5.svg" alt="icon5">
         </div>
       </div>
       <!-- text 6 -->
       <div class="txt-box">
-        <h4>바이오정보 분산관리를 통한 안전한 얼굴 인증</h4>
-          <p>금융결제원 바이오정보 분산관리 <br> 성능평가 인증서 획득</p>
+        <h4>바이오정보 분산관리를 통한<br>안전한 얼굴 인증</h4>
+        <p>금융결제원 바이오정보 분산관리 <br> 성능평가 인증서 획득</p>
         <div class="icon">
           <img src="./assets/images/sub2_solution/con1/6.svg" alt="icon6">
         </div>
@@ -151,10 +258,11 @@
   <section class="con2">
     <h4 class="con2-subTitle">Technology</h4>
     <h3 class="con2-title">얼굴인식 AI를 활용한 다양한 핵심 기술</h3>
-    
+
     <!-- video 3개 슬라이드 -->
     <div class="video-wrapper">
-      <button class="arrow left"><img src="./assets/images/global/icon/arrow_simple_l.svg" alt="arrow_simple_l"></button>
+      <button class="arrow left"><img src="./assets/images/global/icon/arrow_simple_l.svg"
+          alt="arrow_simple_l"></button>
 
       <ul class="slider">
         <li class="slide">
@@ -165,7 +273,7 @@
         <li class="slide">
           <h5>얼굴 위·변조 판별</h5>
           <video src="./assets/images/sub2_solution/video2.mp4" autoplay muted loop></video>
-          <p>개인 얼굴의 특징을 구분하기 위한 고유의 특징점을 추출합니다.</p> 
+          <p>개인 얼굴의 특징을 구분하기 위한 고유의 특징점을 추출합니다.</p>
         </li>
         <li class="slide">
           <h5>얼굴 매칭</h5>
@@ -174,7 +282,8 @@
         </li>
       </ul>
 
-      <button class="arrow right"><img src="./assets/images/global/icon/arrow_simple_r.svg" alt="arrow_simple_r"></button>
+      <button class="arrow right"><img src="./assets/images/global/icon/arrow_simple_r.svg"
+          alt="arrow_simple_r"></button>
     </div>
   </section>
 
@@ -191,7 +300,7 @@
           <img src="./assets/images/sub2_solution/con3/1.svg" alt="icon1">
         </div>
         <h4>얼굴 검증</h4>
-        <p>입력 영상에 존재하는 얼굴의 Bounding Box 위치/좌표 제공</p>
+        <p>입력 영상에 존재하는 얼굴의<br>Bounding Box 위치/좌표 제공</p>
       </div>
 
       <!-- arrow -->
@@ -205,7 +314,7 @@
           <img src="./assets/images/sub2_solution/con3/2.svg" alt="icon2">
         </div>
         <h4>라이브니스 탐지</h4>
-          <p>Active or Passive 방식으로 라이브니스 탐지</p>
+        <p>Active or Passive 방식으로<br>라이브니스 탐지</p>
       </div>
 
       <!-- arrow -->
@@ -219,7 +328,7 @@
           <img src="./assets/images/sub2_solution/con3/3.svg" alt="icon3">
         </div>
         <h4>얼굴 특징점 추출</h4>
-          <p>사람별 얼굴 차이를 극대화하는 N개의 특징 백터 추출</p>
+        <p>사람별 얼굴 차이를 극대화하는<br>N개의 특징 백터 추출</p>
       </div>
 
       <!-- arrow -->
@@ -233,7 +342,7 @@
           <img src="./assets/images/sub2_solution/con3/4.svg" alt="icon4">
         </div>
         <h4>1:1 매칭</h4>
-          <p>실시간으로 DB에 저장된 얼굴 백터를 비교</p>
+        <p>실시간으로 DB에 저장된<br>얼굴 백터를 비교</p>
       </div>
     </div>
   </section>
@@ -241,9 +350,9 @@
   <!------ contents 4 ------>
   <section class="con4">
     <h4 class="con4-subTitle">Resources</h4>
-    <h3 class="con4-title">얼굴 본인인증 AI 솔루션에 대해 더 알아보세요</h3>
-    <a href="#" class="readmore-btn">Read More ></a>    
-    
+    <h3 class="con4-title">얼굴 본인인증 AI 솔루션에 대해<br> 더 알아보세요</h3>
+    <a href="#" class="readmore-btn">Read More ></a>
+
     <!-- resource list -->
     <ul class="resource-list">
       <!-- list 1 -->
@@ -254,7 +363,9 @@
         <div class="content-wrapper">
           <!-- <img src="./assets/images/sub2_solution/con4/resource1.jpeg" alt="resource1"> -->
           <div class="text-wrapper">
-            <p class="text">2025년 4월 발생한 SK텔레콤 유심 해킹 사태는 기존 본인 인증 시스템의 구조적 취약성을 여실히 드러냈습니다. 유출된 유심 정보를 통해 타인 명의로 휴대폰을 개통하고 금융서비스에 접근하는 피해가 발생할 수 있어, 인증 체계 전반에 대한 경각심이 높아졌습니다. SMS 인증, 비밀번호, 간편 인증 등 단일 방식의 인증은 더 이상 안전하다고 보기 어려우며, 이에 대한 실질적인 대응책으로 생체 정보 기반의 안면인증이 주목받고 있습니다.‍</p>
+            <p class="text">2025년 4월 발생한 SK텔레콤 유심 해킹 사태는 기존 본인 인증 시스템의 구조적 취약성을 여실히 드러냈습니다. 유출된 유심 정보를 통해 타인 명의로 휴대폰을
+              개통하고 금융서비스에 접근하는 피해가 발생할 수 있어, 인증 체계 전반에 대한 경각심이 높아졌습니다. SMS 인증, 비밀번호, 간편 인증 등 단일 방식의 인증은 더 이상 안전하다고 보기
+              어려우며, 이에 대한 실질적인 대응책으로 생체 정보 기반의 안면인증이 주목받고 있습니다.‍</p>
             <p class="date">인사이트 <span>2025-05-12</span></p>
           </div>
         </div>
@@ -268,7 +379,8 @@
         <div class="content-wrapper">
           <!-- <img src="./assets/images/sub2_solution/con4/resource2.jpg" alt="resource2"> -->
           <div class="text-wrapper">
-            <p class="text">알체라가 최근 국내 금융기업 K사가 주관한 성능 테스트(BMT)에서 경쟁사 대비 압도적인 성능을 기록하며 1위를 차지했습니다. 이번 테스트는 신분증 사본 판별, 얼굴 라이브니스(Liveness), 얼굴 매칭(Matching), 기기 호환성 등 총 4가지 항목에 걸쳐 진행되었으며, 알체라는 모든 부문에서 뛰어난 성과를 보이며 기술력을 입증했습니다.</p>
+            <p class="text">알체라가 최근 국내 금융기업 K사가 주관한 성능 테스트(BMT)에서 경쟁사 대비 압도적인 성능을 기록하며 1위를 차지했습니다. 이번 테스트는 신분증 사본 판별, 얼굴
+              라이브니스(Liveness), 얼굴 매칭(Matching), 기기 호환성 등 총 4가지 항목에 걸쳐 진행되었으며, 알체라는 모든 부문에서 뛰어난 성과를 보이며 기술력을 입증했습니다.</p>
             <p class="date">비즈니스 <span>2025-02-27</span></p>
           </div>
         </div>
@@ -282,7 +394,8 @@
         <div class="content-wrapper">
           <!-- <img src="./assets/images/sub2_solution/con4/resource3.png" alt="resource3"> -->
           <div class="text-wrapper">
-            <p class="text">얼굴라이브니스(Liveness)란, 셀피와 신분증 얼굴 이미지를 비교할때, 얼굴 위조 여부를 판별하는 기술을 말합니다. 얼굴 라이브니스 기술은 신분 확인과 출입 통제 등 다양한 분야에 적용할수 있는데요. 얼굴 라이브니스 기술 도입 시 유의 사항을 확인해 보고, 국내최고 기술력의 알체라 라이브니스 기술의 특장점을 소개해 드리겠습니다.</p>
+            <p class="text">얼굴라이브니스(Liveness)란, 셀피와 신분증 얼굴 이미지를 비교할때, 얼굴 위조 여부를 판별하는 기술을 말합니다. 얼굴 라이브니스 기술은 신분 확인과 출입 통제
+              등 다양한 분야에 적용할수 있는데요. 얼굴 라이브니스 기술 도입 시 유의 사항을 확인해 보고, 국내최고 기술력의 알체라 라이브니스 기술의 특장점을 소개해 드리겠습니다.</p>
             <p class="date">비즈니스 <span>2024-12-30</span></p>
           </div>
         </div>
@@ -296,23 +409,24 @@
         <div class="content-wrapper">
           <!-- <img src="./assets/images/sub2_solution/con4/resource4.png" alt="resource4"> -->
           <div class="text-wrapper">
-            <p class="text">최근 거리에서 전자담배를 사용하는 사람들이 늘어나며, 특히 액상형 전자담배의 사용률이 눈에 띄게 증가하고 있습니다. 질병관리청 통계에 따르면 청소년의 액상형 전자담배 사용률은 2020년 1.9%에서 2023년 3.1%로 증가했습니다. 일반 담배 사용률이 동기간 동안 거의 변동이 없었던 점을 고려하면, 이는 심각한 증가 추세로 평가됩니다.</p>
+            <p class="text">최근 거리에서 전자담배를 사용하는 사람들이 늘어나며, 특히 액상형 전자담배의 사용률이 눈에 띄게 증가하고 있습니다. 질병관리청 통계에 따르면 청소년의 액상형 전자담배
+              사용률은 2020년 1.9%에서 2023년 3.1%로 증가했습니다. 일반 담배 사용률이 동기간 동안 거의 변동이 없었던 점을 고려하면, 이는 심각한 증가 추세로 평가됩니다.</p>
             <p class="date">비즈니스 <span>2024-12-19</span></p>
           </div>
         </div>
       </li>
     </ul>
-    
+
   </section>
 
-    <!------ contact ------>
-    <section class="contact">
-        <p>Contact Us</p>
-        <h3>얼굴인식 AI 기술로 비즈니스를 업그레이드하세요</h3>
-        <h4>알체라의 세일즈 컨설턴트가<br>고객님에게 최적의 솔루션을 제안 드립니다.</h4>
-        <a href="#">문의하기 <span><img src="./assets/images/global/icon/arrow_right.svg" alt="arrow_right"></span>
-        </a>
-    </section>
+  <!------ contact ------>
+  <section class="contact">
+    <p>Contact Us</p>
+    <h3>얼굴인식 AI 기술로 비즈니스를 업그레이드하세요</h3>
+    <h4>알체라의 세일즈 컨설턴트가<br>고객님에게 최적의 솔루션을 제안 드립니다.</h4>
+    <a href="#">문의하기 <span><img src="./assets/images/global/icon/arrow_right.svg" alt="arrow_right"></span>
+    </a>
+  </section>
 
     <!------ footer ------>
     <footer>
