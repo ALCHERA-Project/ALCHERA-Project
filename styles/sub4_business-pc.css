@@ -2,9 +2,27 @@
 
 /***** pc *****/
 @media (min-width: 1280px) {
-  
+
+  /* sub4-main */
+  .sub4-main .main-title {
+    height: 620px;
+  }
+
+  .sub4-main .main-title h2 {
+    font-size: 50px;
+    margin-bottom: 33px;
+  }
+
+  .sub4-main .main-title p {
+    font-size: 22px;
+  }
+
+  .gradient1 {
+    top: 500px;
+  }
 
 
+ 
     
 /* 금융 분야 사용 솔루션 안내 */
 /* contents 4 */
@@ -12,7 +30,9 @@
     margin: 40px 80px 160px;
     padding: 0;
   }
-
+  .con4 .con4-title {
+    font-size: 50px;
+  }
   .con4 .solution-info {
     width: 100%;
     display: grid;
