@@ -13,9 +13,9 @@
 
   .fix-icon .chat a {
     position: fixed;
-    top: 680px;
-    right: 15px;
-    z-index: 99999;
+    bottom: 150px;
+    right: 20px;
+    z-index: 999;
   }
 
   .fix-icon .chat a img {
@@ -49,9 +49,9 @@
 
   .fix-icon .goToTop a {
     position: fixed;
-    top: 740px;
-    right: 15px;
-    z-index: 9999;
+    bottom: 85px;
+    right: 20px;
+    z-index: 999;
   }
 
   .fix-icon .goToTop a img {
@@ -122,41 +122,77 @@
     transform: rotate(-45deg) translate(6px, -6px);
   }
 
+
+  /* slide-menu */
   .m-menu .slide-menu {
+    width: 100vw;
+    height: 100%;
+
+    padding: 0 30px 0 20px;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(5px);
+    /* 사파리용 */
+    -webkit-backdrop-filter: blur(5px);
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
     position: fixed;
     top: 0;
     left: -105%;
-    width: 100vw;
-    height: 100vh;
-    background-color: #111;
-    color: #fff;
-    transition: left 0.3s ease-in-out;
+    opacity: 0;
+    transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out;
     z-index: 999;
+    overflow: hidden;
   }
 
   .slide-menu.active {
     left: 0;
+    transform: translateX(0);
+    opacity: 1;
   }
 
-  .m-menu .side-menu .main-mo {}
+  /* 모바일 메뉴 항목 */
+    .m-menu .main-mo > li {
+    margin-bottom: 40px;
+  }
 
-  /* 슬라이드되는 햄버거 메뉴 여기부터 css 수정하면 됨 */
+  .m-menu .main-mo > li > a {
+    font-size: 30px;
+    font-weight: var(--weight-md);
+    color: var(--color-w);
+    display: block;
+    margin-bottom: 10px;
+  }
 
-  .m-menu .side-menu .main-mo li {}
+  /* 서브 메뉴 (소분류) */
+  .sub-mo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+  }
 
-  .m-menu .side-menu .main-mo li a {}
+  .sub-mo li a {
+    font-size: 16px;
+    color: var(--color-mg);
+  }
+  
+  .sub-mo li a:nth-last-child {
+    border-right: none;
+  }
 
-  .m-menu .side-menu .main-mo li .sub-mo {}
+  /* 하단 링크 */
+  .side-mo {
+    font-size: 16px;
+    margin-top: 25px;
+    display: flex;
+    gap: 8px;
+  }
 
-  .m-menu .side-menu .main-mo li .sub-mo li {}
-
-  .m-menu .side-menu .main-mo li .sub-mo li a {}
-
-  .m-menu .side-menu .side-mo {}
-
-  .m-menu .side-menu .side-mo li {}
-
-  .m-menu .side-menu .side-mo li a {}
+  .side-mo a {
+    color: var(--color-mg);
+  }
 
 
 
@@ -377,7 +413,6 @@
   /****** contact-mobile ******/
   .contact {
     height: 340px;
-    /* width: calc(100% - 80px); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -400,27 +435,27 @@
   .contact h3 {
     font-size: 28px;
     font-weight: 600;
-    color: #fff;
-    margin: 0;
-    margin-bottom: 10px;
+    color: var(--color-w);
+    margin-bottom: 15px;
   }
 
   .contact h4 {
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-    margin: 0;
-    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: var(--weight-xs);
+    line-height: 1.4;
+    color: var(--color-w);
+    margin-bottom: 35px;
   }
 
   .contact a {
+    width: 150px;
     font-size: 16px;
     font-weight: 600;
-    color: #0000A5;
-    background-color: #fff;
+    color: var(--color-mb);
+    background-color: var(--color-w);
     display: block;
-    padding: 10px 30px;
-    border-radius: 15px;
+    padding: 15px 0;
+    border-radius: 10px;
     cursor: pointer;
   }
 
@@ -428,6 +463,11 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+  }
+  
+  /* svg 컬러 변경~~~~~~~~~~~~~~~~ !!!!!!!! */
+  .contact a span img {
+    fill: #fff;
   }
 
 }
@@ -564,7 +604,7 @@
 
   .fix-icon .chat a {
     position: fixed;
-    top: 600px;
+    bottom: 130px;
     right: 50px;
     z-index: 99999;
   }
@@ -584,7 +624,7 @@
 
   .fix-icon .goToTop a {
     position: fixed;
-    top: 675px;
+    bottom: 50px;
     right: 50px;
     z-index: 9999;
   }
@@ -612,8 +652,8 @@
 
   .contact p {
     font-size: 16px;
-    font-weight: 600;
-    color: #fff;
+    font-weight: var(--weight-md);
+    color: var(--color-w);
     margin-bottom: 20px;
   }
 
@@ -628,10 +668,20 @@
   }
 
   .contact a {
+    width: 180px;
     font-size: 18px;
-    padding: 13px 35px;
+    padding: 18px 45px;
+
+    transition: all 0.3s ease-in-out;
   }
 
+  .contact a:hover {
+    background-color: var(--color-b);
+    color: var(--color-w);
+  }
+  .contact a:hover span {
+    color: var(--color-w);
+  }
   .contact a span {
     display: inline-flex;
     align-items: center;

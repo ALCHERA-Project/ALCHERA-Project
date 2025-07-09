@@ -61,6 +61,13 @@
 1) index 작업
 - solution, tech(가로스크롤), press(가로 슬라이드) 작업
 
+# 250705
+### 은혜
+- sub3, 4 css - mo / pc 작성
+- 유효성 검사
+- 글로벌 css 디테일 수정
+- 포토덤프 사진 업로드
+
 # 250629
 ### 서희
 - index photoDump 이미지 교체, css 수정

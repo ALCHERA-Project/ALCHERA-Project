@@ -1,5 +1,4 @@
 // video 3개 슬라이드
-
 const slider = document.querySelector('.slider');
 const slides = document.querySelectorAll('.slide');
 const totalSlides = slides.length;
@@ -35,7 +34,8 @@ function updateSlider() {
     });
   });
 
-  // 스크롤하면 투명도 1로 변경, 위로 떠오르는 이벤트
+  
+// 스크롤하면 투명도 1로 변경, 위로 떠오르는 이벤트
 document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger);
 
@@ -57,4 +57,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-

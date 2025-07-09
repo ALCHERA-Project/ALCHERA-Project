@@ -263,7 +263,7 @@
     width: 100%;
     display: grid;
     gap: 20px;
-    grid-template-row: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(3, 1fr);
   }
   .con4 .solution-info li {

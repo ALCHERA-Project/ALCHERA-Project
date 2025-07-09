@@ -7,7 +7,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
 
   <!-- favicon -->
-  <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./assets/images/favicon/favicon.ico" sizes="any">
+  <link rel="icon" href="./assets/images/favicon/browserconfig.xml" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./assets/images/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
 
   <!-- open graph -->
   <meta property="og:title" content="ALCHERA">
@@ -19,10 +22,14 @@
   <!-- reset css -->
   <link rel="stylesheet" href="./styles/reset.css">
 
+  <!------ font ------>
+  <link rel="stylesheet" href="./styles/pretendard.css">
+  <link rel="stylesheet" href="./styles/raleway.css">
+
   <!-- 공통된 css style -->
   <link rel="stylesheet" href="./styles/global.css">
   <link rel="stylesheet" href="./styles/globalVar.css">
-  <link rel="stylesheet" href="">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- page 별 css style -->
   <link rel="stylesheet" href="./styles/sub1_technology-m.css">
@@ -53,7 +60,7 @@
 
     <!---- goToTop ---->
     <div class="goToTop">
-      <a href="#"><img src="./assets/images/global/icon/goToTop.svg" alt="goToTop"></a>
+      <a href="#" id="goToTopBtn"><img src="./assets/images/global/icon/goToTop.svg" alt="goToTop"></a>
     </div>
   </div>
 
@@ -70,42 +77,43 @@
           <div class="line"></div>
         </div>
       </div>
+
       <div class="slide-menu" id="slide-menu">
         <ul class="main-mo">
           <li><a href="./sub1_technology.html">기술</a>
             <ul class="sub-mo">
-              <li><a href="#">얼굴인식</a></li>
-              <li><a href="#">OCR</a></li>
-              <li><a href="#">이상상황 감지</a></li>
+              <li><a href="./sub1_technology.html">얼굴인식 |</a></li>
+              <li><a href="./sub1_technology.html">OCR |</a></li>
+              <li><a href="./sub1_technology.html">이상상황 감지</a></li>
             </ul>
           </li>
           <li><a href="./sub2_solution.html">솔루션</a>
             <ul class="sub-mo">
-              <li><a href="#">얼굴 본인인증</a></li>
-              <li><a href="#">신분증 본인인증</a></li>
-              <li><a href="#">재외국민 여권 신원확인</a></li>
-              <li><a href="#">바이오정보 분산관리</a></li>
-              <li><a href="#">ekYC</a></li>
-              <li><a href="#">출입통제</a></li>
-              <li><a href="#">산불 조기감지</a></li>
-              <li><a href="#">전기차 화재 조기감지</a></li>
+              <li><a href="./sub2_solution.html">얼굴 본인인증 |</a></li>
+              <li><a href="./sub2_solution.html">신분증 본인인증 |</a></li>
+              <li><a href="./sub2_solution.html">재외국민 여권 신원확인 |</a></li>
+              <li><a href="./sub2_solution.html">바이오정보 분산관리 |</a></li>
+              <li><a href="./sub2_solution.html">ekYC |</a></li>
+              <li><a href="./sub2_solution.html">출입통제 |</a></li>
+              <li><a href="./sub2_solution.html">산불 조기감지 |</a></li>
+              <li><a href="./sub2_solution.html">전기차 화재 조기감지</a></li>
             </ul>
           </li>
           <li><a href="./sub3_service.html">서비스</a>
             <ul class="sub-mo">
-              <li><a href="#">AI 데이터</a></li>
-              <li><a href="#">소프트웨어 개발</a></li>
-              <li><a href="#">데이터바우처</a></li>
+              <li><a href="./sub3_service.html">AI 데이터 |</a></li>
+              <li><a href="./sub3_service.html">소프트웨어 개발 |</a></li>
+              <li><a href="./sub3_service.html">데이터바우처</a></li>
             </ul>
           </li>
           <li><a href="./sub4_business.html">사업영역</a>
             <ul class="sub-mo">
-              <li><a href="#">금융</a></li>
-              <li><a href="#">환경</a></li>
-              <li><a href="#">정부/공공기관</a></li>
-              <li><a href="#">공항</a></li>
-              <li><a href="#">리테일</a></li>
-              <li><a href="#">통신</a></li>
+              <li><a href="./sub4_business.html">금융 |</a></li>
+              <li><a href="./sub4_business.html">환경 |</a></li>
+              <li><a href="./sub4_business.html">정부/공공기관 |</a></li>
+              <li><a href="./sub4_business.html">공항 |</a></li>
+              <li><a href="./sub4_business.html">리테일 |</a></li>
+              <li><a href="./sub4_business.html">통신</a></li>
             </ul>
           </li>
         </ul>
@@ -113,9 +121,7 @@
           <li><a href="#">문의하기 |</a></li>
           <li><a href="#">데모 신청</a></li>
         </ul>
-
       </div>
-
     </nav>
 
     <!---- pc ---->
@@ -132,31 +138,31 @@
         </li>
         <li><a href="./sub2_solution.html">솔루션</a>
           <ul class="sub-menu">
-            <li><a href="#">얼굴 본인인증</a></li>
-            <li><a href="#">신분증 본인인증</a></li>
-            <li><a href="#">재외국민 여권 신원확인</a></li>
-            <li><a href="#">바이오정보 분산관리</a></li>
-            <li><a href="#">ekYC</a></li>
-            <li><a href="#">출입통제</a></li>
-            <li><a href="#">산불 조기감지</a></li>
-            <li><a href="#">전기차 화재 조기감지</a></li>
+            <li><a href="./sub2_solution.html">얼굴 본인인증</a></li>
+            <li><a href="./sub2_solution.html">신분증 본인인증</a></li>
+            <li><a href="./sub2_solution.html">재외국민 여권 신원확인</a></li>
+            <li><a href="./sub2_solution.html">바이오정보 분산관리</a></li>
+            <li><a href="./sub2_solution.html">ekYC</a></li>
+            <li><a href="./sub2_solution.html">출입통제</a></li>
+            <li><a href="./sub2_solution.html">산불 조기감지</a></li>
+            <li><a href="./sub2_solution.html">전기차 화재 조기감지</a></li>
           </ul>
         </li>
         <li><a href="./sub3_service.html">서비스</a>
           <ul class="sub-menu">
-            <li><a href="#">AI 데이터</a></li>
-            <li><a href="#">소프트웨어 개발</a></li>
-            <li><a href="#">데이터바우처</a></li>
+            <li><a href="./sub3_service.html">AI 데이터</a></li>
+            <li><a href="./sub3_service.html">소프트웨어 개발</a></li>
+            <li><a href="./sub3_service.html">데이터바우처</a></li>
           </ul>
         </li>
         <li><a href="./sub4_business.html">사업영역</a>
           <ul class="sub-menu">
-            <li><a href="#">금융</a></li>
-            <li><a href="#">환경</a></li>
-            <li><a href="#">정부/공공기관</a></li>
-            <li><a href="#">공항</a></li>
-            <li><a href="#">리테일</a></li>
-            <li><a href="#">통신</a></li>
+            <li><a href="./sub4_business.html">금융</a></li>
+            <li><a href="./sub4_business.html">환경</a></li>
+            <li><a href="./sub4_business.html">정부/공공기관</a></li>
+            <li><a href="./sub4_business.html">공항</a></li>
+            <li><a href="./sub4_business.html">리테일</a></li>
+            <li><a href="./sub4_business.html">통신</a></li>
           </ul>
         </li>
       </ul>

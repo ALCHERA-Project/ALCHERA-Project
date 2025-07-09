@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/***** pc *****/
+@media (min-width: 1280px) {
+  
+
+
+    
+/* 금융 분야 사용 솔루션 안내 */
+/* contents 4 */
+  .con4 {
+    margin: 40px 80px 160px;
+    padding: 0;
+  }
+
+  .con4 .solution-info {
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .con4 .solution-info li {
+    width: 100%;
+    height: 330px;
+    padding: 0;
+  }
+
+  .con4 .solution-info li img {
+    width: 51px;
+    margin-bottom: 20px;
+  }
+
+  .con4 .solution-info li h6 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .con4 .solution-info li p {
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
+
+  .con4 .solution-info li a {
+    font-size: 14px;
+    padding: 12px 30px;
+  }
+}

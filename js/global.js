@@ -1,5 +1,19 @@
+// go to top scroll
 document.addEventListener("DOMContentLoaded", function () {
-  // 🟡 햄버거 메뉴 토글 (모바일용)
+    const goToTopBtn = document.getElementById("goToTopBtn");
+
+    goToTopBtn.addEventListener("click", function (e) {
+      e.preventDefault(); // a 태그 기본 동작 막기
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  });
+
+  
+document.addEventListener("DOMContentLoaded", function () {
+  // 햄버거 메뉴 토글 (모바일용)
   const hamburgerMenu = document.getElementById('hamburger-menu');
   const slideMenu = document.getElementById('slide-menu');
 
@@ -8,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     hamburgerMenu.classList.toggle('active');
   });
 
-  // 🔵 데스크탑 서브메뉴 slide
+  // 데스크탑 서브메뉴 slide
   const menuItems = document.querySelectorAll(".main-menu > li");
   menuItems.forEach((item) => {
     const submenu = item.querySelector(".sub-menu");
@@ -30,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // 🟢 모바일 메뉴 toggle
+  // 모바일 메뉴 toggle
   const hamburger = document.getElementById('ham');
   const moNav = document.getElementById('moNav');
 
@@ -39,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
     hamburger.classList.toggle('close');
   });
 
-  // 🔴 스크롤 시 헤더 숨김/표시
+  // 스크롤 시 헤더 숨김/표시
   const header = document.querySelector("header");
   let lastScrollY = window.scrollY;
 
@@ -57,6 +71,10 @@ document.addEventListener("DOMContentLoaded", function () {
     lastScrollY = currentScrollY;
   });
 });
+
+
+
+
 
 // footer family-site
 document.addEventListener('DOMContentLoaded', function () {

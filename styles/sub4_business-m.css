@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+
+/* 금융 분야 사용 솔루션 안내 */
+/* contents 4 */
+.con4 {
+  padding: 0px 20px 80px;
+}
+
+.con4 .solution-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.con4 .solution-info li {
+  width: calc(50% - 37px);
+  height: 250px;
+  border: 1px solid #00006B;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 15px;
+  text-align: center;
+}
+
+.con4 .solution-info li img {
+  width: 40px;
+  margin-bottom: 12px;
+}
+
+.con4 .solution-info li h6 {
+  font-size: 16px;
+  font-weight: var(--weight-md);
+  color: var(--color-b);
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.con4 .solution-info li p {
+  font-size: 13px;
+  font-weight: var(--weight-md);
+  color: var(--color-g);
+  margin: 0;
+  margin-bottom: 13px;
+}
+
+.con4 .solution-info li a {
+  font-size: 13px;
+  color: var(--color-w);
+  background-color: var(--color-b);
+  display: block;
+  padding: 5px 15px;
+  border-radius: 15px;
+}
