@@ -243,10 +243,15 @@
   color: var(--color-b);
 }
 
+.con3 .con3-title br {
+  display: none;
+}
+
 .con3 .img-box-wrapper .img-box img {
   width: 390px;
   height: 390px;
   object-fit: cover;
+  border-radius: 15px;
 }
 
 .con3 .img-box-wrapper .img-box .hover-txt {
