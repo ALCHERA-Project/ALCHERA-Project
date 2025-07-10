@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+@media (min-width: 1280px) {
+
+/* sub3-main */
+  .sub3-main .main-title {
+    height: 620px;
+  }
+
+  .sub3-main .main-title h2 {
+    font-size: 50px;
+    margin-bottom: 33px;
+  }
+
+  .sub3-main .main-title p {
+    font-size: 22px;
+  }
+
+  .sub3-main .gradient1 {
+    top: 480px;
+  }
+
+  /* contents 1 */
+  .con1 {
+    padding: 200px 0 100px 0;
+
+  }
+
+  .con1 .list1 .list1-title {
+    padding: 20px 0 35px 0;
+    font-size: 38px;
+  }
+
+  .con1 .list1 p {
+    width: 570px;
+    padding-bottom: 70px;
+    font-size: 16px;
+  }
+  .con1 .list1 .txt-box-wrapper {
+    width: 100%;
+  }
+  .con1 .list1 .txt-box-wrapper .txt-box {
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .con1 .list1 .txt-box-wrapper .txt-box img {
+    width: 80px;
+  }
+  .con1 .list1 .txt-box-wrapper .txt-box h2 {
+    padding-top: 5px;
+    font-size: 40px;
+  }
+
+  .con1 .list2 {
+    padding-top: 160px;
+  }
+  .con1 .list2 .list2-title {
+    width: 100%;
+    font-size: 38px;
+  }
+  .con1 .list2 p {
+    width: 700px;
+    font-size: 16px;
+    margin: 20px 70px;
+  }
+
+  .con1 .list2 .img-box-wrapper {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .con1 .list2 .img-box-wrapper .img-box1,
+  .con1 .list2 .img-box-wrapper .img-box2,
+  .con1 .list2 .img-box-wrapper .img-box3,
+  .con1 .list2 .img-box-wrapper .img-box4 {
+    width: 400px;
+    height: 255px;
+  }
+  .con1 .list2 .img-box-wrapper .img-box1 h4,
+  .con1 .list2 .img-box-wrapper .img-box2 h4,
+  .con1 .list2 .img-box-wrapper .img-box3 h4,
+  .con1 .list2 .img-box-wrapper .img-box4 h4 {
+    width: 250px;
+    font-size: 24px;
+  }
+  .con1 .list2 .img-box-wrapper .img-box1 h5,
+  .con1 .list2 .img-box-wrapper .img-box2 h5,
+  .con1 .list2 .img-box-wrapper .img-box3 h5,
+  .con1 .list2 .img-box-wrapper .img-box4 h5 {
+    font-size: 16px;
+  }
+  
+
+  /* contents 2 */
+  .con2 {
+    padding: 270px 0 100px 0;
+
+  }
+
+  .con2 .con2-title {
+    margin-left: 950px;
+    font-size: 38px;
+    text-align: left;
+    line-height: 1.4;
+  }
+
+  .con2 p {
+    margin-left: 950px;
+    padding: 0;
+    width: 490px;
+    font-size: 16px;
+    text-align: left;
+  }
+
+
+}

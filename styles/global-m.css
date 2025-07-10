@@ -9,7 +9,7 @@ header nav {
   background-color: rgba(0, 0, 0, 0.85);
   color: white;
   transition: right 1s ease-in-out;
-  z-index: 1000;
+  z-index: 99999;
   padding: 80px 20px 20px;
   /* overflow-y: auto; */
 }
@@ -22,7 +22,7 @@ header nav.active {
 /* 햄버거 버튼 */
 .ham {
   position: fixed;
-  top: 20px;
+  /* top: 20px; */
   right: 20px;
   z-index: 1100;
   width: 30px;
@@ -56,21 +56,66 @@ header nav.active {
   font-weight: 600;
 }
 
-.sub-menu {
-  margin-top: 12px;
+/* slide-menu */
+.slide-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #000;
+  padding: 40px 24px;
+  height: 100vh;
+  overflow-y: auto;
+}
 
+.slide-menu.active {
   display: flex;
 }
 
-.sub-menu li a {
-  font-size: 16px;
-  color: var(--color-mg);
-  padding: 0 5px 0 5px;
-  border-right: 1px solid var(--color-mg);
+/* 모바일 메뉴 항목 */
+.main-mo > li {
+  margin-bottom: 40px;
 }
 
+.main-mo > li > a {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* 서브 메뉴 (소분류) */
+.sub-mo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+}
+
+.sub-mo li a {
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* 하단 링크 */
+.side-mo {
+  margin-top: auto;
+  padding-top: 40px;
+  border-top: 1px solid #333;
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.side-mo a {
+  color: #999;
+}
+
+
+
+
+
+
 /* 문의하기 / 데모신청 */
-.main-menu2 {
+/* .main-menu2 {
   padding-top: 50px;
   display: flex;
 
@@ -79,4 +124,4 @@ header nav.active {
   font-size: 18px;
   color: var(--color-lg);
   padding-right: 5px;
-}
+} */

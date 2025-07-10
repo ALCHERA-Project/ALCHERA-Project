@@ -7,11 +7,11 @@
   <title>service</title>
 
   <!------ favicon ------>
-  <!-- <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="./assets/images/favicon/site.webmanifest"> -->
+  <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
 
   <!-- open graph -->
   <meta property="og:title" content="ALCHERA">
@@ -30,41 +30,148 @@
   <link rel="stylesheet" href="./styles/global.css">
   <link rel="stylesheet" href="./styles/globalVar.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/sub3_service-pc.css">
+
   <link rel="stylesheet" href="./styles/sub3_service-m.css">
+  <link rel="stylesheet" href="./styles/sub3_service-pc.css">
+
 
   <!------ jQuery ------>
   <script src="./assets/Js/jquery-3.7.1.min.js"></script>
   <script src="./assets/Js/jquery-ui.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script> -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script> -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!-- <script src="./assets/Js/global.js" defer></script> -->
-  <!-- <script src="./sub3_service.js" defer></script> -->
 
-  <!-- 곡선 - 직선 배경 변경 -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script> -->
+  <!-- page 별 사용되는 js -->
+  <script src="/js/global.js"></script>
+  <script src="./js/sub3_service.js" defer></script>
 </head>
 
 <body>
+  <!------ fix-icon ------->
+  <!---- chat ---->
+  <div class="fix-icon">
+    <div class="chat">
+      <a href="#"><img src="./assets/images/global/icon/chat.svg" alt="chat"></a>
+    </div>
+
+    <!---- goToTop ---->
+    <div class="goToTop">
+      <a href="#" id="goToTopBtn"><img src="./assets/images/global/icon/goToTop.svg" alt="goToTop"></a>
+    </div>
+  </div>
+
   <!------ header ------>
   <header>
-    <!---- nav ---->
-    <nav>
-      <h1 class="logo"><a href=""><img src="" alt="logo"></a></h1>
+
+    <!---- mobile ---->
+    <nav class="m-menu">
+      <div class="main-menu">
+        <h1 class="logo"><a href="./index.html"><img src="./assets/images/global/logo-w.svg" alt="logo-w"></a></h1>
+        <div class="hamburger-menu" id="hamburger-menu">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+
+      <div class="slide-menu" id="slide-menu">
+        <ul class="main-mo">
+          <li><a href="./sub1_technology.html">기술</a>
+            <ul class="sub-mo">
+              <li><a href="./sub1_technology.html">얼굴인식 |</a></li>
+              <li><a href="./sub1_technology.html">OCR |</a></li>
+              <li><a href="./sub1_technology.html">이상상황 감지</a></li>
+            </ul>
+          </li>
+          <li><a href="./sub2_solution.html">솔루션</a>
+            <ul class="sub-mo">
+              <li><a href="./sub2_solution.html">얼굴 본인인증 |</a></li>
+              <li><a href="./sub2_solution.html">신분증 본인인증 |</a></li>
+              <li><a href="./sub2_solution.html">재외국민 여권 신원확인 |</a></li>
+              <li><a href="./sub2_solution.html">바이오정보 분산관리 |</a></li>
+              <li><a href="./sub2_solution.html">ekYC |</a></li>
+              <li><a href="./sub2_solution.html">출입통제 |</a></li>
+              <li><a href="./sub2_solution.html">산불 조기감지 |</a></li>
+              <li><a href="./sub2_solution.html">전기차 화재 조기감지</a></li>
+            </ul>
+          </li>
+          <li><a href="./sub3_service.html">서비스</a>
+            <ul class="sub-mo">
+              <li><a href="./sub3_service.html">AI 데이터 |</a></li>
+              <li><a href="./sub3_service.html">소프트웨어 개발 |</a></li>
+              <li><a href="./sub3_service.html">데이터바우처</a></li>
+            </ul>
+          </li>
+          <li><a href="./sub4_business.html">사업영역</a>
+            <ul class="sub-mo">
+              <li><a href="./sub4_business.html">금융 |</a></li>
+              <li><a href="./sub4_business.html">환경 |</a></li>
+              <li><a href="./sub4_business.html">정부/공공기관 |</a></li>
+              <li><a href="./sub4_business.html">공항 |</a></li>
+              <li><a href="./sub4_business.html">리테일 |</a></li>
+              <li><a href="./sub4_business.html">통신</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="side-mo">
+          <li><a href="#">문의하기 |</a></li>
+          <li><a href="#">데모 신청</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!---- pc ---->
+    <nav class="pc-menu">
+      <h1 class="logo"><a href="./index.html"><img src="./assets/images/global/logo-w.svg" alt="logo-w"></a></h1>
+
       <ul class="main-menu">
-        <li class="main-item"><a href="">기술</a></li>
-        <li class="main-item"><a href="">솔루션</a></li>
-        <li class="main-item"><a href="">서비스</a></li>
-        <li class="main-item"><a href="">사업영역</a></li>
+        <li><a href="./sub1_technology.html">기술</a>
+          <ul class="sub-menu">
+            <li><a href="#">얼굴인식</a></li>
+            <li><a href="#">OCR</a></li>
+            <li><a href="#">이상상황 감지</a></li>
+          </ul>
+        </li>
+        <li><a href="./sub2_solution.html">솔루션</a>
+          <ul class="sub-menu">
+            <li><a href="./sub2_solution.html">얼굴 본인인증</a></li>
+            <li><a href="./sub2_solution.html">신분증 본인인증</a></li>
+            <li><a href="./sub2_solution.html">재외국민 여권 신원확인</a></li>
+            <li><a href="./sub2_solution.html">바이오정보 분산관리</a></li>
+            <li><a href="./sub2_solution.html">ekYC</a></li>
+            <li><a href="./sub2_solution.html">출입통제</a></li>
+            <li><a href="./sub2_solution.html">산불 조기감지</a></li>
+            <li><a href="./sub2_solution.html">전기차 화재 조기감지</a></li>
+          </ul>
+        </li>
+        <li><a href="./sub3_service.html">서비스</a>
+          <ul class="sub-menu">
+            <li><a href="./sub3_service.html">AI 데이터</a></li>
+            <li><a href="./sub3_service.html">소프트웨어 개발</a></li>
+            <li><a href="./sub3_service.html">데이터바우처</a></li>
+          </ul>
+        </li>
+        <li><a href="./sub4_business.html">사업영역</a>
+          <ul class="sub-menu">
+            <li><a href="./sub4_business.html">금융</a></li>
+            <li><a href="./sub4_business.html">환경</a></li>
+            <li><a href="./sub4_business.html">정부/공공기관</a></li>
+            <li><a href="./sub4_business.html">공항</a></li>
+            <li><a href="./sub4_business.html">리테일</a></li>
+            <li><a href="./sub4_business.html">통신</a></li>
+          </ul>
+        </li>
       </ul>
-      <ul class="sub-menu">
-        <li class="sub-item"><a href="">문의하기</a></li>
-        <li class="sub-item"><a href="">데모 신청</a></li>
+
+      <ul class="side-menu">
+        <li class="side-item"><a href="#">문의하기</a></li>
+        <li class="side-item"><a href="#">데모 신청</a></li>
       </ul>
     </nav>
+
   </header>
+
+
+
 
   <!-- 여기부터 본문 -->
 
@@ -75,11 +182,11 @@
       <h2>AI 데이터</h2>
       <p>고성능 인공지능 모델 개발을 위한 고품질 AI 데이터 구축 서비스</p>
     </div>
+    <div class="gradient1"></div>
   </section>
 
   <!------ contents 1 ------>
   <section class="con1">
-
     <!-- list 1 -->
     <div class="list1">
       <h4 class="list1-subTitle">Feature</h4>
@@ -122,26 +229,46 @@
       </div>
     </div>
 
-    <!-- list 2 -->
+    <!-- list 2 : img-box -->
     <div class="list2">
       <h3 class="list2-title">장관상 배출한 4년 연속 데이터바우처 공급기업</h3>
       <p>알체라는 정부가 지원하는 데이터바우처 사업의 공식 선정사입니다. 이미 수 많은 고객사가 알체라와 함께 데이터바우처 지원사업을 수주했으며, 다수의 수요기업이 과기부 장관상을 수여하는 성과를 이뤄내고 있습니다.</p>
 
       <div class="img-box-wrapper">
-      <!-- img 1 -->
+        <!-- box1 -->
+        <div class="img-box1">
+          <h4>아동 다중지은 검사 결과 및 인터뷰 음성 수집</h4>
+          <h5>- 교육분야 AI 가공</h5>
+        </div>
+        <!-- box2 -->
+        <div class="img-box2">
+          <h4>전문 발표자 스피치 데이터 수집 및 가공</h4>
+          <h5>- 교육분야 AI 가공(청년기업)</h5>
+        </div>
+        <!-- box3 -->
+        <div class="img-box3">
+          <h4>산업현장 유해위험성 평가 데이터 정제</h4>
+          <h5>- 안전분야 AI 가공</h5>
+        </div>
+        <!-- box4 -->
+        <div class="img-box4">
+          <h4>영어 교육용 영상 데이터 수집 및 가공</h4>
+          <h5>- 교육분야 AI 가공(지역기업)</h5>
+        </div>
 
       </div>
     </div>
-
-    <!-- list 3 : map -->
-    <div class="list3">
-      <h3 class="list3-title">국내외 대규모 데이터 센터 보유 <br> 리소스를 활용한 데이터 품질 보장</h3>
-      <p>AI 데이터 구축을 위한 전문 레이블러가 국내와 해외 모두 상주하고 있습니다. 인프라를 통한 빠른 서비스 대응과 합리적인 견적을 제공해드리고 있습니다.</p>
-    </div>
   </section>
 
+  <!-- map -->
   <!------ contents 2 ------>
   <section class="con2">
+    <h3 class="con2-title">국내외 대규모 데이터 센터 보유 <br> 리소스를 활용한 데이터 품질 보장</h3>
+    <p>AI 데이터 구축을 위한 전문 레이블러가 국내와 해외 모두 상주하고 있습니다. 인프라를 통한 빠른 서비스 대응과 합리적인 견적을 제공해드리고 있습니다.</p>
+  </section>
+
+  <!------ contents 3 ------>
+  <section class="con3">
     
     <!-- list 1 -->
     <div class="list1">
@@ -153,19 +280,19 @@
       <div class="img-box-wrapper">
       
       <!-- img 1 -->
-       <div class="img-box">
+       <div class="img-box1">
         <h3>자율주행 데이터</h3>
        </div>
       <!-- img 2 -->
-       <div class="img-box">
+       <div class="img-box2">
         <h3>LLM/LMM 데이터</h3>
        </div>
       <!-- img 3 -->
-       <div class="img-box">
+       <div class="img-box3">
         <h3>Vision 데이터</h3>
        </div>
       <!-- img 4 -->
-       <div class="img-box">
+       <div class="img-box4">
         <h3>자연어 데이터</h3>
        </div>
       </div>
@@ -178,15 +305,15 @@
       <!-- video -->
       <div class="video-wrapper">
         <video src="./assets/images/sub3_service/con2/video.mp4" autoplay muted loop></video>
-        <p>정확한 라벨링 작업을 위한 고도화 솔루션 툴을 지원하고 있습니다. 고객사에서는 쉽고 빠르게 라벨링 작업을 하실 수 있으며, 작업 시간 단축과 원가 절감 등 효율적으로 데이터를 가공하고, 구축할 수 있습니다.</p>
+        <p>정확한 라벨링 작업을 위한 고도화 솔루션 툴을 지원하고 있습니다. <br> 고객사에서는 쉽고 빠르게 라벨링 작업을 하실 수 있으며, <br> 작업 시간 단축과 원가 절감 등 효율적으로 데이터를 가공하고, 구축할 수 있습니다.</p>
       </div>
      </div>
   </section>
 
-  <!------ contents 3 ------>
-  <section class="con3">
-    <h4 class="contents-subTitle">Process</h4>
-    <h3 class="contents-title">One-Stop AI 데이터 구축 프로세스</h3>
+  <!------ contents 4 ------>
+  <section class="con4">
+    <h4 class="con4-subTitle">Process</h4>
+    <h3 class="con4-title">One-Stop AI 데이터 구축 프로세스</h3>
     <p>고객의 요구사항을 기반으로한 체계적인 프로세스로 데이터 수집부터 데이터 납품까지 One-Stop 서비스를 제공합니다.</p>
 
     <!-- text -->
@@ -194,10 +321,10 @@
 
       <!-- text 1 -->
       <div class="txt-box">
-        <div class="icon1">
+        <div class="icon">
           <img src="./assets/images/sub3_service/con3/project.svg" alt="icon1">
         </div>
-        <h4>얼굴 검증</h4>
+        <h4>프로젝트 설계</h4>
       </div>
 
       <!-- arrow -->
@@ -207,7 +334,7 @@
 
       <!-- text 2 -->
       <div class="txt-box">
-        <div class="icon2">
+        <div class="icon">
           <img src="./assets/images/sub3_service/con3/work.svg" alt="icon2">
         </div>
         <h4>POC 수행</h4>
@@ -220,7 +347,7 @@
 
       <!-- text 3 -->
       <div class="txt-box">
-        <div class="icon3">
+        <div class="icon">
           <img src="./assets/images/sub3_service/con3/collect.svg" alt="icon3">
         </div>
         <h4>데이터 수집</h4>
@@ -233,10 +360,10 @@
 
       <!-- text 4 -->
       <div class="txt-box">
-        <div class="icon4">
+        <div class="icon">
           <img src="./assets/images/sub3_service/con3/filter.svg" alt="icon4">
         </div>
-        <h4>데이터 수집</h4>
+        <h4>데이터 정제/잔처리</h4>
       </div>
 
       <!-- arrow -->
@@ -246,7 +373,7 @@
 
       <!-- text 5 -->
       <div class="txt-box">
-        <div class="icon5">
+        <div class="icon">
           <img src="./assets/images/sub3_service/con3/manufacture.svg" alt="icon5">
         </div>
         <h4>데이터 가공</h4>
@@ -259,7 +386,7 @@
 
       <!-- text 6 -->
       <div class="txt-box">
-        <div class="icon6">
+        <div class="icon">
           <img src="./assets/images/sub3_service/con3/check.svg" alt="icon6">
         </div>
         <h4>데이터 검수</h4>
@@ -272,7 +399,7 @@
 
       <!-- text 7 -->
       <div class="txt-box">
-        <div class="icon6">
+        <div class="icon">
           <img src="./assets/images/sub3_service/con3/deliver.svg" alt="icon7">
         </div>
         <h4>데이터 납품</h4>
@@ -285,10 +412,10 @@
     </div>
   </section>
 
-  <!------ contents 4 ------>
-  <section class="con4">
-    <h4 class="contents-subTitle">Resources</h4>
-    <h3 class="contents-title">AI 데이터 서비스에 대해 더 알아보세요</h3>
+  <!------ contents 5 ------>
+  <section class="con5">
+    <h4 class="con5-subTitle">Resources</h4>
+    <h3 class="con5-title">AI 데이터 서비스에 대해 더 알아보세요</h3>
     <a href="#" class="readmore-btn">Read More ></a>
 
     <!-- resource list -->
@@ -299,7 +426,7 @@
 
         <!-- active -->
         <div class="content-wrapper">
-          <img src="./assets/images/sub3_service/con4/resource1.png" alt="resource1">
+          <!-- <img src="./assets/images/sub3_service/con4/resource1.png" alt="resource1"> -->
           <div class="text-wrapper">
             <p class="text">데이터는 기업이 성장하고 경쟁력을 유지하는 데 필수적인 자원입니다.하지만 데이터 구매 비용, 가공 기술의 부족, 전문 인력 부재는 여전히 많은 중소기업과 소상공인들에게 높은 장벽으로 작용하고 있습니다.</p>
             <p class="date">인사이트 <span>2025-01-24</span></p>
@@ -313,7 +440,7 @@
 
         <!-- active -->
         <div class="content-wrapper">
-          <img src="./assets/images/sub3_service/con4/resource2.jpeg" alt="resource2">
+          <!-- <img src="./assets/images/sub3_service/con4/resource2.jpeg" alt="resource2"> -->
           <div class="text-wrapper">
             <p class="text">최근 글로벌 자율주행 시장이 빠르게 성장하고 있습니다. 기업은 물론 정부 차원에서 정책적, 재정적 지원을 아끼지 않고 있는데요. 자율주행 기술의 고도화에 꼭 필요한 것이 있습니다. 바로 AI 데이터 학습인데요. 자율주행 기술과 AI 데이터의 연관성을 알아보고, 알체라가 가진 AI 데이터 사업의 전문성을 소개해 드립니다.</p>
             <p class="date">인사이트 <span>2025-01-09</span></p>
@@ -327,7 +454,7 @@
 
         <!-- active -->
         <div class="content-wrapper">
-          <img src="./assets/images/sub3_service/con4/resource3.png" alt="resource3">
+          <!-- <img src="./assets/images/sub3_service/con4/resource3.png" alt="resource3"> --> 
           <div class="text-wrapper">
             <p class="text">AI 솔루션 개발시, 고민하게 되는 것 중 하나는 "얼마나 많은 데이터가 필요할까?"입니다. 대부분의 AI 전문가는 “데이터는 많을수록 좋습니다.”라는 답변을 합니다. 그 이유는 데이터의 양이 많으면 다음과 같은 장점을 얻을 수 있기 때문입니다.</p>
             <p class="date">인사이트 <span>2024-10-29</span></p>
@@ -341,7 +468,7 @@
 
         <!-- active -->
         <div class="content-wrapper">
-          <img src="./assets/images/sub3_service/con4/resource4.jpeg" alt="resource4">
+          <!-- <img src="./assets/images/sub3_service/con4/resource4.jpeg" alt="resource4"> -->
           <div class="text-wrapper">
             <p class="text">최고의 요리가 좋은 재료에서 시작되듯, AI 솔루션의 품질 또한 고품질의 데이터에 달려 있습니다. 데이터 라벨링은 AI 데이터를 준비하는 과정 중 하나로, 수집, 라벨링, 전처리 단계를 포함합니다. 데이터 라벨링의 중요성 및 과정과 이 작업이 AI 개발에 어떻게 기여하는지 자세히 살펴보겠습니다.</p>
             <p class="date">인사이트 <span>2024-10-18</span></p>
@@ -351,13 +478,17 @@
     </ul>
   </section>
 
-  <!------ contact ------>
-  <section class="contact">
-    <p>Contact Us</p>
-    <h3>얼굴인식 AI 기술로 비즈니스를 업그레이드하세요</h3>
-    <h4>알체라의 세일즈 컨설턴트가<br>고객님에게 최적의 솔루션을 제안 드립니다.</h4>
-    <a href="#">문의하기 →<img src="./assets/images/global/contact.jpg" alt="contact"></a>
-  </section>
+
+
+
+    <!------ contact ------>
+    <section class="contact">
+        <p>Contact Us</p>
+        <h3>얼굴인식 AI 기술로 비즈니스를 업그레이드하세요</h3>
+        <h4>알체라의 세일즈 컨설턴트가<br>고객님에게 최적의 솔루션을 제안 드립니다.</h4>
+        <a href="#">문의하기 <span><img src="./assets/images/global/icon/arrow_right.svg" alt="arrow_right"></span>
+        </a>
+    </section>
 
     <!------ footer ------>
     <footer>

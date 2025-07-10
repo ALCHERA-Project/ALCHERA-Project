@@ -1,7 +1,7 @@
 # ALCHERA Project 작업일지
 - 리뉴얼 사이트: https://www.alchera.ai/
 - Alchera Youtube : https://www.youtube.com/@ALCHERAinc/videos
-- 레퍼 사이트(메인): https://convencion-hyundai.plastic.design/?utm_source=awwwards&utm_medium=web&utm_campaign=hyundai_convention&utm_content=awwwards_summit
+- 레퍼 사이트(메인): https://convencion-hyundai.plastic.design
 - 레퍼 사이트(서브) : https://www.pltt.xyz/pages/service/video.php
 - gsap 레퍼: https://madewithgsap.com/
 - google drive : https://drive.google.com/drive/folders/1jNLVl-mRead3KSveLNgLUBjFLA73RuBt?usp=drive_link
@@ -21,7 +21,7 @@
 - 서브2 CSS
 
 2) 은혜
-- 포토덤프 이미지 먼저 업로드
+- 포토덤프 이미지 먼저 업로드 - ok
 - 글로벌 수정 / 모두 적용
 - 서브페이지 제발 해오긔.. (sub2 js도 부탁해요!)
 - 유효성 검사
@@ -60,6 +60,13 @@
 ### 미팅 내용
 1) index 작업
 - solution, tech(가로스크롤), press(가로 슬라이드) 작업
+
+# 250705
+### 은혜
+- sub3, 4 css - mo / pc 작성
+- 유효성 검사
+- 글로벌 css 디테일 수정
+- 포토덤프 사진 업로드
 
 # 250629
 ### 서희

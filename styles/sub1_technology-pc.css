@@ -98,6 +98,7 @@
     font-size: 16px;
   }
 
+  /* 지그재그 이미지 */
   /* contents 2 */
   .con2-wrapper {
     width: 100%;
@@ -263,7 +264,7 @@
     width: 100%;
     display: grid;
     gap: 20px;
-    grid-template-row: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(3, 1fr);
   }
   .con4 .solution-info li {

@@ -1,0 +1,331 @@
+@charset "utf-8";
+
+/***** mo *****/
+
+/* sub4-main */
+.sub4-main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.sub4-main .main-title {
+  background: url(../assets/images/sub4_business/sub4-main.jpg) no-repeat 70% 50%;
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub4-main .main-title h2 {
+  font-size: 30px;
+  font-weight: var(--weight-md);
+  color: var(--color-w);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sub4-main .main-title p {
+  width: 300px;
+  font-size: 16px;
+  font-weight: var(--weight-xs);
+  line-height: 1.4;
+  color: var(--color-w);
+  text-align: center;
+  margin: 0px 20px;
+}
+
+.gradient1 {
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(to top, #494949 0%, rgba(57, 114, 57, 0) 100%);
+  position: absolute;
+  top: 650px;
+  z-index: 9;
+}
+
+/****** contents 1 ******/
+.con1 {
+  padding: 200px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  /* pc에서는 display grid로 변경해서 정렬 */
+  align-items: center;
+  position: relative;
+}
+
+.con1 .gradient2 {
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(to bottom, #494949 0%, rgba(57, 114, 57, 0) 100%);
+  position: absolute;
+  top: 0px;
+  z-index: 9;
+}
+
+.con1 .con1-subTitle {
+  font-size: 16px;
+  color: var(--color-mb);
+}
+
+.con1 .con1-title {
+  padding: 20px 0 50px 0;
+  font-size: 22px;
+  color: var(--color-b);
+}
+
+/* 그래프 이미지 2개 */
+.con1 .img-box-wrapper {
+  width: 350px;
+}
+.con1 .img-box-wrapper .img-box {
+
+}
+.con1 .img-box-wrapper .img-box .img1 img,
+.con1 .img-box-wrapper .img-box .img2 img {
+  width: 350px;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border-radius: 15px;
+}
+.con1 .img-box-wrapper .img-box .img1 h3,
+.con1 .img-box-wrapper .img-box .img2 h3 {
+  padding: 25px 0 10px;
+  font-size: 18px;
+  color: var(--color-mb);
+}
+.con1 .img-box-wrapper .img-box .img1 h4,
+.con1 .img-box-wrapper .img-box .img2 h4 {
+  padding-bottom: 10px;
+  font-size: 14px;
+  letter-spacing: -1px;
+  color: var(--color-b);
+}
+.con1 .img-box-wrapper .img-box .img1 p,
+.con1 .img-box-wrapper .img-box .img2 p {
+  font-size: 14px;
+  color: var(--color-g);
+}
+.con1 .img-box-wrapper .img-box .img2 {
+  padding-top: 35px;
+}
+
+
+/* 지 그 재 그 */
+/****** contents 2 ******/
+.con2 {
+  padding: 80px 20px 0 20px;
+  text-align: center;
+}
+
+/* list 1 시나리오 */
+.con2 .list1 {
+}
+
+.con2 .list1-subTitle {
+  font-size: 16px;
+  color: var(--color-mb);
+}
+
+.con2 .list1-title {
+  padding: 20px 0 50px 0;
+  font-size: 22px;
+  color: var(--color-b);
+}
+.con2 .list1 img {
+  width: 100%;
+}
+
+/* list 2 - 지그재그 1 */
+/* list 3 - 지그재그 2 */
+.con2 .list2 .list2-title,
+.con2 .list3 .list3-title {
+  margin: 80px 20px 40px;
+  font-size: 22px;
+  color: var(--color-b);
+}
+
+.con2 .list2 p,
+.con2 .list3 p {
+  margin: 25px 20px 30px;
+  color: var(--color-b);
+}
+
+.con2 .list2 .list2-wrapper,
+.con2 .list3 .list3-wrapper {
+  /* margin: 0px 20px; */
+  display: grid;
+
+  /* 이거 안해도 되나...?!?!???  ****************************************************/
+  /* grid-template-rows: repeat(4, 220px 1fr); */
+}
+
+.con2 .list2 .list2-wrapper img,
+.con2 .list3 .list3-wrapper img {
+  width: 100%;
+  /* height: 220px; */
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.con2 .list2 .list2-wrapper img:nth-child(1),
+.con2 .list3 .list3-wrapper img:nth-child(1) {
+  grid-row: 1 / 2;
+}
+
+.con2 .list2 .list2-wrapper img:nth-child(2),
+.con2 .list3 .list3-wrapper img:nth-child(2) {
+  grid-row: 3 / 4;
+}
+
+.con2 .list2 .list2-wrapper img:nth-child(3),
+.con2 .list3 .list3-wrapper img:nth-child(3) {
+  grid-row: 5 / 6;
+}
+
+/* .con2 .list2 .list2-wrapper img:nth-child(4) {
+  grid-row: 7 / 8;
+} */
+
+.con2 .list2 .list2-wrapper .txt-wrapper,
+.con2 .list3 .list3-wrapper .txt-wrapper {
+  text-align: left;
+  padding-bottom: 50px;
+}
+
+.con2 .list2 .list2-wrapper .txt-wrapper h5,
+.con2 .list3 .list3-wrapper .txt-wrapper h5 {
+  font-size: 18px;
+  font-weight: var(--weight-md);
+  color: var(--color-mb);
+  margin: 30px 0px 10px;
+}
+
+.con2 .list2 .list2-wrapper .txt-wrapper p,
+.con2 .list3 .list3-wrapper .txt-wrapper p {
+  font-size: 14px;
+  font-weight: var(--weight-md);
+  color: var(--color-b);
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.con2 .list2 .list2-wrapper .txt-wrapper p span,
+.con2 .list3 .list3-wrapper .txt-wrapper p span {
+  margin: 5px 0 0 18px;
+  color: var(--color-g);
+  display: block;
+}
+
+/****** contents 3 ******/
+.con3 {
+  padding: 30px 20px 0 20px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  /* pc에서는 display grid로 변경해서 정렬 */
+  align-items: center;
+  position: relative;
+}
+
+.con3 .con3-subTitle {
+  font-size: 16px;
+  color: var(--color-mb);
+}
+
+.con3 .con3-title {
+  width: 260px;
+  padding: 20px 0 50px 0;
+  font-size: 22px;
+  color: var(--color-b);
+}
+
+.con3 .img-box-wrapper .img-box img {
+  width: 390px;
+  height: 390px;
+  object-fit: cover;
+}
+
+.con3 .img-box-wrapper .img-box .hover-txt {
+  margin: 30px 20px 40px 20px;
+}
+.con3 .img-box-wrapper .img-box .hover-txt h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: var(--color-b);
+}
+.con3 .img-box-wrapper .img-box .hover-txt p {
+  text-align: left;
+  line-height: 1.4;
+  color: var(--color-g);
+}
+
+
+/* 금융 분야 사용 솔루션 안내 */
+/****** contents 4 ******/
+.con4 {
+  padding: 80px 0 80px;
+}
+
+.con4 .con4-title {
+  padding: 20px 0 50px 0;
+  text-align: center;
+  font-size: 22px;
+  color: var(--color-b);
+}
+
+.con4 .solution-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.con4 .solution-info li {
+  width: calc(50% - 37px);
+  height: 250px;
+  border: 1px solid #00006B;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 15px;
+  text-align: center;
+}
+
+.con4 .solution-info li img {
+  width: 40px;
+  margin-bottom: 12px;
+}
+
+.con4 .solution-info li h6 {
+  font-size: 16px;
+  font-weight: var(--weight-md);
+  color: var(--color-b);
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.con4 .solution-info li p {
+  font-size: 13px;
+  font-weight: var(--weight-md);
+  color: var(--color-g);
+  margin: 0;
+  margin-bottom: 13px;
+}
+
+.con4 .solution-info li a {
+  font-size: 13px;
+  color: var(--color-w);
+  background-color: var(--color-b);
+  display: block;
+  padding: 5px 15px;
+  border-radius: 15px;
+}
