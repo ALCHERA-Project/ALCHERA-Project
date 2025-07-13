@@ -175,7 +175,7 @@
 /* box 1 */
 .con1 .list2 .img-box-wrapper .img-box1 {
   height: 200px;
-  background-image: url(../assets/images/sub3_service/con1/list2/1_education.jpg);
+  background-image: url(../assets/images/sub3_service/con1/list2/1.png);
   background-size: cover;
   border-radius: 15px;
   border: 1px solid var(--color-w);
@@ -188,7 +188,7 @@
 /* box 2 */
 .con1 .list2 .img-box-wrapper .img-box2 {
   height: 200px;
-  background-image: url(../assets/images/sub3_service/con1/list2/2_speech.jpg);
+  background-image: url(../assets/images/sub3_service/con1/list2/2.png);
   background-size: cover;
   border-radius: 15px;
   border: 1px solid var(--color-w);
@@ -201,7 +201,7 @@
 /* box 1 */
 .con1 .list2 .img-box-wrapper .img-box3 {
   height: 200px;
-  background-image: url(../assets/images/sub3_service/con1/list2/3_industry.jpg);
+  background-image: url(../assets/images/sub3_service/con1/list2/3.png);
   background-size: cover;
   border-radius: 15px;
   border: 1px solid var(--color-w);
@@ -214,7 +214,7 @@
 /* box 1 */
 .con1 .list2 .img-box-wrapper .img-box4 {
   height: 200px;
-  background-image: url(../assets/images/sub3_service/con1/list2/4_data.jpg);
+  background-image: url(../assets/images/sub3_service/con1/list2/4.png);
   background-size: cover;
   border-radius: 15px;
   border: 1px solid var(--color-w);
