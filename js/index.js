@@ -22,30 +22,33 @@ requestAnimationFrame(raf);
   });
 
 // intro - about 스크롤 
-gsap.registerPlugin(ScrollTrigger);
+  // GSAP 플러그인 등록
+  gsap.registerPlugin(ScrollTrigger);
 
-// 텍스트 서서히 사라지기
-gsap.to(".intro-title", {
-  opacity: 0,
-  // scale: 1.2,
-  scrollTrigger: {
-    trigger: ".intro",
-    start: "top top",
-    end: "bottom top",
-    scrub: true
-  }
-});
+  // PC 버전에서만 실행
+  if (window.innerWidth > 390) {
+    // 텍스트 서서히 사라지기
+    gsap.to(".intro-title", {
+      opacity: 0,
+      scrollTrigger: {
+        trigger: ".intro",
+        start: "top top",
+        end: "bottom top",
+        scrub: true
+      }
+    });
 
-// 배경 비디오 어둡게 만들고 싶다면 추가
-gsap.to(".intro video", {
-  filter: "brightness(0)",
-  scrollTrigger: {
-    trigger: ".about",
-    start: "top 70%",  // about이 보이기 시작할 때
-    end: "top top",    // 화면의 중간까지 왔을 때
-    scrub: true
+    // 배경 비디오 어두워지기
+    gsap.to(".intro video", {
+      filter: "brightness(0)",
+      scrollTrigger: {
+        trigger: ".about",
+        start: "top 70%",
+        end: "top top",
+        scrub: true
+      }
+    });
   }
-});
 
 // 🔹 1. intro 섹션을 pin (고정)
 ScrollTrigger.create({
