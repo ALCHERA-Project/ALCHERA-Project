@@ -38,7 +38,7 @@
 
 3) 같이 만나서 (7/6 일)
 - 퍼블리싱 가이드 라인
-- 발표자료 만들긔
+- 발표자료 만들기
 
 ### 미팅 내용
 1) index
@@ -65,7 +65,7 @@
 2) sub 수정
 - 각 css 문서에 'globalVar : color, font-weight'로 수정 
 - transition : ease-in-out 통일
-- global 최종본으로 통일 (은혜가 수정후 적용시키겠어요)
+- global 최종본으로 통일 (은혜가 수정후 적용)
 
 ### 미팅 내용
 1) index 작업
