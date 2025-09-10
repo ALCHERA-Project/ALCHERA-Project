@@ -51,12 +51,25 @@ requestAnimationFrame(raf);
   }
 
 // 🔹 1. intro 섹션을 pin (고정)
-ScrollTrigger.create({
-  trigger: ".intro",
-  start: "top top",
-  end: "bottom top", // intro의 끝이 뷰포트 상단에 닿을 때 고정 해제
-  pin: true,
-  pinSpacing: false // 고정된 동안 아래 콘텐츠 밀리지 않게
+// ScrollTrigger.create({
+//   trigger: ".intro",
+//   // trigger: ".pin-spacer",
+//   start: "top top",
+//   end: "bottom top", // intro의 끝이 뷰포트 상단에 닿을 때 고정 해제
+//   pin: true,
+//   pinSpacing: false // 고정된 동안 아래 콘텐츠 밀리지 않게
+// });
+
+ScrollTrigger.matchMedia({
+  "(min-width: 1200px)": function () {
+    ScrollTrigger.create({
+      trigger: ".intro",
+      start: "top top",
+      end: "bottom top", // intro의 끝이 뷰포트 상단에 닿을 때 고정 해제
+      pin: true,
+      pinSpacing: false // 고정된 동안 아래 콘텐츠 밀리지 않게
+    });
+  }
 });
 
 
@@ -64,7 +77,7 @@ ScrollTrigger.create({
 // about-video
 gsap.registerPlugin(ScrollTrigger);
 
-  // 🎥 비디오 천천히 위로 이동 (패럴럭스 느낌)
+  // 비디오 천천히 위로 이동 (패럴럭스 느낌)
   gsap.to(".about-video video", {
     y: -500, // 전체 스크롤 구간 동안 150px 위로 이동
     ease: "none",
@@ -76,7 +89,7 @@ gsap.registerPlugin(ScrollTrigger);
     }
   });
 
-  // ✨ 텍스트 리스트 등장 애니메이션
+  // 텍스트 리스트 등장 애니메이션
 // 1. 텍스트를 글자 단위로 쪼개서 <span>으로 감싸기
 function splitTextToSpans(selector) {
   document.querySelectorAll(selector).forEach((el) => {
