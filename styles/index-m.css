@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+*{
+  font-family: var(--primary-font-ko);
+}
+
 body {
   margin: 0;
   overflow-x: hidden;
