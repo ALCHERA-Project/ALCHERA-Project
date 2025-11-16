@@ -213,7 +213,7 @@ body {
 }
 
 .tech .tech-scroll .img-list li:nth-child(2) {
-  background: url(../assets/images/index/01_tech/ocr2.jpg) no-repeat center;
+  background: url(../assets/images/index/01_tech/ocr.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -364,12 +364,12 @@ body {
 }
 
 .photoDump li:nth-of-type(5) {
-  top: 60%;
+  top: 48%;
   left: 15%;
 }
 
 .photoDump li:nth-of-type(6) {
-  top: 60%;
+  top: 65%;
   left: 50%;
 }
 
@@ -466,13 +466,12 @@ body {
   margin: 0;
   color: var(--color-b);
   margin-bottom: 45px;
+  font-size: 24px;
 }
 
 .history .history-wrapper {
   position: relative;
 }
-
-
 
 .history .history-wrapper dl {
   display: flex;
