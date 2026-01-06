@@ -15,7 +15,7 @@
     position: fixed;
     bottom: 150px;
     right: 20px;
-    z-index: 999;
+    z-index: 99999;
   }
 
   .fix-icon .chat a img {
@@ -51,7 +51,7 @@
     position: fixed;
     bottom: 85px;
     right: 20px;
-    z-index: 999;
+    z-index: 9999;
   }
 
   .fix-icon .goToTop a img {
@@ -72,7 +72,7 @@
     padding: 0px 20px;
     background-color: #000;
     position: fixed;
-    z-index: 999;;
+    z-index: 99999;
   }
 
   .m-menu .main-menu {
@@ -195,8 +195,6 @@
   }
 
 
-
-
   /****** footer-mobile ******/
   footer {
     background-color: var(--color-b);
@@ -224,8 +222,6 @@
     margin: 0;
     padding: 0;
   }
-
-  footer .footer-menu-wrapper .link-list li {}
 
   footer .footer-menu-wrapper .link-list li a {
     font-size: 16px;
@@ -472,6 +468,8 @@
 
 }
 
+
+
 /* 구분 *****************************/
 /****** pc ******/
 
@@ -589,7 +587,7 @@
     padding-left: 10px;
   }
 
-  /* ✅ 헤더 스크롤 시 숨기기 - 공통 적용 */
+  /* 헤더 스크롤 시 숨기기 - 공통 적용 */
   header.hide {
     transform: translateY(-100%);
     transition: transform 0.3s ease;
@@ -680,6 +678,16 @@
     color: var(--color-w);
   }
 
+  .contact a .arrow {
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(0);
+  } 
+  
+  .contact a:hover .arrow {
+    color: var(--color-w);
+    transform: translateX(6px);
+  }
+
 
   /****** footer ******/
   footer {
@@ -763,7 +771,7 @@
   /** family-site **/
   .family-site {
     width: 160px;
-    position: absolute;
+    /* position: absolute; */
     right: 0;
     bottom: 30px;
     margin: 0;
@@ -771,7 +779,6 @@
     list-style: none;
     display: flex;
     flex-direction: column-reverse;
-    z-index: 1;
   }
 
   .family-site li {
@@ -780,7 +787,7 @@
     text-align: center;
     border-bottom: none;
     opacity: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     pointer-events: none;
   }
 
@@ -788,6 +795,7 @@
     display: block;
     width: 160px;
     height: 35px;
+    background-color: var(--color-b);
     border-left: 1px solid var(--color-w);
     border-right: 1px solid var(--color-w);
     line-height: 32px;
@@ -806,6 +814,7 @@
   .family-site.open li:not(.active) {
     opacity: 1;
     transform: translateY(0);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     pointer-events: auto;
   }
 
