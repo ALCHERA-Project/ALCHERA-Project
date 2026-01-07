@@ -6,13 +6,18 @@
 - gsap 레퍼: https://madewithgsap.com/
 - google drive : https://drive.google.com/drive/folders/1jNLVl-mRead3KSveLNgLUBjFLA73RuBt?usp=drive_link
 
-# ppt 탬플릿
-1) 구글드라이브 > '0.ppt 탬플릿' 폴더에 3개 업로드 해뒀었는데, 이중에서 골라서 쓰면 될듯
-
 # global
 1) global.html 따로 작성해서 4가지 영역 작성해둠
 2) 여기에 header / chat+goToTOp / contact / footer 4가지 적어둠
 3) 'head' 영역에 들어가는 태그 작성해둠
+
+# 260106 - 07
+1) global
+- contact 화살표 svg 색상변경 수정
+: svg 코드 내부의 fill="currnetColor" 로 설정 후 css 적용
+- footer의 family-site / sns 클릭 문제 해결
+: z-inedx+pointer-events 물리적인 문제
+- 대메뉴, 서브메뉴, sns, family-site 링크 체크 및 수정
 
 # 250626 12차 미팅
 ### 해올 것
@@ -22,7 +27,6 @@
 
 2) 공통
 - 최종 ppt 내용 피그마에 적어오기
-
 
 # 250626 11차 미팅
 ### 해올 것

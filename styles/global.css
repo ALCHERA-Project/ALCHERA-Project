@@ -316,6 +316,22 @@
     line-height: 20px;
   }
 
+  /** sns **/
+  .sns {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 20px;
+    top: -5px;
+  }
+
+  .sns li a img {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(358deg) brightness(100%) contrast(100%);
+  }
+
   /** family-site **/
   .family-site {
     width: 150px;
@@ -323,7 +339,6 @@
     bottom: -40px;
     margin: 0;
     padding: 0;
-    list-style: none;
     display: flex;
     flex-direction: column-reverse;
   }
@@ -332,8 +347,8 @@
     text-align: center;
     border-bottom: none;
     opacity: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    pointer-events: none;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    pointer-events: auto;
   }
 
   .family-site li a {
@@ -390,21 +405,6 @@
     border: 1px solid var(--color-w);
   }
 
-  /** sns **/
-  .sns {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    right: 20px;
-    top: -5px;
-  }
-
-  .sns li a img {
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(358deg) brightness(100%) contrast(100%);
-  }
 
   /****** contact-mobile ******/
   .contact {
@@ -682,7 +682,7 @@
     transition: transform 0.3s ease-in-out;
     transform: translateX(0);
   } 
-  
+
   .contact a:hover .arrow {
     color: var(--color-w);
     transform: translateX(6px);
@@ -768,10 +768,22 @@
     margin-bottom: 0px;
   }
 
+  /** sns **/
+  .sns {
+    gap: 25px;
+    right: 0px;
+    top: 65px;
+  }
+
+  .sns li a img {
+    width: 30px;
+    height: 30px;
+  }
+
   /** family-site **/
   .family-site {
     width: 160px;
-    /* position: absolute; */
+    position: absolute;
     right: 0;
     bottom: 30px;
     margin: 0;
@@ -788,7 +800,12 @@
     border-bottom: none;
     opacity: 0;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    pointer-events: none;
+
+    /* 
+    family-site가 물리적으로 sns 위를 덮고 있어 클릭이 안됨
+    none -> auto 로 변경 
+    */
+    pointer-events: auto;
   }
 
   .family-site li a {
@@ -843,17 +860,5 @@
     opacity: 1;
     pointer-events: auto;
     border: 1px solid var(--color-w);
-  }
-
-  /** sns **/
-  .sns {
-    gap: 25px;
-    right: 0px;
-    top: 65px;
-  }
-
-  .sns li a img {
-    width: 30px;
-    height: 30px;
   }
 }
