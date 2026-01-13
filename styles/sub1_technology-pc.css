@@ -2,10 +2,6 @@
 
 /***** pc *****/
 @media (min-width: 1280px) {
-
-  /* common css */
-  body {}
-
   .contents-title {
     font-size: 38px;
     margin: 160px 80px 70px;
@@ -34,12 +30,12 @@
     width: 100%;
     display: flex;
     gap: 35px;
-    padding: 120px 100px;
+    padding: 120px 135px;
     background-color: var(--color-b);
   }
 
   .sub1-main .main-video video {
-    width: 500px;
+    width: 550px;
     margin-bottom: 0px;
   }
 
@@ -158,7 +154,7 @@
   .con2 .txt-wrapper h5 {
     font-size: 24px;
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   .con2 .txt-wrapper p {
@@ -182,8 +178,13 @@
 
   .con3 .readmore-btn {
     text-align: end;
+    /* transition: all 0.3s ease-in-out; */
   }
 
+  .con3 .readmore-btn:hover {
+    text-decoration: underline;
+  }
+  
   .con3 .link-wrapper {
     width: 100%;
     margin: 0;
@@ -195,7 +196,7 @@
 
   .con3 .link-wrapper li {
     width: 100%;
-    height: 160px;
+    height: 170px;
     padding: 0;
     border-radius: 15px;
   }
@@ -250,13 +251,9 @@
     margin-bottom: 3px;
   }
 
-  .con3 .link-wrapper li a p {
-    font-size: 13px;
-  }
-
   /* contents 4 */
   .con4 {
-    margin: 40px 80px 160px;
+    margin: 40px 150px 160px;
     padding: 0;
   }
 
@@ -279,12 +276,14 @@
   }
 
   .con4 .solution-info li h6 {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 15px;
   }
 
   .con4 .solution-info li p {
-    font-size: 12px;
+    padding: 0 110px;
+    font-size: 16px;
+    font-weight: var(--weight-sm);
     margin-bottom: 30px;
   }
 
