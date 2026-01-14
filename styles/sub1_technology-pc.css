@@ -101,7 +101,7 @@
     margin: 0px;
     display: grid;
     justify-content: center;
-    gap: 30px;
+    gap: 35px;
     grid-template-rows: repeat(4, 307px);
     grid-template-columns: 486px 486px;
   }

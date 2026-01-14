@@ -11,6 +11,22 @@
 2) 여기에 header / chat+goToTOp / contact / footer 4가지 적어둠
 3) 'head' 영역에 들어가는 태그 작성해둠
 
+# 260114
+1) sub2
+- 비디오 슬라이드 스크립트 수정
+- 
+
+# 260113
+1) sub1
+- grid 간격 수정
+1) sub2
+- 폰트 크기 수정
+- 비디오 슬라이드 스크립트 수정
+
+1) sub1 수정
+- 폰트 적용 확인 및 크기 수정
+- 이미지 호버 transition 수정
+
 # 260106 - 07
 1) global
 - contact 화살표 svg 색상변경 수정

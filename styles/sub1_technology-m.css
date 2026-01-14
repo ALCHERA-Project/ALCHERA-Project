@@ -166,8 +166,8 @@
 
 .con2 .txt-wrapper h5 {
   font-family: var(--primary-font-en);
+  font-weight: var(--weight-md);
   font-size: 18px;
-  font-weight: 600;
   color: var(--color-b);
   margin: 30px 0px 10px;
 }
