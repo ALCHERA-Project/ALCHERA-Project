@@ -348,6 +348,8 @@
     padding: 0;
     margin: 0;
     gap: 0;
+    overflow: hidden;
+    cursor: default;
   }
 
   .img-slide .img-menu-wrapper li {

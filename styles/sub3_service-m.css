@@ -251,7 +251,7 @@
 .con2 {
   height: 700px;
   padding-top: 50px;
-  background: url(../assets/images/sub3_service/con1/map.jpeg) no-repeat 27% 50%;
+  background: url(../assets/images/sub3_service/con1/map.jpg) no-repeat 27% 50%;
   background-size: cover;
   text-align: center;
 }
@@ -462,30 +462,51 @@
   overflow-x: auto;
   white-space: nowrap;
   box-sizing: border-box;
-  padding: 0 85px;
+  padding: 0 85px 0 40px;
 
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
 
+.con4 .txt-box-wrapper .arrow {
+  flex: 0 0 auto;
+}
+
 .con4 .txt-box-wrapper .txt-box {
-  margin: 0 auto;
-  width: 220px;
-  height: 220px;
+  flex: 0 0 180px;
+  width: 180px;
+  height: 180px;
+  min-width: 180px;
+  min-height: 180px;
+  margin: 0;
+  padding: 20px;
   background-color: var(--color-wg);
   border: 1px solid var(--color-b);
-  border-radius: 120px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  white-space: normal;
+  text-align: center;
 }
 
 .con4 .txt-box-wrapper .txt-box .icon img {
-  width: 60px;
-  margin: 0 auto;
-  padding: 50px 0 20px;
+  display: block;
+  width: 40px;
+  height: auto;
+  margin: 0;
+  padding: 0;
 }
 
-.con4 .txt-box-wrapper .txt-box p {
-  font-size: 18px;
-  padding: 8px 30px;
+.con4 .txt-box-wrapper .txt-box h4 {
+  margin: 0;
+  padding: 0 4px;
+  font-size: 14px;
+  font-weight: var(--weight-md);
+  line-height: 1.35;
+  color: var(--color-b);
 }
 
 /***** contents 5 ******/

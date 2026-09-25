@@ -154,6 +154,7 @@ body {
 }
 
 .tech_ai {
+  position: relative;
   height: 250px;
   width: 100%;
   text-align: center;
@@ -164,7 +165,19 @@ body {
   background-size: cover;
 }
 
+.tech_ai .tech-dim {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
 .tech .tech_ai h3 {
+  position: relative;
+  z-index: 1;
   margin: 0;
   font-weight: 700;
   font-size: 24px;
@@ -173,6 +186,8 @@ body {
 }
 
 .tech .tech_ai p {
+  position: relative;
+  z-index: 1;
   font-size: 14px;
   font-weight: var(--weight-xs);
   color: var(--color-w);
@@ -373,19 +388,26 @@ body {
 .img-slide {
   width: 100%;
   overflow: hidden;
-  cursor: grab;
 }
 
 .img-menu-wrapper {
-  width: 2090px;
-  padding: 0;
-  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin: 20px 0;
   list-style: none;
-  margin: 20px;
   display: flex;
   gap: 10px;
-  margin-bottom: 20px;
-  overflow-x: scroll;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  cursor: grab;
+}
+
+.img-menu-wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 .img-menu-wrapper.dragging {
@@ -394,6 +416,7 @@ body {
 }
 
 .img-menu-wrapper li {
+  flex: 0 0 340px;
   width: 340px;
   height: 310px;
   padding: 30px;

@@ -34,12 +34,14 @@
   margin: 0px 20px;
 }
 
-.gradient1 {
+.sub2-main .gradient1 {
   width: 100%;
   height: 120px;
-  background: linear-gradient(to top, #828181 0%, rgba(57, 114, 57, 0) 100%);
+  background: linear-gradient(to top, #828181 0%, rgba(130, 129, 129, 0) 100%);
   position: absolute;
-  top: 650px;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 999;
 }
 
@@ -58,7 +60,7 @@
 .con1 .gradient2 {
   width: 100%;
   height: 120px;
-  background: linear-gradient(to bottom, #828181 0%, rgba(57, 114, 57, 0) 100%);
+  background: linear-gradient(to bottom, #828181 0%, rgba(130, 129, 129, 0) 100%);
   position: absolute;
   top: 0px;
   z-index: 999;
@@ -136,7 +138,7 @@
 
 .con2 .video-wrapper {
   margin: 0 auto;
-  padding: 0;
+  padding: 0 0 50px;
 }
 
 /* video 3개 슬라이드 */
@@ -150,15 +152,19 @@
 
 .slider {
   display: flex;
+  align-items: flex-start;
   margin: 0;
+  background: transparent;
   transition: transform 0.5s ease-in-out;
 }
 
 .slider .slide {
   min-width: 100%;
+  flex: 0 0 100%;
   box-sizing: border-box;
   text-align: center;
   color: white;
+  background: transparent;
 }
 
 .slider .slide h5 {
@@ -167,7 +173,9 @@
 }
 
 .slider .slide p {
-  padding: 25px 45px 50px;
+  padding: 25px 45px 0;
+  min-height: 78px;
+  box-sizing: border-box;
   font-size: 14px;
   font-weight: var(--weight-sm);
 }

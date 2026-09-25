@@ -130,56 +130,65 @@ document.querySelectorAll(".about-video ul li").forEach((li) => {
 
 // 2-solution 모바일 메뉴
 document.addEventListener("DOMContentLoaded", () => {
-  const slider = document.querySelector('.img-slide');
+  const slider = document.querySelector('.img-menu-wrapper');
   if (!slider) return;
 
+  const canScroll = window.matchMedia('(max-width: 1279px)');
   let isDragging = false;
-  let startX;
-  let scrollLeft;
+  let startX = 0;
+  let scrollLeft = 0;
+  let lastX = 0;
+  let lastTime = 0;
+  let velocity = 0;
+  let frame = 0;
+
+  const stopGlide = () => {
+    if (frame) cancelAnimationFrame(frame);
+    frame = 0;
+  };
+
+  const glide = () => {
+    if (Math.abs(velocity) < 0.4) {
+      frame = 0;
+      return;
+    }
+    slider.scrollLeft -= velocity;
+    velocity *= 0.94;
+    frame = requestAnimationFrame(glide);
+  };
 
   slider.addEventListener('mousedown', e => {
+    if (!canScroll.matches) return;
+    stopGlide();
     isDragging = true;
-    startX = e.pageX - slider.offsetLeft;
+    startX = e.pageX;
+    lastX = e.pageX;
+    lastTime = performance.now();
     scrollLeft = slider.scrollLeft;
+    velocity = 0;
     slider.classList.add('dragging');
   });
 
-  slider.addEventListener('mouseleave', () => {
+  const endDrag = () => {
+    if (!isDragging) return;
     isDragging = false;
     slider.classList.remove('dragging');
-  });
+    frame = requestAnimationFrame(glide);
+  };
 
-  slider.addEventListener('mouseup', () => {
-    isDragging = false;
-    slider.classList.remove('dragging');
-  });
+  slider.addEventListener('mouseleave', endDrag);
+  slider.addEventListener('mouseup', endDrag);
 
   slider.addEventListener('mousemove', e => {
     if (!isDragging) return;
     e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    const walk = x - startX;
-    slider.scrollLeft = scrollLeft - walk;
+    const now = performance.now();
+    const dt = now - lastTime || 16;
+    velocity = (e.pageX - lastX) / dt * 16;
+    lastX = e.pageX;
+    lastTime = now;
+    slider.scrollLeft = scrollLeft - (e.pageX - startX);
   });
-
-  slider.addEventListener('touchstart', e => {
-    isDragging = true;
-    startX = e.touches[0].pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-    slider.classList.add('dragging');
-  }, { passive: true });
-
-  slider.addEventListener('touchend', () => {
-    isDragging = false;
-    slider.classList.remove('dragging');
-  });
-
-  slider.addEventListener('touchmove', e => {
-    if (!isDragging) return;
-    const x = e.touches[0].pageX - slider.offsetLeft;
-    const walk = x - startX;
-    slider.scrollLeft = scrollLeft - walk;
-  }, { passive: true });
 });
 
 
