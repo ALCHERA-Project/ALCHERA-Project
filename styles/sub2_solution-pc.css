@@ -65,8 +65,15 @@
     padding-bottom: 0;
   }
 
+  .slider-window {
+    width: 650px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
   .slider {
     display: flex;
+    width: 100%;
     margin: 0;
     transition: transform 0.5s ease-in-out;
   }
@@ -101,8 +108,8 @@
 
   .video-wrapper .arrow {
     position: absolute;
-    top: 50%;
-    transform: translateY(-100%);
+    top: 280px;
+    transform: translateY(-50%);
     background-color: transparent;
     color: var(--color-w);
     border: none;
@@ -110,13 +117,20 @@
     z-index: 9999;
   }
 
-  /* 화살표 이슈 해결.......... ㅜㅜ */
-  .arrow.left {
-    left: 10px;
+  .video-wrapper .arrow svg {
+    fill: var(--color-w);
   }
 
-  .arrow.right {
-    right: 10px;
+  .video-wrapper .arrow.left {
+    left: calc(50% - 650px / 2 - 35px);
+    right: auto;
+    transform: translate(-100%, -50%);
+  }
+
+  .video-wrapper .arrow.right {
+    left: calc(50% + 650px / 2 + 35px);
+    right: auto;
+    transform: translateY(-50%);
   }
 
   /* contents 3 */

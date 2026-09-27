@@ -150,6 +150,11 @@
   background-color: var(--color-b);
 }
 
+.slider-window {
+  width: 100%;
+  overflow: hidden;
+}
+
 .slider {
   display: flex;
   align-items: flex-start;

@@ -126,32 +126,51 @@
     grid-row: 2 / 3;
     grid-column: 1 / 3;
     margin: 150px 0 80px;
+    --logo-reveal: 100%;
+    -webkit-mask-image: linear-gradient(90deg, #000 0%, #000 34%, transparent 66%);
+    mask-image: linear-gradient(90deg, #000 0%, #000 34%, transparent 66%);
+    -webkit-mask-size: 300% 100%;
+    mask-size: 300% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: var(--logo-reveal) center;
+    mask-position: var(--logo-reveal) center;
   }
 
   /* about video */
   /* 비디오 포함 영역 */
   .about .about-video {
     position: relative;
+    display: grid;
     width: 100%;
-    height: 500%;
+    height: auto;
+    padding: 0;
     background-color: #000;
-
     overflow: hidden;
   }
 
   /* 영상 */
   .about .about-video video {
-    /* padding: 150px 0px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    object-position: center center;
     z-index: 0;
   }
 
   /* 텍스트 그룹 */
   .about .about-video ul {
+    grid-area: 1 / 1;
     position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
     z-index: 1;
+    padding: 200px 0;
     text-align: center;
   }
 
@@ -510,19 +529,24 @@
     box-sizing: border-box;
   }
 
+  .history .history-wrapper .history-right {
+    position: relative;
+    align-self: flex-start;
+  }
+
   .history .history-wrapper .history-right dl:after {
     content: "";
     position: absolute;
-    left: 785px;
+    left: 80px;
     top: 10px;
     width: 2px;
-    height: 65%;
+    height: calc(100% - 60px);
     background: #000038;
   }
 
   .history .history-wrapper .history-right dl:first-child:after {
     top: 10px;
-    height: calc(100% - 170px);
+    height: calc(100% - 60px);
   }
 
 

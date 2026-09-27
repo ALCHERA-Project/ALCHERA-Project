@@ -92,7 +92,26 @@ slider.addEventListener('transitionend', () => {
 document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger);
 
-  const titleElements = gsap.utils.toArray('.con1-subTitle, .con1-title, .txt-box, .con2-subTitle, .con2-title, .con3-subTitle, .con3-title, .arrow, .con4-subTitle, .con4-title, .list');
+  const titleElements = gsap.utils.toArray('.con1-subTitle, .con1-title, .txt-box, .con2-subTitle, .con2-title, .con3-subTitle, .con3-title, .con3 .arrow, .con4-subTitle, .con4-title, .list');
+
+  ScrollTrigger.matchMedia({
+    "(max-width: 1279px)": function () {
+      gsap.utils.toArray('.video-wrapper .arrow').forEach((el) => {
+        gsap.set(el, { opacity: 0, y: 50 });
+        gsap.to(el, {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          scrollTrigger: {
+            trigger: el,
+            start: "top 90%",
+            toggleActions: "play none none reverse",
+            markers: false
+          }
+        });
+      });
+    }
+  });
 
   titleElements.forEach((el) => {
     gsap.set(el, { opacity: 0, y: 50 });

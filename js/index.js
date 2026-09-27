@@ -72,20 +72,42 @@ ScrollTrigger.matchMedia({
   }
 });
 
+ScrollTrigger.matchMedia({
+  "(min-width: 1280px)": function () {
+    gsap.fromTo(".about .about-txt img",
+      { "--logo-reveal": "100%" },
+      {
+        "--logo-reveal": "0%",
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".about .about-txt img",
+          start: "top 85%",
+          end: "center 35%",
+          scrub: 1.2
+        }
+      }
+    );
+  }
+});
+
 
 
 // about-video
 gsap.registerPlugin(ScrollTrigger);
 
-  // 비디오 천천히 위로 이동 (패럴럭스 느낌)
-  gsap.to(".about-video video", {
-    y: -500, // 전체 스크롤 구간 동안 150px 위로 이동
-    ease: "none",
-    scrollTrigger: {
-      trigger: ".about-video",
-      start: "top bottom",
-      end: "bottom top",
-      scrub: true
+  // 비디오 천천히 위로 이동 (패럴럭스 느낌) — 모바일만
+  ScrollTrigger.matchMedia({
+    "(max-width: 1279px)": function () {
+      gsap.to(".about-video video", {
+        y: -500,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".about-video",
+          start: "top bottom",
+          end: "bottom top",
+          scrub: true
+        }
+      });
     }
   });
 
@@ -215,38 +237,61 @@ document.addEventListener("DOMContentLoaded", () => {
   let isDragging = false;
   let startX;
   let scrollLeft;
+  let lastX = 0;
+  let lastTime = 0;
+  let velocity = 0;
+  let frame = 0;
 
   const SCROLL_SPEED = 1.5; // ← 드래그 가속도 조절
 
-  // 마우스 이벤트
-  slider.addEventListener('mousedown', e => {
-    isDragging = true;
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-    slider.classList.add('dragging');
-  });
+  const stopGlide = () => {
+    if (frame) cancelAnimationFrame(frame);
+    frame = 0;
+  };
 
-  slider.addEventListener('mouseleave', () => {
-    isDragging = false;
-    slider.classList.remove('dragging');
-  });
-
-  slider.addEventListener('mouseup', () => {
-    isDragging = false;
-    slider.classList.remove('dragging');
-  });
-
-  slider.addEventListener('mousemove', e => {
-    if (!isDragging) return;
-    if (e.buttons === 0) {
-      isDragging = false;
-      slider.classList.remove('dragging');
+  const glide = () => {
+    if (Math.abs(velocity) < 0.4) {
+      frame = 0;
       return;
     }
+    slider.scrollLeft -= velocity;
+    velocity *= 0.94;
+    frame = requestAnimationFrame(glide);
+  };
+
+  const onMouseMove = e => {
+    if (!isDragging) return;
     e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * SCROLL_SPEED; // ← 여기 적용
-    slider.scrollLeft = scrollLeft - walk;
+    const now = performance.now();
+    const dt = now - lastTime || 16;
+    velocity = (e.pageX - lastX) / dt * 16 * SCROLL_SPEED;
+    lastX = e.pageX;
+    lastTime = now;
+    slider.scrollLeft = scrollLeft - (e.pageX - startX) * SCROLL_SPEED;
+  };
+
+  const endDrag = () => {
+    if (!isDragging) return;
+    isDragging = false;
+    slider.classList.remove('dragging');
+    window.removeEventListener('mousemove', onMouseMove);
+    window.removeEventListener('mouseup', endDrag);
+    frame = requestAnimationFrame(glide);
+  };
+
+  slider.addEventListener('mousedown', e => {
+    if (e.button !== 0) return;
+    e.preventDefault();
+    stopGlide();
+    isDragging = true;
+    startX = e.pageX;
+    lastX = e.pageX;
+    lastTime = performance.now();
+    scrollLeft = slider.scrollLeft;
+    velocity = 0;
+    slider.classList.add('dragging');
+    window.addEventListener('mousemove', onMouseMove);
+    window.addEventListener('mouseup', endDrag);
   });
 
   // 터치 이벤트
@@ -324,15 +369,33 @@ document.addEventListener("DOMContentLoaded", () => {
     scrub: true
   });
 
-  gsap.to(".photoDump-wrapper", {
-    yPercent: -50, 
-    ease: "none",
-    scrollTrigger: {
-      trigger: ".solution",
-      start: "top top",
-      endTrigger: ".img-slide",
-      end: "top 80%",
-      scrub: true
+  const photoScroll = () => ({
+    trigger: ".solution",
+    start: "top top",
+    endTrigger: ".img-slide",
+    end: "top 80%",
+    scrub: true,
+    invalidateOnRefresh: true
+  });
+
+  const travel = () => document.querySelector(".photoDump-wrapper").offsetHeight * 0.5;
+
+  const risePhotos = (speeds) => {
+    document.querySelectorAll(".photoDump li").forEach((item, index) => {
+      gsap.to(item, {
+        y: () => -travel() * speeds[index],
+        ease: "none",
+        scrollTrigger: photoScroll()
+      });
+    });
+  };
+
+  ScrollTrigger.matchMedia({
+    "(max-width: 1279px)": function () {
+      risePhotos([0.55, 1.65, 1, 1.45, 0.95, 0.85]);
+    },
+    "(min-width: 1280px)": function () {
+      risePhotos([0.55, 1.65, 1, 1.45, 0.95, 1.5]);
     }
   });
 });

@@ -83,5 +83,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   activeItem.addEventListener('click', function () {
     familySite.classList.toggle('open');
+    const arrow = activeItem.querySelector('span');
+    if (!arrow) return;
+    arrow.textContent = familySite.classList.contains('open') ? ' ▼' : ' ▲';
   });
 });
