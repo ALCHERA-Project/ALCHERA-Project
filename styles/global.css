@@ -542,6 +542,7 @@
     left: 0;
 
     opacity: 1;
+    max-height: 0;
     transition: max-height 0.8s ease-in-out;
     overflow: hidden;
   }
