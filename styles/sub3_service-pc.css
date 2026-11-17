@@ -95,7 +95,8 @@
   .con1 .list2 p {
     width: 700px;
     font-size: 16px;
-    margin: 20px 70px;
+    margin: 20px auto;
+    text-align: center;
   }
 
   .con1 .list2 .img-box-wrapper {
