@@ -259,6 +259,7 @@
 
   .con4 .solution-info {
     width: 100%;
+    margin: 0;
     display: grid;
     gap: 20px;
     grid-template-rows: 1fr 1fr;

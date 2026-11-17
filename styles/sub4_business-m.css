@@ -1,6 +1,8 @@
 @charset "utf-8";
 
-/***** mo *****/
+* {
+  font-family: var(--primary-font-ko);
+}
 
 /* sub4-main */
 .sub4-main {
@@ -70,6 +72,7 @@
 
 .con1 .con1-subTitle {
   font-size: 16px;
+  font-family: var(--primary-font-en);
   color: var(--color-mb);
 }
 
@@ -129,6 +132,7 @@
 
 .con2 .list1-subTitle {
   font-size: 16px;
+  font-family: var(--primary-font-en);
   color: var(--color-mb);
 }
 
@@ -235,6 +239,7 @@
 
 .con3 .con3-subTitle {
   font-size: 16px;
+  font-family: var(--primary-font-en);
   color: var(--color-mb);
 }
 

@@ -263,17 +263,17 @@
 }
 
 .con4 .solution-info {
-  width: 100%;
+  width: auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 10px;
-  margin: 0 auto;
+  margin: 0 20px;
   padding: 0;
 }
 
 .con4 .solution-info li {
-  width: 170px;
+  width: calc((100% - 10px) / 2);
   height: 250px;
   border: 1px solid #00006B;
   border-radius: 15px;

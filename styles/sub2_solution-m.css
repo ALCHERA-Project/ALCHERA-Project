@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+* {
+  font-family: var(--primary-font-ko);
+}
+
 /* sub2-main */
 .sub2-main {
   display: flex;
@@ -79,12 +83,14 @@
 }
 
 .con1 .txt-box-wrapper {
-  width: 350px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .con1 .txt-box-wrapper .txt-box {
-  width: 350px;
-  height: 320px;
+  width: 100%;
+  max-width: 400px;
+  height: 330px;
   margin-bottom: 25px;
   border: 1px solid var(--color-b);
   border-radius: 15px;
@@ -292,6 +298,7 @@
 }
 
 .con4 .readmore-btn {
+  font-family: var(--primary-font-en);
   color: var(--color-mg);
 }
 

@@ -99,7 +99,7 @@ gsap.registerPlugin(ScrollTrigger);
   ScrollTrigger.matchMedia({
     "(max-width: 1279px)": function () {
       gsap.to(".about-video video", {
-        y: -500,
+        yPercent: -15,
         ease: "none",
         scrollTrigger: {
           trigger: ".about-video",
