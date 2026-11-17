@@ -50,7 +50,7 @@
     transition: opacity 0.5s ease;
   }
 
-  .intro .intro-title h3 {
+  .intro .intro-title h2 {
     margin: 0px;
     font-size: 60px;
     margin-bottom: 15px;
@@ -80,7 +80,7 @@
     margin: 160px 200px;
   }
 
-  .about .about-txt h4 {
+  .about .about-txt h3 {
     margin: 0px;
     padding: 0px;
     font-size: 30px;
@@ -275,7 +275,7 @@
     margin: 30px 0px;
   }
 
-  .tech .tech-scroll .tech-info h5 {
+  .tech .tech-scroll .tech-info h4 {
     font-size: 30px;
     margin-bottom: 35px;
   }
@@ -410,13 +410,13 @@
   }
 
   /* 텍스트는 이미지 + 오버레이 위로 */
-  .img-slide .img-menu-wrapper li h5,
+  .img-slide .img-menu-wrapper li h4,
   .img-slide .img-menu-wrapper li p {
     position: relative;
     z-index: 99;
   }
 
-  .img-slide .img-menu-wrapper li h5 {
+  .img-slide .img-menu-wrapper li h4 {
     position: absolute;
     top: 5%;
     font-size: 30px;
@@ -484,6 +484,10 @@
   }
 
   .history .history-wrapper dl dd {
+    margin: 0;
+  }
+
+  .history .history-wrapper .history-txt p {
     margin: 0;
     font-size: 15px;
     line-height: 40px;

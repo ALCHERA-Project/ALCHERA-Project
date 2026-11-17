@@ -172,7 +172,7 @@
   background: transparent;
 }
 
-.slider .slide h5 {
+.slider .slide h4 {
   padding: 25px 0;
   font-weight: 600;
 }
@@ -310,7 +310,7 @@
   border-bottom: none;
 }
 
-.con4 .resource-list .list h5 {
+.con4 .resource-list .list h4 {
   padding-bottom: 8px;
   font-weight: 500;
   color: var(--color-b);

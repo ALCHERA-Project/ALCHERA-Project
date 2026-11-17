@@ -44,15 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // 모바일 메뉴 toggle
-  const hamburger = document.getElementById('ham');
-  const moNav = document.getElementById('moNav');
-
-  hamburger.addEventListener('click', () => {
-    moNav.classList.toggle('active');
-    hamburger.classList.toggle('close');
-  });
-
   // 스크롤 시 헤더 숨김/표시
   const header = document.querySelector("header");
   let lastScrollY = window.scrollY;

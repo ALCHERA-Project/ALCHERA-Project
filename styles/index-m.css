@@ -40,7 +40,7 @@ body {
 
 }
 
-.intro .intro-title h3 {
+.intro .intro-title h2 {
   margin: 0px 30px;
   font-weight: var(--weight-lg);
   font-size: 45px;
@@ -61,7 +61,7 @@ body {
   flex-direction: column;
 }
 
-.about .about-txt h4 {
+.about .about-txt h3 {
   margin: 45px 0px;
   padding: 0px 20px;
   font-size: 24px;
@@ -237,7 +237,7 @@ body {
   margin: 50px 0px;
 }
 
-.tech .tech-scroll .tech-info h5 {
+.tech .tech-scroll .tech-info h4 {
   margin: 0;
   font-size: 24px;
   font-weight: var(--weight-lg);
@@ -427,7 +427,7 @@ body {
   position: relative;
 }
 
-.img-menu-wrapper li h5 {
+.img-menu-wrapper li h4 {
   font-size: 20px;
   font-weight: var(--weight-md);
   color: var(--color-w);
@@ -508,9 +508,11 @@ body {
   line-height: 25px;
 }
 
-.history .history-txt {}
-
 .history .history-wrapper dl dd {
+  margin: 0;
+}
+
+.history .history-wrapper .history-txt p {
   margin: 0;
   font-size: 13px;
   font-weight: var(--weight-xs);

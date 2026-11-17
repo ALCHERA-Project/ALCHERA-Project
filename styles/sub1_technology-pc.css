@@ -151,7 +151,7 @@
     padding-right: 0px;
   }
 
-  .con2 .txt-wrapper h5 {
+  .con2 .txt-wrapper h4 {
     font-size: 24px;
     margin: 0;
     margin-bottom: 20px;
@@ -246,7 +246,7 @@
     grid-row: 5 / 6;
   }
 
-  .con3 .link-wrapper li a h5 {
+  .con3 .link-wrapper li a h4 {
     font-size: 18px;
     margin-bottom: 3px;
   }
@@ -275,7 +275,7 @@
     margin-bottom: 20px;
   }
 
-  .con4 .solution-info li h6 {
+  .con4 .solution-info li h4 {
     font-size: 20px;
     margin-bottom: 15px;
   }

@@ -46,8 +46,8 @@
   <script src="./js/jquery-ui.min.js"></script>
 
   <!-- page 별 사용되는 js -->
-  <script src="js/global.js"></script>
-  <script src="./js/sub1_technology.js"></script>
+  <script src="./js/global.js" defer></script>
+  <script src="./js/sub1_technology.js" defer></script>
 </head>
 
 <body>
@@ -186,7 +186,7 @@
     <div class="main-video">
       <video src="./assets/images/sub1_technology/about.mp4" autoplay muted loop></video>
       <div class="video-txt">
-        <h3>얼굴 정보를 통해<br>정확한 신원확인이 가능한<br>얼굴인식 인공지능</h>
+        <h3>얼굴 정보를 통해<br>정확한 신원확인이 가능한<br>얼굴인식 인공지능</h3>
           <p>알체라의 얼굴인식 인공지능 기술은 얼굴 이미지를 기반으로 특장점을 추출하여 빠르고 정확한 본인인증 솔루션을 제공합니다. 신뢰할 수 있는 실시간 얼굴 위조 판별 기술을 더해, 다양한
             비즈니스 성공을 경험해 보세요.</p>
       </div>
@@ -232,18 +232,18 @@
       <img src="./assets/images/sub1_technology/con2/AGE.jpg" alt="tech-img">
       <!-- contents 2 text -->
       <div class="txt-wrapper">
-        <h5>Face Detection</h5>
+        <h4>Face Detection</h4>
         <p>Face Detection은 얼굴인식 첫 절반 과정으로 얼굴검출, 랜드마크 검출, 얼굴정렬까지의 세 단계로 구성됩니다. 이미지가 입력되면 AI는 먼저 얼굴의 영역을 찾고, 얼굴이 검출되면
           랜드마크 포인트를 추출해냅니다.<br>이후 랜드마크 포인트를 기준으로 얼굴 이미지를 회전시키고 편집해 Face Matching이 가능한 형태로 변형시킵니다.</p>
       </div>
       <div class="txt-wrapper">
-        <h5>Face Matching</h5>
+        <h4>Face Matching</h4>
         <p>Face Matching은 Face Detection 이후 얼굴인식의 나머지 절반 과정으로, 특징추출과 특징 대조로 구성됩니다. 정렬된 얼굴 이미지를 받은 AI는 이미지에 몇 십 개의
           Convolutional Layers를 적용시켜 얼굴을 N차원의 벡터값으로 변환시킵니다.<br>이 벡터 값은 사람마다 고유한 값이어서 이후에 서로 대조시키는 방식으로 신원 확인이 가능합니다.
         </p>
       </div>
       <div class="txt-wrapper">
-        <h5>Face Anti-Spoofing</h5>
+        <h4>Face Anti-Spoofing</h4>
         <p>Face Anti-Spoofing은 입력되는 얼굴 이미지가 촬영 당시 실제로 해당 장소에 있던 실제 사람으로부터 촬영된 것인지 확인하는 기능으로 IR, 3D Depth, RGB 카메라에서
           모두
           구동 가능합니다. <br>많은 적용 사례와 산업군이 증명하듯, 알체라의 Anti-Spoofing(위변조방지) 기술은 99%의 True Positive Rate을 지녀 신분 도용 등 사기
@@ -251,7 +251,7 @@
           아주 효과적입니다.</p>
       </div>
       <div class="txt-wrapper">
-        <h5>Age, Gender, Emotion</h5>
+        <h4>Age, Gender, Emotion</h4>
         <p>Age, Gender, Emotion(AGE)는 촬영된 인물의 나이, 성별, 그리고 감정을 추측하는 기능입니다. 오프라인 매장에서 고객군의 특징을 나이, 성별에 따라 구분하여 제품 추천을
           하는
           등의 서비스 구현이 가능합니다.</p>
@@ -267,63 +267,63 @@
     <ul class="link-wrapper">
       <li>
         <a href="#">
-          <h5>행정안전부 정부청사관리본부</h5>
+          <h4>행정안전부 정부청사관리본부</h4>
           <p>스마트 정부청사 통합관리체계 구축사업</p>
         </a>
         <img src="./assets/images/sub1_technology/con3/government.jpg" alt="con3-img">
       </li>
       <li>
         <a href="#">
-          <h5>인천국제공항공사</h5>
+          <h4>인천국제공항공사</h4>
           <p>스마트패스 구축사업</p>
         </a>
         <img src="./assets/images/sub1_technology/con3/airport.JPG" alt="con3-img">
       </li>
       <li>
         <a href="#">
-          <h5>한국교육과정평가원</h5>
+          <h4>한국교육과정평가원</h4>
           <p>이미지 적합성 판별 AI 솔루션</p>
         </a>
         <img src="./assets/images/sub1_technology/con3/education.jpg" alt="con3-img">
       </li>
       <li>
         <a href="#">
-          <h5>경찰청</h5>
+          <h4>경찰청</h4>
           <p>얼굴인식 AI 솔루션</p>
         </a>
         <img src="./assets/images/sub1_technology/con3/police.jpeg" alt="con3-img">
       </li>
       <li>
         <a href="#">
-          <h5>신한카드</h5>
+          <h4>신한카드</h4>
           <p>페이스페이(FacePay) 얼굴인식 AI 솔루션</p>
         </a>
         <img src="./assets/images/sub1_technology/con3/sinhan.jpg" alt="con3-img">
       </li>
       <li>
         <a href="#">
-          <h5>토스증권</h5>
+          <h4>토스증권</h4>
           <p>신분증 진위확인 솔루션</p>
         </a>
         <img src="./assets/images/sub1_technology/con3/toss.png" alt="con3-img">
       </li>
       <li>
         <a href="#">
-          <h5>롯데정보통신</h5>
+          <h4>롯데정보통신</h4>
           <p>얼굴인식 AI 솔루션</p>
         </a>
         <img src="./assets/images/sub1_technology/con3/lotte.png" alt="con3-img">
       </li>
       <li>
         <a href="#">
-          <h5>삼성 SDS</h5>
+          <h4>삼성 SDS</h4>
           <p>얼굴인식 AI 솔루션</p>
         </a>
         <img src="./assets/images/sub1_technology/con3/samsung.jpg" alt="con3-img">
       </li>
       <li>
         <a href="#">
-          <h5>부산은행</h5>
+          <h4>부산은행</h4>
           <p>신분증 OCR 및 사본판별 솔루션</p>
         </a>
         <img src="./assets/images/sub1_technology/con3/busan.png" alt="con3-img">
@@ -338,37 +338,37 @@
     <ul class="solution-info">
       <li>
         <img src="./assets/images/sub1_technology/con4/face.svg" alt="icon">
-        <h6>얼굴 본인인증</h6>
+        <h4>얼굴 본인인증</h4>
         <p>높은 보안성과 편리함을 보장하는 얼굴 본인인증 솔루션</p>
         <a href="#">더 알아보기</a>
       </li>
       <li>
         <img src="./assets/images/sub1_technology/con4/id.svg" alt="icon">
-        <h6>신분증 본인인증</h6>
+        <h4>신분증 본인인증</h4>
         <p>위조와 도용의 위험을 예방하는 신분증 본인인증 솔루션</p>
         <a href="#">더 알아보기</a>
       </li>
       <li>
         <img src="./assets/images/sub1_technology/con4/etc.svg" alt="icon">
-        <h6>바이오정보 분산관리</h6>
+        <h4>바이오정보 분산관리</h4>
         <p>개인정보 유출 방지를 위한 분산형 얼굴 정보 저장 방식</p>
         <a href="#">더 알아보기</a>
       </li>
       <li>
         <img src="./assets/images/sub1_technology/con4/etc.svg" alt="icon">
-        <h6>eKYC</h6>
+        <h4>eKYC</h4>
         <p>고객확인제도 구현을 위한 통합 보안 솔루션</p>
         <a href="#">더 알아보기</a>
       </li>
       <li>
         <img src="./assets/images/sub1_technology/con4/etc.svg" alt="icon">
-        <h6>재외국민 여권 신원확인</h6>
+        <h4>재외국민 여권 신원확인</h4>
         <p>재외국민 비대면 본인인증이 가능한 신원확인 솔루션</p>
         <a href="#">더 알아보기</a>
       </li>
       <li>
         <img src="./assets/images/sub1_technology/con4/enter.svg" alt="icon">
-        <h6>출입통제</h6>
+        <h4>출입통제</h4>
         <p>안전하고 편리한 출입통제 솔루션</p>
         <a href="#">더 알아보기</a>
       </li>
@@ -378,8 +378,8 @@
   <!------ contact ------>
   <section class="contact">
     <p>Contact Us</p>
-    <h3>얼굴인식 AI 기술로 비즈니스를 업그레이드하세요</h3>
-    <h4>알체라의 세일즈 컨설턴트가<br>고객님에게 최적의 솔루션을 제안 드립니다.</h4>
+    <h2>얼굴인식 AI 기술로 비즈니스를 업그레이드하세요</h2>
+    <h3>알체라의 세일즈 컨설턴트가<br>고객님에게 최적의 솔루션을 제안 드립니다.</h3>
     <a href="#">문의하기 <svg class="arrow" width="16" height="12" viewBox="0 0 16 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path d="M1.01599 6.02401C1.01696 5.87669 1.07129 5.73471 1.16893 5.62439C1.26656 5.51406 1.40088 5.44287 1.54699 5.42401L1.62999 5.41801L12.422 5.41801L8.52199 1.58101C8.46484 1.52513 8.41944 1.45839 8.38844 1.38472C8.35744 1.31105 8.34147 1.23193 8.34147 1.15201C8.34147 1.07208 8.35744 0.992957 8.38844 0.919288C8.41944 0.845618 8.46484 0.778885 8.52199 0.723006C8.6266 0.619833 8.76446 0.557165 8.91098 0.546176C9.0575 0.535187 9.20316 0.576591 9.32199 0.663006L9.39099 0.722006L14.342 5.59401C14.3731 5.62429 14.401 5.65781 14.425 5.69401L14.445 5.72701L14.461 5.75701L14.481 5.80201L14.494 5.83701L14.507 5.88301L14.514 5.91501L14.516 5.96301V6.00001V6.04701V6.08301V6.02401C14.5162 6.06157 14.5128 6.09907 14.506 6.13601L14.5 6.16201L14.485 6.21501L14.475 6.24201L14.451 6.29501L14.438 6.32001L14.416 6.35801L14.397 6.38501L14.392 6.39201C14.3754 6.41351 14.3573 6.43389 14.338 6.45301L9.38899 11.327C9.27322 11.4408 9.11736 11.5046 8.95499 11.5046C8.79263 11.5046 8.63676 11.4408 8.52099 11.327C8.41701 11.2248 8.35377 11.0883 8.3431 10.9429C8.33242 10.7976 8.37504 10.6533 8.46299 10.537L8.52299 10.469L12.423 6.63301L1.62999 6.63301C1.54963 6.63353 1.46996 6.61818 1.39556 6.58782C1.32115 6.55746 1.25348 6.5127 1.19642 6.45611C1.13937 6.39952 1.09406 6.33222 1.06309 6.25806C1.03213 6.18391 1.01612 6.10437 1.01599 6.02401Z" stroke="currentColor" stroke-width="0.5"/>
     </svg>

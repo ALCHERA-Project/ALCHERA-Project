@@ -429,14 +429,14 @@
     margin-bottom: 20px;
   }
 
-  .contact h3 {
+  .contact h2 {
     font-size: 28px;
     font-weight: 600;
     color: var(--color-w);
     margin-bottom: 15px;
   }
 
-  .contact h4 {
+  .contact h3 {
     font-size: 14px;
     font-weight: var(--weight-xs);
     line-height: 1.4;
@@ -657,12 +657,12 @@
     margin-bottom: 20px;
   }
 
-  .contact h3 {
+  .contact h2 {
     font-size: 38px;
     margin-bottom: 35px;
   }
 
-  .contact h4 {
+  .contact h3 {
     font-size: 16px;
     margin-bottom: 40px;
   }

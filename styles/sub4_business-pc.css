@@ -151,8 +151,8 @@
     padding-right: 0px;
   }
 
-  .con2 .list2 .list2-wrapper .txt-wrapper h5,
-  .con2 .list3 .list3-wrapper .txt-wrapper h5 {
+  .con2 .list2 .list2-wrapper .txt-wrapper h4,
+  .con2 .list3 .list3-wrapper .txt-wrapper h4 {
     font-size: 24px;
     margin: 0;
     margin-bottom: 15px;
@@ -259,7 +259,7 @@
     margin-bottom: 20px;
   }
 
-  .con4 .solution-info li h6 {
+  .con4 .solution-info li h4 {
     font-size: 22px;
     margin-bottom: 15px;
   }

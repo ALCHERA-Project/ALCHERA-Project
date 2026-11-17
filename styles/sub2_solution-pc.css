@@ -90,7 +90,7 @@
     align-items: center;
   }
 
-  .slider .slide h5 {
+  .slider .slide h4 {
     padding: 35px 0;
     font-size: 22px;
     font-weight: 600;
@@ -191,7 +191,7 @@
     border-bottom: none;
   }
 
-  .con4 .resource-list .list h5 {
+  .con4 .resource-list .list h4 {
     padding: 0px;
     padding-left: 30px;
   }

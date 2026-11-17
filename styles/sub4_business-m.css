@@ -198,8 +198,8 @@
   padding-bottom: 50px;
 }
 
-.con2 .list2 .list2-wrapper .txt-wrapper h5,
-.con2 .list3 .list3-wrapper .txt-wrapper h5 {
+.con2 .list2 .list2-wrapper .txt-wrapper h4,
+.con2 .list3 .list3-wrapper .txt-wrapper h4 {
   font-size: 18px;
   font-weight: var(--weight-md);
   color: var(--color-mb);
@@ -321,7 +321,7 @@
   margin-bottom: 12px;
 }
 
-.con4 .solution-info li h6 {
+.con4 .solution-info li h4 {
   font-size: 16px;
   font-weight: var(--weight-md);
   color: var(--color-b);

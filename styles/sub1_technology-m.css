@@ -164,7 +164,7 @@
   text-align: left;
 }
 
-.con2 .txt-wrapper h5 {
+.con2 .txt-wrapper h4 {
   font-family: var(--primary-font-en);
   font-weight: var(--weight-md);
   font-size: 18px;
@@ -242,7 +242,7 @@
   z-index: 1;
 }
 
-.con3 .link-wrapper li a h5 {
+.con3 .link-wrapper li a h4 {
   font-size: 16px;
   font-weight: var(--weight-md);
   color: var(--color-w);
@@ -290,7 +290,7 @@
   margin-bottom: 12px;
 }
 
-.con4 .solution-info li h6 {
+.con4 .solution-info li h4 {
   font-size: 16px;
   font-weight: var(--weight-md);
   color: var(--color-b);
