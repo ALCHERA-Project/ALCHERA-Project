@@ -181,7 +181,7 @@
 /* box 1 */
 .con1 .list2 .img-box-wrapper .img-box1 {
   height: 200px;
-  background-image: url(../assets/images/sub3_service/con1/list2/1.png);
+  background-image: url(../assets/images/sub3_service/con1/list2/1_education.jpg);
   background-size: cover;
   border-radius: 15px;
   border: 1px solid var(--color-w);
@@ -194,7 +194,7 @@
 /* box 2 */
 .con1 .list2 .img-box-wrapper .img-box2 {
   height: 200px;
-  background-image: url(../assets/images/sub3_service/con1/list2/2.png);
+  background-image: url(../assets/images/sub3_service/con1/list2/2_speech.jpg);
   background-size: cover;
   border-radius: 15px;
   border: 1px solid var(--color-w);
@@ -207,10 +207,11 @@
 /* box 1 */
 .con1 .list2 .img-box-wrapper .img-box3 {
   height: 200px;
-  background-image: url(../assets/images/sub3_service/con1/list2/3.png);
+  background-image: url(../assets/images/sub3_service/con1/list2/3_industry.jpg);
   background-size: cover;
   border-radius: 15px;
   border: 1px solid var(--color-w);
+
   padding: 25px;
   margin-bottom: 15px;
   text-align: left;
@@ -220,11 +221,12 @@
 /* box 1 */
 .con1 .list2 .img-box-wrapper .img-box4 {
   height: 200px;
-  background-image: url(../assets/images/sub3_service/con1/list2/4.png);
+  background-image: url(../assets/images/sub3_service/con1/list2/4_data.jpg);
   background-size: cover;
   border-radius: 15px;
   border: 1px solid var(--color-w);
   padding: 25px;
+  margin-bottom: 15px;
   text-align: left;
   color: var(--color-w);
 }
@@ -316,8 +318,8 @@
 .con3 .list1 .img-box-wrapper .img-box3,
 .con3 .list1 .img-box-wrapper .img-box4 {
   width: 50%;
-  height: 180px;
-  padding-top: 35%;
+  height: 90px;
+  padding-top: 17.5%;
   color: var(--color-w);
 }
 
@@ -382,7 +384,7 @@
 
 
 
-/***** contents 3 ******/
+/****** contents 3 ******/
 .con3 {
   padding: 0 0 80px;
   text-align: center;
@@ -437,7 +439,7 @@
   padding: 8px 30px;
 }
 
-/* con4 */
+/****** con4 ******/
 .con4 {
   padding: 80px 0;
   text-align: center;
