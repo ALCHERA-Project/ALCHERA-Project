@@ -82,7 +82,7 @@
   margin-top: 15px;
 }
 
-/* contents 1 */
+/* con1 */
 .con1 .txt-box {
   margin: 25px 20px;
   padding: 0px 30px;
@@ -130,7 +130,7 @@
   margin: 0;
 }
 
-/* contents 2 */
+/* con2 */
 .con2-wrapper {
   margin: 0px 20px;
   display: grid;
@@ -179,7 +179,7 @@
   margin-bottom: 50px;
 }
 
-/* contents 3 */
+/* con3 */
 .con3 {
   padding: 0px 20px;
   display: flex;
@@ -257,7 +257,7 @@
   margin: 0;
 }
 
-/* contents 4 */
+/* con4 */
 .con4 {
   padding: 0 0 80px;
 }

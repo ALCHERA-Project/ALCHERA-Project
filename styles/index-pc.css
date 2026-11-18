@@ -1,13 +1,13 @@
 @charset "utf-8";
 
-/***** pc *****/
+/* pc */
 @media (min-width: 1280px) {
 
   html {
     width: 100%;
   }
 
-  /****** 공통 적용 ******/
+  /* 공통 적용 */
   #loading-overlay {
     position: fixed;
     top: 0;
@@ -18,7 +18,7 @@
     z-index: 9999;
   }
 
-  /****** intro ******/
+  /* intro */
   .intro {
     position: relative;
     height: 100vh;
@@ -61,7 +61,7 @@
     margin: 0px;
   }
 
-  /****** about ******/
+  /* about */
   .about {
     position: relative;
     width: 100%;
@@ -202,7 +202,7 @@
 
 
 
-  /****** 1-tech ******/
+  /* 1-tech */
   .tech {
     position: relative;
     min-height: 325vh;
@@ -304,7 +304,7 @@
     font-size: 20px;
   }
 
-  /****** 2-solution ******/
+  /* 2-solution */
   .solution .photoDump-title h3 {
     margin: 0;
     font-size: 40px;
@@ -356,7 +356,7 @@
     left: 50%;
   }
 
-  /****** img-slide ******/
+  /* img-slide */
   .img-slide {
     width: 100vw;
   }
@@ -451,7 +451,7 @@
   }
 
 
-  /****** 3-history ******/
+  /* 3-history */
   .history {
     margin: 70px 50px 0px;
     padding-bottom: 80px;
@@ -573,7 +573,7 @@
     box-sizing: border-box;
   }
 
-  /****** 4-press ******/
+  /* 4-press */
   .press {
     margin: 80px 50px;
   }
@@ -615,7 +615,7 @@
     color: var(--color-b);
   }
 
-  /****** location ******/
+  /* location */
   .location {
     padding: 80px 0px;
   }

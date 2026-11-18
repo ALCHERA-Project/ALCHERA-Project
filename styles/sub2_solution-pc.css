@@ -16,7 +16,7 @@
     font-size: 22px;
   }
 
-  /* contents 1 */
+  /* con1 */
   .con1 {
     padding: 200px 80px 0;
 
@@ -42,7 +42,7 @@
     margin-bottom: 0px;
   }
 
-  /* contents 2 */
+  /* con2 */
   .con2 {
     padding: 160px 0px;
   }
@@ -133,7 +133,7 @@
     transform: translateY(-50%);
   }
 
-  /* contents 3 */
+  /* con3 */
   .con3 {
     padding: 0px 0px 160px;
   }

@@ -1,11 +1,11 @@
 @charset "utf-8";
 
-/****** mo ******/
+/* mo */
 
 @media screen and (min-width: 390px) {
 
-  /****** fix-icon ******/
-  /*** chat ***/
+  /* fix-icon */
+  /* chat */
   .fix-icon .chat {
     width: 100%;
     position: relative;
@@ -41,7 +41,7 @@
     }
   }
 
-  /*** goToTop ***/
+  /* goToTop */
   .fix-icon .goToTop {
     width: 100%;
     position: relative;
@@ -61,7 +61,7 @@
     border-radius: 50px;
   }
 
-  /****** header-mo ******/
+  /* header-mo */
   .pc-menu {
     display: none;
   }
@@ -195,7 +195,7 @@
   }
 
 
-  /****** footer-mobile ******/
+  /* footer-mobile */
   footer {
     background-color: var(--color-b);
     color: var(--color-w);
@@ -208,7 +208,7 @@
     color: var(--color-w);
   }
 
-  /**** footer-menu ****/
+  /* footer-menu */
   footer .footer-menu-wrapper {
     display: flex;
     flex-direction: column;
@@ -253,7 +253,7 @@
     line-height: 30px;
   }
 
-  /**** footer-bottom ****/
+  /* footer-bottom */
   footer .footer-bottom {
     padding: 25px 0px;
     display: flex;
@@ -261,7 +261,7 @@
     gap: 90px;
   }
 
-  /** address **/
+  /* address */
   footer .footer-bottom .address h2 {
     margin: 0;
   }
@@ -284,7 +284,7 @@
     position: relative;
   }
 
-  /** language **/
+  /* language */
   footer .footer-bottom .lang {
     display: flex;
     align-items: center;
@@ -304,7 +304,7 @@
     border-left: 1px solid var(--color-w);
   }
 
-  /** policy **/
+  /* policy */
   footer .footer-bottom .policy {
     margin-bottom: 15px;
   }
@@ -316,7 +316,7 @@
     line-height: 20px;
   }
 
-  /** sns **/
+  /* sns */
   .sns {
     display: flex;
     list-style: none;
@@ -332,7 +332,7 @@
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(358deg) brightness(100%) contrast(100%);
   }
 
-  /** family-site **/
+  /* family-site */
   .family-site {
     width: 150px;
     position: absolute;
@@ -406,7 +406,7 @@
   }
 
 
-  /****** contact-mobile ******/
+  /* contact-mobile */
   .contact {
     height: 340px;
     display: flex;
@@ -472,11 +472,11 @@
 
 
 /* 구분 *****************************/
-/****** pc ******/
+/* pc */
 
 @media screen and (min-width: 1280px) {
 
-  /**** header ****/
+  /* header */
   /* 모바일 메뉴 숨김 */
   .m-menu {
     display: none;
@@ -595,8 +595,8 @@
     transition: transform 0.3s ease;
   }
 
-  /****** fix-icon ******/
-  /*** chat ***/
+  /* fix-icon */
+  /* chat */
   .fix-icon .chat {
     width: 100%;
     position: relative;
@@ -616,7 +616,7 @@
     border-radius: 50px;
   }
 
-  /*** goToTop ***/
+  /* goToTop */
   .fix-icon .goToTop {
     width: 100%;
     position: relative;
@@ -644,7 +644,7 @@
   }
 
 
-  /****** contact ******/
+  /* contact */
   .contact {
     height: 430px;
     padding: 0px 40px;
@@ -691,12 +691,12 @@
   }
 
 
-  /****** footer ******/
+  /* footer */
   footer {
     padding: 50px 80px;
   }
 
-  /**** footer-menu ****/
+  /* footer-menu */
   footer .footer-menu-wrapper {
     flex-direction: row;
     justify-content: space-between;
@@ -726,7 +726,7 @@
     font-size: 18px;
   }
 
-  /**** footer-bottom ****/
+  /* footer-bottom */
   footer .footer-bottom {
     padding: 70px 0px 30px;
     display: flex;
@@ -735,7 +735,7 @@
     position: relative;
   }
 
-  /** address **/
+  /* address */
   footer .footer-bottom .address {
     display: flex;
     gap: 30px;
@@ -759,18 +759,18 @@
     align-items: baseline;
   }
 
-  /** language **/
+  /* language */
   footer .footer-bottom .lang {
     margin-bottom: 0px;
     margin-right: 60px;
   }
 
-  /** policy **/
+  /* policy */
   footer .footer-bottom .policy {
     margin-bottom: 0px;
   }
 
-  /** sns **/
+  /* sns */
   .sns {
     gap: 25px;
     right: 0px;
@@ -782,7 +782,7 @@
     height: 30px;
   }
 
-  /** family-site **/
+  /* family-site */
   .family-site {
     width: 160px;
     position: absolute;

@@ -47,7 +47,7 @@
   z-index: 99;
 }
 
-/***** contents 1 *****/
+/* con1 */
 .con1 {
   padding: 120px 20px 0 20px;
   text-align: center;
@@ -254,7 +254,7 @@
 }
 
 
-/***** contents 2 *****/
+/* con2 */
 /* map */
 .con2 {
   height: 700px;
@@ -276,7 +276,7 @@
 }
 
 
-/***** contents 3 *****/
+/* con3 */
 .con3 .list1 {
   text-align: center;
 }
@@ -384,7 +384,7 @@
 
 
 
-/****** contents 3 ******/
+/* con3 */
 .con3 {
   padding: 0 0 80px;
   text-align: center;
@@ -439,7 +439,7 @@
   padding: 8px 30px;
 }
 
-/****** con4 ******/
+/* con4 */
 .con4 {
   padding: 80px 0;
   text-align: center;
@@ -520,7 +520,7 @@
   color: var(--color-b);
 }
 
-/***** contents 5 ******/
+/* con5 */
 /* con4 */
 .con5 {
   padding: 0 20px 80px;

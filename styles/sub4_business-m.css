@@ -51,7 +51,7 @@
   z-index: 9;
 }
 
-/****** contents 1 ******/
+/* con1 */
 .con1 {
   padding: 200px 20px 0 20px;
   display: flex;
@@ -120,16 +120,13 @@
 
 
 /* 지 그 재 그 */
-/****** contents 2 ******/
+/* con2 */
 .con2 {
   padding: 80px 20px 0 20px;
   text-align: center;
 }
 
 /* list 1 시나리오 */
-.con2 .list1 {
-}
-
 .con2 .list1-subTitle {
   font-size: 16px;
   font-family: var(--primary-font-en);
@@ -164,9 +161,6 @@
 .con2 .list3 .list3-wrapper {
   /* margin: 0px 20px; */
   display: grid;
-
-  /* 이거 안해도 되나...?!?!???  ****************************************************/
-  /* grid-template-rows: repeat(4, 220px 1fr); */
 }
 
 .con2 .list2 .list2-wrapper img,
@@ -226,7 +220,7 @@
   display: block;
 }
 
-/****** contents 3 ******/
+/* con3 */
 .con3 {
   padding: 30px 20px 0 20px;
   display: flex;
@@ -286,7 +280,7 @@
 
 
 /* 금융 분야 사용 솔루션 안내 */
-/****** con 4 ******/
+/* con4 */
 .con4 {
   padding: 0 0 80px;
 }

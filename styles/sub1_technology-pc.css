@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/***** pc *****/
+/* pc */
 @media (min-width: 1280px) {
   .contents-title {
     font-size: 38px;
@@ -52,7 +52,7 @@
     margin-top: 35px;
   }
 
-  /* contents 1 */
+  /* con1 */
   .con1 {
     margin: 0px 80px;
   }
@@ -95,7 +95,7 @@
   }
 
   /* 지그재그 이미지 */
-  /* contents 2 */
+  /* con2 */
   .con2-wrapper {
     width: 100%;
     margin: 0px;
@@ -162,7 +162,7 @@
     margin-bottom: 0px;
   }
 
-  /* contents 3 */
+  /* con3 */
   .con3 {
     width: 100%;
     padding: 160px 80px 0px;
@@ -251,7 +251,7 @@
     margin-bottom: 3px;
   }
 
-  /* con 4 */
+  /* con4 */
   .con4 {
     margin: 40px 150px 160px;
     padding: 0;

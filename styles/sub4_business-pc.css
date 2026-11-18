@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/***** pc *****/
+/* pc */
 @media (min-width: 1280px) {
 
   /* sub4-main */
@@ -18,7 +18,7 @@
     font-size: 22px;
   }
 
-  /* contents 1 */
+  /* con1 */
   .con1 .con1-title {
     font-size: 38px;
   }
@@ -62,7 +62,7 @@
     line-height: 1.4;
   }
 
-  /* contents 2 */
+  /* con2 */
   /* list 1 시나리오 */
   .con2 {
     padding-top: 160px;
@@ -79,7 +79,7 @@
     padding-bottom: 80px;
   }
 
-  /****** 지그재그 이미지 ***********************/
+  /* 지그재그 이미지 */
   /* list 2 + list 3 */
   .con2 .list2 .list2-title,
   .con2 .list3 .list3-title {
@@ -165,7 +165,7 @@
     margin-bottom: 0px;
   }
 
-  /* con 3 */
+  /* con3 */
   .con3 {
     padding: 160px 0 0;
   }
@@ -226,7 +226,7 @@
 
 
   /* 금융 분야 사용 솔루션 안내 */
-  /* con 4 */
+  /* con4 */
   .con4 {
     margin: 40px 150px 160px;
     padding: 0;
